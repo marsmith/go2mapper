@@ -1,0 +1,5729 @@
+{
+  "SitesCollection": [
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "403727073154503",
+        "station_nm": "S 21311. 1",
+        "lonDD": "-73.2628961",
+        "latDD": "40.6245447"
+      },
+      "SiteID": "403727073154503"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "403727073154601",
+        "station_nm": "S 21091. 1",
+        "lonDD": "-73.2628961",
+        "latDD": "40.6245447"
+      },
+      "SiteID": "403727073154601"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "403805073121002",
+        "station_nm": "S125986. 1",
+        "lonDD": "-73.202255",
+        "latDD": "40.6347944"
+      },
+      "SiteID": "403805073121002"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404358072520302",
+        "station_nm": "S124400. 1",
+        "lonDD": "-72.867076",
+        "latDD": "40.73298785"
+      },
+      "SiteID": "404358072520302"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404751073240903",
+        "station_nm": "S 16874. 3",
+        "lonDD": "-73.40225",
+        "latDD": "40.7975"
+      },
+      "SiteID": "404751073240903"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "405030073180601",
+        "station_nm": "S 65602. 1",
+        "lonDD": "-73.3012222",
+        "latDD": "40.8410833"
+      },
+      "SiteID": "405030073180601"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "405743072425701",
+        "station_nm": "S  4271. 1",
+        "lonDD": "-72.7153761",
+        "latDD": "40.9620428"
+      },
+      "SiteID": "405743072425701"
+    },
+    {
+      "Attributes": {
+        "site_type": "at",
+        "Office": "Coram",
+        "site_no": "404404073491301",
+        "station_nm": "WEATHER STATION AT QUEENS COLLEGE NR FLUSHING NY",
+        "lonDD": "-73.81985648",
+        "latDD": "40.73454679"
+      },
+      "SiteID": "404404073491301"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404416073491801",
+        "station_nm": "Q  3905. 1",
+        "lonDD": "-73.8213667",
+        "latDD": "40.7376083"
+      },
+      "SiteID": "404416073491801"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404416073491802",
+        "station_nm": "Q  3810. 2",
+        "lonDD": "-73.8209676",
+        "latDD": "40.7379078"
+      },
+      "SiteID": "404416073491802"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404535073370002",
+        "station_nm": "N  8269. 2",
+        "lonDD": "-73.6162392",
+        "latDD": "40.75982298"
+      },
+      "SiteID": "404535073370002"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404553073351201",
+        "station_nm": "N  1616. 3",
+        "lonDD": "-73.5862383",
+        "latDD": "40.76490596"
+      },
+      "SiteID": "404553073351201"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404753073440303",
+        "station_nm": "N  4266. 2",
+        "lonDD": "-73.7337427",
+        "latDD": "40.797879"
+      },
+      "SiteID": "404753073440303"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404757073440401",
+        "station_nm": "N  9099. 1",
+        "lonDD": "-73.7340204",
+        "latDD": "40.79926788"
+      },
+      "SiteID": "404757073440401"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404818073293101",
+        "station_nm": "N 11454. 1",
+        "lonDD": "-73.49151248",
+        "latDD": "40.80509915"
+      },
+      "SiteID": "404818073293101"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404832073333203",
+        "station_nm": "N  9059. 1",
+        "lonDD": "-73.55802778",
+        "latDD": "40.80902778"
+      },
+      "SiteID": "404832073333203"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404931073382101",
+        "station_nm": "N   110. 1",
+        "lonDD": "-73.6387393",
+        "latDD": "40.8253778"
+      },
+      "SiteID": "404931073382101"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404943073414701",
+        "station_nm": "N 12508. 1",
+        "lonDD": "-73.69596348",
+        "latDD": "40.8287115"
+      },
+      "SiteID": "404943073414701"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404958073085001",
+        "station_nm": "S  1812. 3",
+        "lonDD": "-73.1467222",
+        "latDD": "40.8329722"
+      },
+      "SiteID": "404958073085001"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "405149072532201",
+        "station_nm": "S  5517. 1",
+        "lonDD": "-72.8889921",
+        "latDD": "40.8637097"
+      },
+      "SiteID": "405149072532201"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "405223072523401",
+        "station_nm": "S  6434. 1",
+        "lonDD": "-72.8757222",
+        "latDD": "40.8728333"
+      },
+      "SiteID": "405223072523401"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "405223072523402",
+        "station_nm": "S  6455. 1",
+        "lonDD": "-72.87577778",
+        "latDD": "40.8728333"
+      },
+      "SiteID": "405223072523402"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "403505073401301",
+        "station_nm": "N 11002. 1",
+        "lonDD": "-73.6696944",
+        "latDD": "40.58491667"
+      },
+      "SiteID": "403505073401301"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "403517073430702",
+        "station_nm": "N  6702. 1",
+        "lonDD": "-73.7179167",
+        "latDD": "40.58805556"
+      },
+      "SiteID": "403517073430702"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404505073131501",
+        "station_nm": "S123414. 1",
+        "lonDD": "-73.2203936",
+        "latDD": "40.7514871"
+      },
+      "SiteID": "404505073131501"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404530073181102",
+        "station_nm": "S 76016. 2",
+        "lonDD": "-73.30252778",
+        "latDD": "40.75852778"
+      },
+      "SiteID": "404530073181102"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404614073164404",
+        "station_nm": "S  1810. 4",
+        "lonDD": "-73.2785556",
+        "latDD": "40.7698611"
+      },
+      "SiteID": "404614073164404"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404834073403701",
+        "station_nm": "N 12507. 1",
+        "lonDD": "-73.6765185",
+        "latDD": "40.809545"
+      },
+      "SiteID": "404834073403701"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404932073055902",
+        "station_nm": "S 33380. 1",
+        "lonDD": "-73.09927679",
+        "latDD": "40.82565387"
+      },
+      "SiteID": "404932073055902"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404935073055901",
+        "station_nm": "S 33379. 1",
+        "lonDD": "-73.09927679",
+        "latDD": "40.82565387"
+      },
+      "SiteID": "404935073055901"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "405125073420702",
+        "station_nm": "N  6282. 2",
+        "lonDD": "-73.7014722",
+        "latDD": "40.85688889"
+      },
+      "SiteID": "405125073420702"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "405432073345001",
+        "station_nm": "N  7152. 1",
+        "lonDD": "-73.57913889",
+        "latDD": "40.90927778"
+      },
+      "SiteID": "405432073345001"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404812073004101",
+        "station_nm": "S  3521. 1",
+        "lonDD": "-73.0108056",
+        "latDD": "40.8033611"
+      },
+      "SiteID": "404812073004101"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "405830072331502",
+        "station_nm": "S  6558. 2",
+        "lonDD": "-72.5538611",
+        "latDD": "40.97519444"
+      },
+      "SiteID": "405830072331502"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404030073293703",
+        "station_nm": "N   180. 2",
+        "lonDD": "-73.493181",
+        "latDD": "40.675101"
+      },
+      "SiteID": "404030073293703"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404031073382701",
+        "station_nm": "N 11166. 1",
+        "lonDD": "-73.6404071",
+        "latDD": "40.67538018"
+      },
+      "SiteID": "404031073382701"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404124073394901",
+        "station_nm": "N  1129. 3",
+        "lonDD": "-73.6631855",
+        "latDD": "40.69010238"
+      },
+      "SiteID": "404124073394901"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404210073340801",
+        "station_nm": "N  1615. 4",
+        "lonDD": "-73.5684605",
+        "latDD": "40.702879"
+      },
+      "SiteID": "404210073340801"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404237073433701",
+        "station_nm": "N  7493. 1",
+        "lonDD": "-73.7259649",
+        "latDD": "40.71010265"
+      },
+      "SiteID": "404237073433701"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404326073341801",
+        "station_nm": "N 11570. 1",
+        "lonDD": "-73.5712382",
+        "latDD": "40.72398978"
+      },
+      "SiteID": "404326073341801"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "404327073341701",
+        "station_nm": "N 11396. 1",
+        "lonDD": "-73.5709604",
+        "latDD": "40.72426755"
+      },
+      "SiteID": "404327073341701"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "405249073010701",
+        "station_nm": "S120291. 1",
+        "lonDD": "-73.0181616",
+        "latDD": "40.8803764"
+      },
+      "SiteID": "405249073010701"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Coram",
+        "site_no": "405756072173502",
+        "station_nm": "S  8833. 2",
+        "lonDD": "-72.292582",
+        "latDD": "40.9656552"
+      },
+      "SiteID": "405756072173502"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "410254072275201",
+        "station_nm": "RECHARGE BASIN AT MILL LANE AT PECONIC NY",
+        "lonDD": "-72.46463889",
+        "latDD": "41.04852778"
+      },
+      "SiteID": "410254072275201"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01304000",
+        "station_nm": "NISSEQUOGUE RIVER NEAR SMITHTOWN NY",
+        "lonDD": "-73.2241667",
+        "latDD": "40.84944444"
+      },
+      "SiteID": "01304000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01304500",
+        "station_nm": "PECONIC RIVER AT RIVERHEAD NY",
+        "lonDD": "-72.6866667",
+        "latDD": "40.9136111"
+      },
+      "SiteID": "01304500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01305000",
+        "station_nm": "CARMANS RIVER AT YAPHANK NY",
+        "lonDD": "-72.9061111",
+        "latDD": "40.83027778"
+      },
+      "SiteID": "01305000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01305500",
+        "station_nm": "SWAN RIVER AT EAST PATCHOGUE NY",
+        "lonDD": "-72.9936111",
+        "latDD": "40.76694444"
+      },
+      "SiteID": "01305500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01306460",
+        "station_nm": "CONNETQUOT BK NR CENTRAL ISLIP NY",
+        "lonDD": "-73.1586111",
+        "latDD": "40.77194444"
+      },
+      "SiteID": "01306460"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01306499",
+        "station_nm": "CONNETQUOT RIVER NEAR NORTH GREAT RIVER NY",
+        "lonDD": "-73.1503912",
+        "latDD": "40.74759826"
+      },
+      "SiteID": "01306499"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01308000",
+        "station_nm": "SAMPAWAMS CREEK AT BABYLON NY",
+        "lonDD": "-73.31388889",
+        "latDD": "40.70416667"
+      },
+      "SiteID": "01308000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01308500",
+        "station_nm": "CARLLS RIVER AT BABYLON NY",
+        "lonDD": "-73.3283333",
+        "latDD": "40.7086111"
+      },
+      "SiteID": "01308500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01302020",
+        "station_nm": "BRONX RIVER AT NY BOTANICAL GARDEN AT BRONX NY",
+        "lonDD": "-73.87438889",
+        "latDD": "40.86230556"
+      },
+      "SiteID": "01302020"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01303000",
+        "station_nm": "MILL NECK CREEK AT MILL NECK NY",
+        "lonDD": "-73.5636111",
+        "latDD": "40.8875"
+      },
+      "SiteID": "01303000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01303500",
+        "station_nm": "COLD SPRING BROOK AT COLD SPRING HARBOR NY",
+        "lonDD": "-73.4633333",
+        "latDD": "40.8572222"
+      },
+      "SiteID": "01303500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01309500",
+        "station_nm": "MASSAPEQUA CREEK AT MASSAPEQUA NY",
+        "lonDD": "-73.4547222",
+        "latDD": "40.68888889"
+      },
+      "SiteID": "01309500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01309950",
+        "station_nm": "BELLMORE CREEK NEAR BELLMORE NY",
+        "lonDD": "-73.5156816",
+        "latDD": "40.67871226"
+      },
+      "SiteID": "01309950"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01309990",
+        "station_nm": "BELLMORE CREEK TRIBUTARY AT BELLMORE NY",
+        "lonDD": "-73.5123481",
+        "latDD": "40.6798233"
+      },
+      "SiteID": "01309990"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01310500",
+        "station_nm": "EAST MEADOW BROOK AT FREEPORT NY",
+        "lonDD": "-73.5697222",
+        "latDD": "40.66555556"
+      },
+      "SiteID": "01310500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01311500",
+        "station_nm": "VALLEY STREAM AT VALLEY STREAM NY",
+        "lonDD": "-73.7044444",
+        "latDD": "40.6636111"
+      },
+      "SiteID": "01311500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01304250",
+        "station_nm": "LAUREL LAKE NEAR MATTITUCK NY",
+        "lonDD": "-72.5581451",
+        "latDD": "40.9828779"
+      },
+      "SiteID": "01304250"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01304705",
+        "station_nm": "GEORGICA POND NEAR APAQUOQUE NY",
+        "lonDD": "-72.2245248",
+        "latDD": "40.9334333"
+      },
+      "SiteID": "01304705"
+    },
+    {
+      "Attributes": {
+        "site_type": "at",
+        "Office": "Coram",
+        "site_no": "405925072165601",
+        "station_nm": "RAIN GAGE NEAR SAG HARBOR NY",
+        "lonDD": "-72.2817484",
+        "latDD": "40.9903772"
+      },
+      "SiteID": "405925072165601"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01304051",
+        "station_nm": "STONY BROOK R AT STONY BROOK NY",
+        "lonDD": "-73.1473323",
+        "latDD": "40.91482044"
+      },
+      "SiteID": "01304051"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01304070",
+        "station_nm": "TRIBUTARY TO PORT JEFFERSON HARBOR NY",
+        "lonDD": "-73.07121779",
+        "latDD": "40.9448208"
+      },
+      "SiteID": "01304070"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01304100",
+        "station_nm": "WADING RIVER AT WADING RIVER, NY",
+        "lonDD": "-72.8548239",
+        "latDD": "40.95565397"
+      },
+      "SiteID": "01304100"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01304400",
+        "station_nm": "PECONIC RIVER NEAR MANORVILLE, N.Y.",
+        "lonDD": "-72.8278795",
+        "latDD": "40.87732077"
+      },
+      "SiteID": "01304400"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01304510",
+        "station_nm": "PECONIC RIVER AT NUGENT DR., RIVERHEAD, NY",
+        "lonDD": "-72.6692627",
+        "latDD": "40.917599"
+      },
+      "SiteID": "01304510"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01304600",
+        "station_nm": "BIG FRESH POND OUTLET AT NORTH SEA NY",
+        "lonDD": "-72.4173075",
+        "latDD": "40.9303781"
+      },
+      "SiteID": "01304600"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01304660",
+        "station_nm": "LIGONEE BROOK AT SAG HARBOR NY",
+        "lonDD": "-72.3028599",
+        "latDD": "40.98926625"
+      },
+      "SiteID": "01304660"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01304990",
+        "station_nm": "CARMANS RIVER AT MIDDLE ISLAND NY",
+        "lonDD": "-72.9426045",
+        "latDD": "40.86315417"
+      },
+      "SiteID": "01304990"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01304995",
+        "station_nm": "CARMANS RIVER NEAR YAPHANK NY",
+        "lonDD": "-72.9364935",
+        "latDD": "40.84148748"
+      },
+      "SiteID": "01304995"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01304998",
+        "station_nm": "CARMANS RIVER BELOW LOWER LAKE AT YAPHANK NY",
+        "lonDD": "-72.9164931",
+        "latDD": "40.83537638"
+      },
+      "SiteID": "01304998"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01305040",
+        "station_nm": "CARMANS RIVER AT SOUTHHAVEN NY",
+        "lonDD": "-72.8853816",
+        "latDD": "40.80259865"
+      },
+      "SiteID": "01305040"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01306000",
+        "station_nm": "PATCHOGUE RIVER AT PATCHOGUE NY",
+        "lonDD": "-73.0205556",
+        "latDD": "40.76555556"
+      },
+      "SiteID": "01306000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01306400",
+        "station_nm": "GREEN CREEK AT WEST SAYVILLE  NY",
+        "lonDD": "-73.09177818",
+        "latDD": "40.7309318"
+      },
+      "SiteID": "01306400"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01303600",
+        "station_nm": "MILL CREEK NEAR HUNTINGTON NY",
+        "lonDD": "-73.42095338",
+        "latDD": "40.88232049"
+      },
+      "SiteID": "01303600"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01303800",
+        "station_nm": "NORTHEAST BR NISSEQUOGUE R AT SMITHTOWN, N.Y.",
+        "lonDD": "-73.1870572",
+        "latDD": "40.851487"
+      },
+      "SiteID": "01303800"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01303900",
+        "station_nm": "NORTHEAST BR NISSEQUOGUE R NEAR SMITHTOWN, N.",
+        "lonDD": "-73.2076136",
+        "latDD": "40.8459314"
+      },
+      "SiteID": "01303900"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01310510",
+        "station_nm": "EAST BRANCH FREEPORT CREEK AT FREEPORT (MD-12)",
+        "lonDD": "-73.5665164",
+        "latDD": "40.65899087"
+      },
+      "SiteID": "01310510"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01310515",
+        "station_nm": "WEST BRANCH FREEPORT CREEK AT FREEPORT, NY (MD-11)",
+        "lonDD": "-73.5701276",
+        "latDD": "40.6589909"
+      },
+      "SiteID": "01310515"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01311200",
+        "station_nm": "MOTTS CREEK AT VALLEY STREAM, N.Y.",
+        "lonDD": "-73.7120758",
+        "latDD": "40.65038129"
+      },
+      "SiteID": "01311200"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01302250",
+        "station_nm": "EAST CREEK AT SANDS POINT NY",
+        "lonDD": "-73.7101944",
+        "latDD": "40.8662222"
+      },
+      "SiteID": "01302250"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01302600",
+        "station_nm": "WEST POND AT GLEN COVE NY",
+        "lonDD": "-73.638",
+        "latDD": "40.88855556"
+      },
+      "SiteID": "01302600"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01302845",
+        "station_nm": "FROST CREEK AT SHEEP LN BRIDGE AT LATTINGTOWN NY",
+        "lonDD": "-73.5931944",
+        "latDD": "40.9051111"
+      },
+      "SiteID": "01302845"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01304057",
+        "station_nm": "FLAX POND AT OLD FIELD NY",
+        "lonDD": "-73.1431667",
+        "latDD": "40.9628611"
+      },
+      "SiteID": "01304057"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01304200",
+        "station_nm": "ORIENT HARBOR AT ORIENT NY",
+        "lonDD": "-72.30675",
+        "latDD": "41.13663889"
+      },
+      "SiteID": "01304200"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01304746",
+        "station_nm": "SHINNECOCK BAY AT PONQUOGUE NY",
+        "lonDD": "-72.50327778",
+        "latDD": "40.85055556"
+      },
+      "SiteID": "01304746"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01304920",
+        "station_nm": "MORICHES BAY AT EAST MORICHES NY",
+        "lonDD": "-72.75086389",
+        "latDD": "40.7881111"
+      },
+      "SiteID": "01304920"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01305575",
+        "station_nm": "GREAT SOUTH BAY AT WATCH HILL ON FIRE ISLAND NY",
+        "lonDD": "-72.9896944",
+        "latDD": "40.69138889"
+      },
+      "SiteID": "01305575"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01309225",
+        "station_nm": "GREAT SOUTH BAY AT LINDENHURST NY",
+        "lonDD": "-73.3556765",
+        "latDD": "40.66926687"
+      },
+      "SiteID": "01309225"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01310521",
+        "station_nm": "HUDSON BAY AT FREEPORT NY",
+        "lonDD": "-73.5754058",
+        "latDD": "40.6276026"
+      },
+      "SiteID": "01310521"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01311145",
+        "station_nm": "EAST ROCKAWAY INLET AT ATLANTIC BEACH NY",
+        "lonDD": "-73.7373543",
+        "latDD": "40.59316026"
+      },
+      "SiteID": "01311145"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01304562",
+        "station_nm": "PECONIC RIVER AT COUNTY HWY 105 AT RIVERHEAD NY",
+        "lonDD": "-72.6386667",
+        "latDD": "40.91777778"
+      },
+      "SiteID": "01304562"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01310740",
+        "station_nm": "REYNOLDS CHANNEL AT POINT LOOKOUT NY",
+        "lonDD": "-73.5837396",
+        "latDD": "40.5934366"
+      },
+      "SiteID": "01310740"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01311143",
+        "station_nm": "HOG ISLAND CHANNEL AT ISLAND PARK NY",
+        "lonDD": "-73.6561111",
+        "latDD": "40.6088333"
+      },
+      "SiteID": "01311143"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01311850",
+        "station_nm": "JAMAICA BAY AT INWOOD NY",
+        "lonDD": "-73.7579103",
+        "latDD": "40.6173266"
+      },
+      "SiteID": "01311850"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Coram",
+        "site_no": "01311875",
+        "station_nm": "ROCKAWAY INLET NEAR FLOYD BENNETT FIELD NY",
+        "lonDD": "-73.885136",
+        "latDD": "40.57371636"
+      },
+      "SiteID": "01311875"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01523000",
+        "station_nm": "ALMOND LAKE NEAR ALMOND NY",
+        "lonDD": "-77.70249279",
+        "latDD": "42.3489582"
+      },
+      "SiteID": "01523000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01523500",
+        "station_nm": "CANACADEA CREEK NEAR HORNELL NY",
+        "lonDD": "-77.6830556",
+        "latDD": "42.3347222"
+      },
+      "SiteID": "01523500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "03010674",
+        "station_nm": "ROOT CREEK AT DAVIS STREET AT BOLIVAR NY",
+        "lonDD": "-78.1629444",
+        "latDD": "42.06438889"
+      },
+      "SiteID": "03010674"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "03010720",
+        "station_nm": "DODGE CREEK AT PORTVILLE NY",
+        "lonDD": "-78.34307188",
+        "latDD": "42.03562085"
+      },
+      "SiteID": "03010720"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "03010734",
+        "station_nm": "ISCHUA CREEK TRIB NEAR MACHIAS NY",
+        "lonDD": "-78.5255556",
+        "latDD": "42.40777778"
+      },
+      "SiteID": "03010734"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "03010820",
+        "station_nm": "ALLEGHENY RIVER AT OLEAN NY",
+        "lonDD": "-78.4511111",
+        "latDD": "42.07305556"
+      },
+      "SiteID": "03010820"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "03011020",
+        "station_nm": "ALLEGHENY RIVER AT SALAMANCA NY",
+        "lonDD": "-78.7152778",
+        "latDD": "42.15638889"
+      },
+      "SiteID": "03011020"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "03013946",
+        "station_nm": "CHAUTAUQUA LAKE AT BEMUS POINT NY",
+        "lonDD": "-79.3939368",
+        "latDD": "42.1564463"
+      },
+      "SiteID": "03013946"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "03014500",
+        "station_nm": "CHADAKOIN RIVER AT FALCONER NY",
+        "lonDD": "-79.20388889",
+        "latDD": "42.1125"
+      },
+      "SiteID": "03014500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04213376",
+        "station_nm": "CANADAWAY CREEK AT FREDONIA NY",
+        "lonDD": "-79.3505556",
+        "latDD": "42.45055556"
+      },
+      "SiteID": "04213376"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04213500",
+        "station_nm": "CATTARAUGUS CREEK AT GOWANDA NY",
+        "lonDD": "-78.9341667",
+        "latDD": "42.4633333"
+      },
+      "SiteID": "04213500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04221000",
+        "station_nm": "GENESEE RIVER AT WELLSVILLE NY",
+        "lonDD": "-77.9572222",
+        "latDD": "42.1222222"
+      },
+      "SiteID": "04221000"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "420326079295801",
+        "station_nm": "Local number, Cu-5, near Panama NY",
+        "lonDD": "-79.4992164",
+        "latDD": "42.0572781"
+      },
+      "SiteID": "420326079295801"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "420530078445201",
+        "station_nm": "Local number, Ct-121, near Red House NY",
+        "lonDD": "-78.7475322",
+        "latDD": "42.09172945"
+      },
+      "SiteID": "420530078445201"
+    },
+    {
+      "Attributes": {
+        "site_type": "at",
+        "Office": "Ithaca",
+        "site_no": "420703079442501",
+        "station_nm": "FINDLEY LAKE RAIN GAGE",
+        "lonDD": "-79.7402333",
+        "latDD": "42.11741944"
+      },
+      "SiteID": "420703079442501"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "421217079183601",
+        "station_nm": "Local number, Cu-867 near Gerry NY",
+        "lonDD": "-79.3097688",
+        "latDD": "42.2047802"
+      },
+      "SiteID": "421217079183601"
+    },
+    {
+      "Attributes": {
+        "site_type": "at",
+        "Office": "Ithaca",
+        "site_no": "421429079295601",
+        "station_nm": "Mayville Rain Gage",
+        "lonDD": "-79.4990278",
+        "latDD": "42.24141667"
+      },
+      "SiteID": "421429079295601"
+    },
+    {
+      "Attributes": {
+        "site_type": "at",
+        "Office": "Ithaca",
+        "site_no": "421511079161701",
+        "station_nm": "SINCLAIRVILLE RAIN GAGE NEAR SINCLAIRVILLE NY",
+        "lonDD": "-79.27138889",
+        "latDD": "42.25305556"
+      },
+      "SiteID": "421511079161701"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "421512077472801",
+        "station_nm": "Local number, Ag-261, at Alfred NY",
+        "lonDD": "-77.7911111",
+        "latDD": "42.2533333"
+      },
+      "SiteID": "421512077472801"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "421544078021301",
+        "station_nm": "Local number, Ag-262, near Belmont NY",
+        "lonDD": "-78.0369444",
+        "latDD": "42.2622222"
+      },
+      "SiteID": "421544078021301"
+    },
+    {
+      "Attributes": {
+        "site_type": "at",
+        "Office": "Ithaca",
+        "site_no": "421932078513701",
+        "station_nm": "Cattaragus Rain Gage",
+        "lonDD": "-78.8602778",
+        "latDD": "42.32555556"
+      },
+      "SiteID": "421932078513701"
+    },
+    {
+      "Attributes": {
+        "site_type": "at",
+        "Office": "Ithaca",
+        "site_no": "421946078274901",
+        "station_nm": "Franklinville Rain Gage",
+        "lonDD": "-78.4636111",
+        "latDD": "42.32944444"
+      },
+      "SiteID": "421946078274901"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "422702079005101",
+        "station_nm": "Local number, Ct-2498, near Perrysburg NY",
+        "lonDD": "-79.0142778",
+        "latDD": "42.45044444"
+      },
+      "SiteID": "422702079005101"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01520500",
+        "station_nm": "TIOGA RIVER AT LINDLEY NY",
+        "lonDD": "-77.1322222",
+        "latDD": "42.0286111"
+      },
+      "SiteID": "01520500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01521596",
+        "station_nm": "BIG CREEK NEAR HOWARD NY",
+        "lonDD": "-77.5755556",
+        "latDD": "42.36694444"
+      },
+      "SiteID": "01521596"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01524500",
+        "station_nm": "CANISTEO RIVER BELOW CANACADEA CREEK AT HORNELL NY",
+        "lonDD": "-77.6511111",
+        "latDD": "42.31388889"
+      },
+      "SiteID": "01524500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01525500",
+        "station_nm": "CANISTEO RIVER AT WEST CAMERON NY",
+        "lonDD": "-77.41777778",
+        "latDD": "42.2222222"
+      },
+      "SiteID": "01525500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01525981",
+        "station_nm": "TUSCARORA CREEK ABOVE SOUTH ADDISON NY",
+        "lonDD": "-77.29888889",
+        "latDD": "42.0722222"
+      },
+      "SiteID": "01525981"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01526500",
+        "station_nm": "TIOGA RIVER NEAR ERWINS NY",
+        "lonDD": "-77.1291667",
+        "latDD": "42.1211111"
+      },
+      "SiteID": "01526500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01527500",
+        "station_nm": "COHOCTON RIVER AT AVOCA NY",
+        "lonDD": "-77.4175",
+        "latDD": "42.39777778"
+      },
+      "SiteID": "01527500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01528320",
+        "station_nm": "COHOCTON RIVER AT BATH NY",
+        "lonDD": "-77.34388889",
+        "latDD": "42.3433333"
+      },
+      "SiteID": "01528320"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01529500",
+        "station_nm": "COHOCTON RIVER NEAR CAMPBELL NY",
+        "lonDD": "-77.2166667",
+        "latDD": "42.2525"
+      },
+      "SiteID": "01529500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01529950",
+        "station_nm": "CHEMUNG RIVER AT CORNING NY",
+        "lonDD": "-77.0575",
+        "latDD": "42.14638889"
+      },
+      "SiteID": "01529950"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01530301",
+        "station_nm": "CUTHRIE RUN NEAR BIG FLATS NY",
+        "lonDD": "-76.92527778",
+        "latDD": "42.1786111"
+      },
+      "SiteID": "01530301"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01530332",
+        "station_nm": "CHEMUNG RIVER AT ELMIRA NY",
+        "lonDD": "-76.8011111",
+        "latDD": "42.08638889"
+      },
+      "SiteID": "01530332"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01531000",
+        "station_nm": "CHEMUNG RIVER AT CHEMUNG NY",
+        "lonDD": "-76.6347222",
+        "latDD": "42.0022222"
+      },
+      "SiteID": "01531000"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "420828076484601",
+        "station_nm": "Local number, Cm-622, near Horseheads NY",
+        "lonDD": "-76.81277778",
+        "latDD": "42.1411111"
+      },
+      "SiteID": "420828076484601"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "421213076313301",
+        "station_nm": "Local number, Ti-891, near Spencer NY",
+        "lonDD": "-76.5259444",
+        "latDD": "42.20352778"
+      },
+      "SiteID": "421213076313301"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "422445077203301",
+        "station_nm": "Local number, Sb-472, near Kanona NY",
+        "lonDD": "-77.3422032",
+        "latDD": "42.41257085"
+      },
+      "SiteID": "422445077203301"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04232200",
+        "station_nm": "CATHARINE CR AT MONTOUR FALLS NY",
+        "lonDD": "-76.84388889",
+        "latDD": "42.3283333"
+      },
+      "SiteID": "04232200"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04232482",
+        "station_nm": "KEUKA LAKE OUTLET AT DRESDEN NY",
+        "lonDD": "-76.95388889",
+        "latDD": "42.68027778"
+      },
+      "SiteID": "04232482"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04232730",
+        "station_nm": "SENECA RIVER NEAR SENECA FALLS NY",
+        "lonDD": "-76.7611111",
+        "latDD": "42.93888889"
+      },
+      "SiteID": "04232730"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04233255",
+        "station_nm": "CAYUGA INLET AT ITHACA NY",
+        "lonDD": "-76.5216667",
+        "latDD": "42.4272222"
+      },
+      "SiteID": "04233255"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04233500",
+        "station_nm": "CAYUGA INLET (CAYUGA LAKE) AT ITHACA NY",
+        "lonDD": "-76.5122222",
+        "latDD": "42.4458333"
+      },
+      "SiteID": "04233500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04234000",
+        "station_nm": "FALL CREEK NEAR ITHACA NY",
+        "lonDD": "-76.47277778",
+        "latDD": "42.4533333"
+      },
+      "SiteID": "04234000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "0423401815",
+        "station_nm": "SALMON CREEK NEAR LUDLOWVILLE NY",
+        "lonDD": "-76.5338333",
+        "latDD": "42.5526111"
+      },
+      "SiteID": "0423401815"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "0423403092",
+        "station_nm": "TRUMANSBURG CREEK NEAR TRUMANSBURG NY",
+        "lonDD": "-76.6847222",
+        "latDD": "42.53777778"
+      },
+      "SiteID": "0423403092"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "0423406130",
+        "station_nm": "SENECA RIVER AT FREE BRIDGE CORNERS NY",
+        "lonDD": "-76.7368961",
+        "latDD": "42.96292674"
+      },
+      "SiteID": "0423406130"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04235299",
+        "station_nm": "OWASCO INLET BELOW AURORA STREET AT MORAVIA NY",
+        "lonDD": "-76.434",
+        "latDD": "42.7115833"
+      },
+      "SiteID": "04235299"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04235396",
+        "station_nm": "OWASCO LAKE NEAR AUBURN NY",
+        "lonDD": "-76.5391069",
+        "latDD": "42.9039563"
+      },
+      "SiteID": "04235396"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04235440",
+        "station_nm": "OWASCO OUTLET AT GENESEE ST., AUBURN NY",
+        "lonDD": "-76.565",
+        "latDD": "42.9322222"
+      },
+      "SiteID": "04235440"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "422710076462901",
+        "station_nm": "Local number, Sy-706, near Burdett NY",
+        "lonDD": "-76.77439779",
+        "latDD": "42.4528501"
+      },
+      "SiteID": "422710076462901"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "422902076475801",
+        "station_nm": "Local number, Sy-722, in FLNF nr Reynoldsville NY",
+        "lonDD": "-76.7993333",
+        "latDD": "42.4838333"
+      },
+      "SiteID": "422902076475801"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "422920076275301",
+        "station_nm": "Local number, Tm-985, near Ithaca NY",
+        "lonDD": "-76.4647222",
+        "latDD": "42.48888889"
+      },
+      "SiteID": "422920076275301"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "423143076582601",
+        "station_nm": "Local number, Ya-180, Dundee NY",
+        "lonDD": "-76.974",
+        "latDD": "42.52880556"
+      },
+      "SiteID": "423143076582601"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "424158076251901",
+        "station_nm": "Local number, Cy-7, near Moravia NY",
+        "lonDD": "-76.4216026",
+        "latDD": "42.6995147"
+      },
+      "SiteID": "424158076251901"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "424347076530202",
+        "station_nm": "Local number, Se-533, near Romulus NY",
+        "lonDD": "-76.88388889",
+        "latDD": "42.7297222"
+      },
+      "SiteID": "424347076530202"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "425448076350002",
+        "station_nm": "Local number, Cy-223, at Auburn NY",
+        "lonDD": "-76.5833333",
+        "latDD": "42.9133333"
+      },
+      "SiteID": "425448076350002"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "425821076461301",
+        "station_nm": "Local number, Se-549, at Montezuma NWR NY",
+        "lonDD": "-76.7703333",
+        "latDD": "42.9725"
+      },
+      "SiteID": "425821076461301"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04219000",
+        "station_nm": "ERIE (BARGE) CANAL AT LOCK 30 AT MACEDON NY",
+        "lonDD": "-77.2955556",
+        "latDD": "43.0722222"
+      },
+      "SiteID": "04219000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "0422026250",
+        "station_nm": "NORTHRUP CREEK AT NORTH GREECE NY",
+        "lonDD": "-77.7422222",
+        "latDD": "43.2536111"
+      },
+      "SiteID": "0422026250"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04229500",
+        "station_nm": "HONEOYE CREEK AT HONEOYE FALLS NY",
+        "lonDD": "-77.58888889",
+        "latDD": "42.9572222"
+      },
+      "SiteID": "04229500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04232034",
+        "station_nm": "IRONDEQUOIT CR AT RAILROAD MILLS NEAR FISHERS NY",
+        "lonDD": "-77.4780556",
+        "latDD": "43.02777778"
+      },
+      "SiteID": "04232034"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04232050",
+        "station_nm": "ALLEN CREEK NEAR ROCHESTER NY",
+        "lonDD": "-77.5186111",
+        "latDD": "43.13027778"
+      },
+      "SiteID": "04232050"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "0423205010",
+        "station_nm": "IRONDEQUOIT CR ABOVE BLOSSOM RD NEAR ROCHESTER NY",
+        "lonDD": "-77.5119444",
+        "latDD": "43.145"
+      },
+      "SiteID": "0423205010"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "042320578",
+        "station_nm": "BEAR CREEK AT ONTARIO NY",
+        "lonDD": "-77.2830556",
+        "latDD": "43.225"
+      },
+      "SiteID": "042320578"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04234254",
+        "station_nm": "GANARGUA CREEK AT MACEDON NY",
+        "lonDD": "-77.2982222",
+        "latDD": "43.0674722"
+      },
+      "SiteID": "04234254"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04235000",
+        "station_nm": "CANANDAIGUA OUTLET AT CHAPIN NY",
+        "lonDD": "-77.23277778",
+        "latDD": "42.91805556"
+      },
+      "SiteID": "04235000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04235250",
+        "station_nm": "FLINT CREEK AT PHELPS NY",
+        "lonDD": "-77.0680556",
+        "latDD": "42.95777778"
+      },
+      "SiteID": "04235250"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04235255",
+        "station_nm": "CANANDAIGUA OUTLET TRIBUTARY NEAR ALLOWAY NY",
+        "lonDD": "-77.0147222",
+        "latDD": "43.0058333"
+      },
+      "SiteID": "04235255"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "425803077151201",
+        "station_nm": "Local number, Ot-1133, near Manchester NY",
+        "lonDD": "-77.2533333",
+        "latDD": "42.9675"
+      },
+      "SiteID": "425803077151201"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "425840077133901",
+        "station_nm": "Local number, Ot-900, near Manchester NY",
+        "lonDD": "-77.2272029",
+        "latDD": "42.9778411"
+      },
+      "SiteID": "425840077133901"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "430252077283402",
+        "station_nm": "Local number, Mo-11, near Powder Mill Park NY",
+        "lonDD": "-77.4761058",
+        "latDD": "43.04728539"
+      },
+      "SiteID": "430252077283402"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "430311077051501",
+        "station_nm": "Local number, Wn-594, near Newark NY",
+        "lonDD": "-77.0875",
+        "latDD": "43.0531111"
+      },
+      "SiteID": "430311077051501"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04214500",
+        "station_nm": "BUFFALO CREEK AT GARDENVILLE NY",
+        "lonDD": "-78.755",
+        "latDD": "42.8547222"
+      },
+      "SiteID": "04214500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04215000",
+        "station_nm": "CAYUGA CREEK NEAR LANCASTER NY",
+        "lonDD": "-78.645",
+        "latDD": "42.89"
+      },
+      "SiteID": "04215000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04215500",
+        "station_nm": "CAZENOVIA CREEK AT EBENEZER NY",
+        "lonDD": "-78.775",
+        "latDD": "42.8297222"
+      },
+      "SiteID": "04215500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04216218",
+        "station_nm": "BLACK ROCK CANAL AT BLACK ROCK LOCK, BUFFALO NY",
+        "lonDD": "-78.9047593",
+        "latDD": "42.9336685"
+      },
+      "SiteID": "04216218"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04216220",
+        "station_nm": "NIAGARA RIVER AT BLACK ROCK LOCK AT BUFFALO NY",
+        "lonDD": "-78.90448148",
+        "latDD": "42.9339463"
+      },
+      "SiteID": "04216220"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04216418",
+        "station_nm": "TONAWANDA CREEK AT ATTICA NY",
+        "lonDD": "-78.2836111",
+        "latDD": "42.86388889"
+      },
+      "SiteID": "04216418"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04217000",
+        "station_nm": "TONAWANDA CREEK AT BATAVIA NY",
+        "lonDD": "-78.1886111",
+        "latDD": "42.9975"
+      },
+      "SiteID": "04217000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04218000",
+        "station_nm": "TONAWANDA CREEK AT RAPIDS NY",
+        "lonDD": "-78.6361111",
+        "latDD": "43.09305556"
+      },
+      "SiteID": "04218000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04218518",
+        "station_nm": "ELLICOTT CREEK BELOW WILLIAMSVILLE NY",
+        "lonDD": "-78.7636111",
+        "latDD": "42.97777778"
+      },
+      "SiteID": "04218518"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04219768",
+        "station_nm": "EIGHTEENMILE CREEK AT BURT NY",
+        "lonDD": "-78.7154167",
+        "latDD": "43.31380556"
+      },
+      "SiteID": "04219768"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04220045",
+        "station_nm": "OAK ORCHARD CREEK NEAR SHELBY NY",
+        "lonDD": "-78.3866667",
+        "latDD": "43.1736111"
+      },
+      "SiteID": "04220045"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "0422016550",
+        "station_nm": "OAK ORCHARD CREEK NEAR KENYONVILLE NY",
+        "lonDD": "-78.3102734",
+        "latDD": "43.301169"
+      },
+      "SiteID": "0422016550"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "425704078360601",
+        "station_nm": "Local number, E-1196, near Clarence NY",
+        "lonDD": "-78.6031667",
+        "latDD": "42.95280278"
+      },
+      "SiteID": "425704078360601"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "425913078085501",
+        "station_nm": "Local number, Gs-190, at Batavia NY",
+        "lonDD": "-78.1486111",
+        "latDD": "42.98694444"
+      },
+      "SiteID": "425913078085501"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "430146078101301",
+        "station_nm": "Local number, Gs-217, near Batavia NY",
+        "lonDD": "-78.1702778",
+        "latDD": "43.02944444"
+      },
+      "SiteID": "430146078101301"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "430739078502701",
+        "station_nm": "Local number, Ni-869, at Shawnee NY",
+        "lonDD": "-78.84059259",
+        "latDD": "43.12755657"
+      },
+      "SiteID": "430739078502701"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "430924078241301",
+        "station_nm": "Local number, Ol-27, near West Shelby NY",
+        "lonDD": "-78.40363889",
+        "latDD": "43.15677778"
+      },
+      "SiteID": "430924078241301"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "431045078160401",
+        "station_nm": "Local number, Ol-20, Barre NY",
+        "lonDD": "-78.2680278",
+        "latDD": "43.17916667"
+      },
+      "SiteID": "431045078160401"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "431308078544501",
+        "station_nm": "Local number, Ni-70, near Ransomville NY",
+        "lonDD": "-78.9122632",
+        "latDD": "43.2189445"
+      },
+      "SiteID": "431308078544501"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04239000",
+        "station_nm": "ONONDAGA CREEK AT DORWIN AVENUE, SYRACUSE NY",
+        "lonDD": "-76.1508333",
+        "latDD": "42.9833333"
+      },
+      "SiteID": "04239000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04240010",
+        "station_nm": "ONONDAGA CREEK AT SPENCER STREET, SYRACUSE NY",
+        "lonDD": "-76.1625",
+        "latDD": "43.0575"
+      },
+      "SiteID": "04240010"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04240100",
+        "station_nm": "HARBOR BROOK AT SYRACUSE NY",
+        "lonDD": "-76.1816667",
+        "latDD": "43.0358333"
+      },
+      "SiteID": "04240100"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04240105",
+        "station_nm": "HARBOR BROOK AT HIAWATHA BOULEVARD, SYRACUSE NY",
+        "lonDD": "-76.185",
+        "latDD": "43.0561111"
+      },
+      "SiteID": "04240105"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04240120",
+        "station_nm": "LEY CREEK AT PARK STREET, SYRACUSE NY",
+        "lonDD": "-76.17027778",
+        "latDD": "43.0772222"
+      },
+      "SiteID": "04240120"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04240300",
+        "station_nm": "NINEMILE CREEK AT LAKELAND NY",
+        "lonDD": "-76.22638889",
+        "latDD": "43.0808333"
+      },
+      "SiteID": "04240300"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04240495",
+        "station_nm": "ONONDAGA LAKE AT LIVERPOOL NY",
+        "lonDD": "-76.2090931",
+        "latDD": "43.1003448"
+      },
+      "SiteID": "04240495"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04243500",
+        "station_nm": "ONEIDA CREEK AT ONEIDA NY",
+        "lonDD": "-75.6391667",
+        "latDD": "43.0975"
+      },
+      "SiteID": "04243500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04243783",
+        "station_nm": "COWASELON CREEK AT STATE ROUTE 13 AT CANASTOTA NY",
+        "lonDD": "-75.7512222",
+        "latDD": "43.0956111"
+      },
+      "SiteID": "04243783"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04244000",
+        "station_nm": "CHITTENANGO CREEK NEAR CHITTENANGO NY",
+        "lonDD": "-75.8586111",
+        "latDD": "43.02305556"
+      },
+      "SiteID": "04244000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04245200",
+        "station_nm": "BUTTERNUT CREEK NEAR JAMESVILLE NY",
+        "lonDD": "-76.0619444",
+        "latDD": "42.93388889"
+      },
+      "SiteID": "04245200"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "425846075504501",
+        "station_nm": "Local number, M-292, near Chittenango Falls NY",
+        "lonDD": "-75.84575",
+        "latDD": "42.97938889"
+      },
+      "SiteID": "425846075504501"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "430056075354102",
+        "station_nm": "Local number, M-178, Valley Mills NY",
+        "lonDD": "-75.5943461",
+        "latDD": "43.0156241"
+      },
+      "SiteID": "430056075354102"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04249000",
+        "station_nm": "OSWEGO RIVER AT LOCK 7, OSWEGO NY",
+        "lonDD": "-76.50527778",
+        "latDD": "43.45166667"
+      },
+      "SiteID": "04249000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04250200",
+        "station_nm": "SALMON RIVER AT PINEVILLE NY",
+        "lonDD": "-76.0376944",
+        "latDD": "43.53119444"
+      },
+      "SiteID": "04250200"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04250750",
+        "station_nm": "SANDY CREEK NEAR ADAMS NY",
+        "lonDD": "-76.0747222",
+        "latDD": "43.8133333"
+      },
+      "SiteID": "04250750"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04235600",
+        "station_nm": "SENECA RIVER (ERIE CANAL) NEAR PORT BYRON NY",
+        "lonDD": "-76.6455556",
+        "latDD": "43.0786111"
+      },
+      "SiteID": "04235600"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04236800",
+        "station_nm": "SKANEATELES CREEK NEAR SKANEATELES JUNCTION NY",
+        "lonDD": "-76.47225",
+        "latDD": "43.01488889"
+      },
+      "SiteID": "04236800"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04237411",
+        "station_nm": "SENECA RIVER, MOUTH OF STATE DITCH, NR JORDAN NY",
+        "lonDD": "-76.4388249",
+        "latDD": "43.11506688"
+      },
+      "SiteID": "04237411"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04237496",
+        "station_nm": "SENECA RIVER NEAR BALDWINSVILLE NY",
+        "lonDD": "-76.3626944",
+        "latDD": "43.1623333"
+      },
+      "SiteID": "04237496"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04242500",
+        "station_nm": "EAST BRANCH FISH CREEK AT TABERG NY",
+        "lonDD": "-75.6214722",
+        "latDD": "43.3011111"
+      },
+      "SiteID": "04242500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04242640",
+        "station_nm": "FISH CREEK AT BECKS GROVE NY",
+        "lonDD": "-75.61302778",
+        "latDD": "43.25825"
+      },
+      "SiteID": "04242640"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04245840",
+        "station_nm": "SCRIBA CREEK NEAR CONSTANTIA NY",
+        "lonDD": "-76.00277778",
+        "latDD": "43.2597222"
+      },
+      "SiteID": "04245840"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04247000",
+        "station_nm": "ONEIDA RIVER NEAR EUCLID NY",
+        "lonDD": "-76.21777778",
+        "latDD": "43.205"
+      },
+      "SiteID": "04247000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04247055",
+        "station_nm": "OSWEGO RIVER NEAR PHOENIX NY",
+        "lonDD": "-76.2871111",
+        "latDD": "43.21116667"
+      },
+      "SiteID": "04247055"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04249050",
+        "station_nm": "CATFISH CREEK AT NEW HAVEN NY",
+        "lonDD": "-76.3258333",
+        "latDD": "43.4833333"
+      },
+      "SiteID": "04249050"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "430243076180401",
+        "station_nm": "Local number, Od-1825, Camillus NY",
+        "lonDD": "-76.300763",
+        "latDD": "43.0453441"
+      },
+      "SiteID": "430243076180401"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "430243076180402",
+        "station_nm": "Local number, Od-1833, Camillus NY",
+        "lonDD": "-76.300763",
+        "latDD": "43.0453441"
+      },
+      "SiteID": "430243076180402"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "432148076225101",
+        "station_nm": "Local number, Ow-5013, near Volney NY",
+        "lonDD": "-76.3808333",
+        "latDD": "43.3633333"
+      },
+      "SiteID": "432148076225101"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "432148076225102",
+        "station_nm": "Local number, Ow-5014, near Volney NY",
+        "lonDD": "-76.3808333",
+        "latDD": "43.3633333"
+      },
+      "SiteID": "432148076225102"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04233286",
+        "station_nm": "SIXMILE CREEK AT BROOKTONDALE NY",
+        "lonDD": "-76.3944444",
+        "latDD": "42.38138889"
+      },
+      "SiteID": "04233286"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04233300",
+        "station_nm": "SIXMILE CREEK AT BETHEL GROVE NY",
+        "lonDD": "-76.435",
+        "latDD": "42.40305556"
+      },
+      "SiteID": "04233300"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04226000",
+        "station_nm": "KESHEQUA CR AT CRAIG COLONY AT SONYEA NY",
+        "lonDD": "-77.82888889",
+        "latDD": "42.68194444"
+      },
+      "SiteID": "04226000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "424129077495501",
+        "station_nm": "NY-SW4 ALFRED FARMS EDGE OF FIELD, SONYEA NY",
+        "lonDD": "-77.8320278",
+        "latDD": "42.69138889"
+      },
+      "SiteID": "424129077495501"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "424129077495502",
+        "station_nm": "NY-TL2 ALFRED TILE EDGE OF FIELD, SONYEA",
+        "lonDD": "-77.83188889",
+        "latDD": "42.6913611"
+      },
+      "SiteID": "424129077495502"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "424131077495801",
+        "station_nm": "NY-SW3 ALFRED FARMS EDGE OF FIELD, SONYEA NY",
+        "lonDD": "-77.83263889",
+        "latDD": "42.6918333"
+      },
+      "SiteID": "424131077495801"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "424131077495802",
+        "station_nm": "NY-TL1 ALFRED TILE EDGE OF FIELD, SONYEA NY",
+        "lonDD": "-77.8324722",
+        "latDD": "42.6918333"
+      },
+      "SiteID": "424131077495802"
+    },
+    {
+      "Attributes": {
+        "site_type": "at",
+        "Office": "Ithaca",
+        "site_no": "424133077495701",
+        "station_nm": "ALFRED FARMS EDGE OF FIELD MET STATION AT SONYEA",
+        "lonDD": "-77.8325556",
+        "latDD": "42.6925"
+      },
+      "SiteID": "424133077495701"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "424421077495301",
+        "station_nm": "NY-SW1 MERRIMAC FARMS EDGE OF FIELD, E GROVELAND",
+        "lonDD": "-77.8312944",
+        "latDD": "42.7392861"
+      },
+      "SiteID": "424421077495301"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "424428077495401",
+        "station_nm": "NY-SW2 MERRIMAC FARMS EDGE OF FIELD, E GROVELAND",
+        "lonDD": "-77.8316667",
+        "latDD": "42.7409611"
+      },
+      "SiteID": "424428077495401"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "425520078535601",
+        "station_nm": "MANHOLE, DELEVAN ST, 110 FT WEST OF NIAGARA ST",
+        "lonDD": "-78.8988333",
+        "latDD": "42.92227778"
+      },
+      "SiteID": "425520078535601"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "425543078535001",
+        "station_nm": "MANHOLE, 50 FT E NIAGARA ST, 115 FT S SCAJAQUADA C",
+        "lonDD": "-78.8973056",
+        "latDD": "42.9285"
+      },
+      "SiteID": "425543078535001"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01503500",
+        "station_nm": "SUSQUEHANNA RIVER AT BINGHAMTON NY",
+        "lonDD": "-75.9147222",
+        "latDD": "42.0925"
+      },
+      "SiteID": "01503500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01509000",
+        "station_nm": "TIOUGHNIOGA RIVER AT CORTLAND NY",
+        "lonDD": "-76.1594444",
+        "latDD": "42.60277778"
+      },
+      "SiteID": "01509000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01509520",
+        "station_nm": "TIOUGHNIOGA RIVER AT LISLE NY",
+        "lonDD": "-75.9991667",
+        "latDD": "42.34944444"
+      },
+      "SiteID": "01509520"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01510000",
+        "station_nm": "OTSELIC RIVER AT CINCINNATUS NY",
+        "lonDD": "-75.8997222",
+        "latDD": "42.5411111"
+      },
+      "SiteID": "01510000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01511000",
+        "station_nm": "WHITNEY POINT LAKE AT WHITNEY POINT NY",
+        "lonDD": "-75.9654778",
+        "latDD": "42.3428513"
+      },
+      "SiteID": "01511000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01511500",
+        "station_nm": "TIOUGHNIOGA RIVER AT ITASKA NY",
+        "lonDD": "-75.90888889",
+        "latDD": "42.29805556"
+      },
+      "SiteID": "01511500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01512500",
+        "station_nm": "CHENANGO RIVER NEAR CHENANGO FORKS NY",
+        "lonDD": "-75.8483333",
+        "latDD": "42.21805556"
+      },
+      "SiteID": "01512500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01513500",
+        "station_nm": "SUSQUEHANNA RIVER AT VESTAL NY",
+        "lonDD": "-76.0561111",
+        "latDD": "42.0908333"
+      },
+      "SiteID": "01513500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01513831",
+        "station_nm": "SUSQUEHANNA RIVER AT OWEGO NY",
+        "lonDD": "-76.26638889",
+        "latDD": "42.0972222"
+      },
+      "SiteID": "01513831"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01514000",
+        "station_nm": "OWEGO CREEK NEAR OWEGO NY",
+        "lonDD": "-76.2705556",
+        "latDD": "42.12916667"
+      },
+      "SiteID": "01514000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04233286",
+        "station_nm": "SIXMILE CREEK AT BROOKTONDALE NY",
+        "lonDD": "-76.3944444",
+        "latDD": "42.38138889"
+      },
+      "SiteID": "04233286"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04233300",
+        "station_nm": "SIXMILE CREEK AT BETHEL GROVE NY",
+        "lonDD": "-76.435",
+        "latDD": "42.40305556"
+      },
+      "SiteID": "04233300"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04237962",
+        "station_nm": "ONONDAGA CREEK NEAR CARDIFF NY",
+        "lonDD": "-76.1691667",
+        "latDD": "42.9"
+      },
+      "SiteID": "04237962"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "421138075511301",
+        "station_nm": "Local number, Bm-128, Kattelville NY",
+        "lonDD": "-75.85325",
+        "latDD": "42.19396475"
+      },
+      "SiteID": "421138075511301"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "421157075535401",
+        "station_nm": "Local number, Bm-129, near Castle Creek NY",
+        "lonDD": "-75.89797408",
+        "latDD": "42.19924216"
+      },
+      "SiteID": "421157075535401"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "422323076190301",
+        "station_nm": "Local number, Tm-1968, near Slaterville Springs NY",
+        "lonDD": "-76.3175",
+        "latDD": "42.38966667"
+      },
+      "SiteID": "422323076190301"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "423827076035901",
+        "station_nm": "Local number, C-586, near McGraw NY",
+        "lonDD": "-76.06638889",
+        "latDD": "42.6408333"
+      },
+      "SiteID": "423827076035901"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "424452076081902",
+        "station_nm": "Local number, C-998, near Preble NY",
+        "lonDD": "-76.1386111",
+        "latDD": "42.74777778"
+      },
+      "SiteID": "424452076081902"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01521000",
+        "station_nm": "ARKPORT RESERVOIR NEAR ARKPORT NY",
+        "lonDD": "-77.7186048",
+        "latDD": "42.39590205"
+      },
+      "SiteID": "01521000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01521500",
+        "station_nm": "CANISTEO RIVER AT ARKPORT NY",
+        "lonDD": "-77.71138889",
+        "latDD": "42.3958333"
+      },
+      "SiteID": "01521500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04223000",
+        "station_nm": "GENESEE RIVER AT PORTAGEVILLE NY",
+        "lonDD": "-78.0422222",
+        "latDD": "42.57027778"
+      },
+      "SiteID": "04223000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04224000",
+        "station_nm": "MOUNT MORRIS LAKE NEAR MOUNT MORRIS NY",
+        "lonDD": "-77.9108373",
+        "latDD": "42.7333957"
+      },
+      "SiteID": "04224000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04224775",
+        "station_nm": "CANASERAGA CREEK ABOVE DANSVILLE NY",
+        "lonDD": "-77.7041667",
+        "latDD": "42.53555556"
+      },
+      "SiteID": "04224775"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04224803",
+        "station_nm": "STONY BROOK AT CO HWY 46 AT SOUTH DANSVILLE NY",
+        "lonDD": "-77.6576667",
+        "latDD": "42.47388889"
+      },
+      "SiteID": "04224803"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04227000",
+        "station_nm": "CANASERAGA CREEK AT SHAKERS CROSSING NY",
+        "lonDD": "-77.8405556",
+        "latDD": "42.73694444"
+      },
+      "SiteID": "04227000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04227500",
+        "station_nm": "GENESEE RIVER NEAR MOUNT MORRIS NY",
+        "lonDD": "-77.83888889",
+        "latDD": "42.76666667"
+      },
+      "SiteID": "04227500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04227980",
+        "station_nm": "CONESUS LAKE NEAR LAKEVILLE NY",
+        "lonDD": "-77.7205554",
+        "latDD": "42.79423006"
+      },
+      "SiteID": "04227980"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04227995",
+        "station_nm": "CONESUS CREEK NEAR LAKEVILLE NY",
+        "lonDD": "-77.71527778",
+        "latDD": "42.85388889"
+      },
+      "SiteID": "04227995"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04228500",
+        "station_nm": "GENESEE RIVER AT AVON NY",
+        "lonDD": "-77.7572222",
+        "latDD": "42.91777778"
+      },
+      "SiteID": "04228500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04230380",
+        "station_nm": "OATKA CREEK AT WARSAW NY",
+        "lonDD": "-78.1375",
+        "latDD": "42.74416667"
+      },
+      "SiteID": "04230380"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04230500",
+        "station_nm": "OATKA CREEK AT GARBUTT NY",
+        "lonDD": "-77.79138889",
+        "latDD": "43.01"
+      },
+      "SiteID": "04230500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04230650",
+        "station_nm": "GENESEE R AT BALLANTYNE BRIDGE NEAR MORTIMER NY",
+        "lonDD": "-77.68027778",
+        "latDD": "43.0922222"
+      },
+      "SiteID": "04230650"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04231000",
+        "station_nm": "BLACK CREEK AT CHURCHVILLE NY",
+        "lonDD": "-77.8822222",
+        "latDD": "43.10055556"
+      },
+      "SiteID": "04231000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04231600",
+        "station_nm": "GENESEE RIVER AT FORD STREET BRIDGE, ROCHESTER NY",
+        "lonDD": "-77.6163056",
+        "latDD": "43.1417222"
+      },
+      "SiteID": "04231600"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "423743078070802",
+        "station_nm": "Local number, Wo-4, near Gainesville NY",
+        "lonDD": "-78.1186201",
+        "latDD": "42.62867339"
+      },
+      "SiteID": "423743078070802"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "425833077503901",
+        "station_nm": "Local number, Lv-330, Caledonia NY",
+        "lonDD": "-77.8440833",
+        "latDD": "42.97580556"
+      },
+      "SiteID": "425833077503901"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "425844077532901",
+        "station_nm": "Local number, Lv-333, near Caledonia NY",
+        "lonDD": "-77.8914",
+        "latDD": "42.9789"
+      },
+      "SiteID": "425844077532901"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01499500",
+        "station_nm": "EAST SIDNEY LAKE AT EAST SIDNEY NY",
+        "lonDD": "-75.2279492",
+        "latDD": "42.32785936"
+      },
+      "SiteID": "01499500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01500000",
+        "station_nm": "OULEOUT CREEK AT EAST SIDNEY NY",
+        "lonDD": "-75.235",
+        "latDD": "42.3333333"
+      },
+      "SiteID": "01500000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01500500",
+        "station_nm": "SUSQUEHANNA RIVER AT UNADILLA NY",
+        "lonDD": "-75.3166667",
+        "latDD": "42.32138889"
+      },
+      "SiteID": "01500500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01502500",
+        "station_nm": "UNADILLA RIVER AT ROCKDALE NY",
+        "lonDD": "-75.4061111",
+        "latDD": "42.37777778"
+      },
+      "SiteID": "01502500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01502632",
+        "station_nm": "SUSQUEHANNA RIVER AT BAINBRIDGE NY",
+        "lonDD": "-75.47638889",
+        "latDD": "42.29138889"
+      },
+      "SiteID": "01502632"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01502731",
+        "station_nm": "SUSQUEHANNA RIVER AT WINDSOR NY",
+        "lonDD": "-75.63777778",
+        "latDD": "42.0747222"
+      },
+      "SiteID": "01502731"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01503000",
+        "station_nm": "SUSQUEHANNA RIVER AT CONKLIN NY",
+        "lonDD": "-75.8030556",
+        "latDD": "42.03527778"
+      },
+      "SiteID": "01503000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01503980",
+        "station_nm": "CHENANGO RIVER AT EATON NY",
+        "lonDD": "-75.6055556",
+        "latDD": "42.85055556"
+      },
+      "SiteID": "01503980"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01505000",
+        "station_nm": "CHENANGO RIVER AT SHERBURNE NY",
+        "lonDD": "-75.5105556",
+        "latDD": "42.6786111"
+      },
+      "SiteID": "01505000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01505810",
+        "station_nm": "CHENANGO RIVER AT OXFORD NY",
+        "lonDD": "-75.59638889",
+        "latDD": "42.44166667"
+      },
+      "SiteID": "01505810"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "01507000",
+        "station_nm": "CHENANGO RIVER AT GREENE NY",
+        "lonDD": "-75.77138889",
+        "latDD": "42.32444444"
+      },
+      "SiteID": "01507000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "site_no": "04249000",
+        "station_nm": "OSWEGO RIVER AT LOCK 7, OSWEGO NY",
+        "lonDD": "-76.50527778",
+        "latDD": "43.45166667"
+      },
+      "SiteID": "04249000"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "421556075281602",
+        "station_nm": "Local number, Cn-12, near Bainbridge NY",
+        "lonDD": "-75.4707364",
+        "latDD": "42.26563617"
+      },
+      "SiteID": "421556075281602"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "site_no": "424136075025101",
+        "station_nm": "Local number, Og-23, near Hartwick NY",
+        "lonDD": "-75.04710349",
+        "latDD": "42.69340779"
+      },
+      "SiteID": "424136075025101"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01349700",
+        "station_nm": "EAST KILL NEAR JEWETT CENTER NY",
+        "lonDD": "-74.30277778",
+        "latDD": "42.24916667"
+      },
+      "SiteID": "01349700"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01349705",
+        "station_nm": "SCHOHARIE CREEK NEAR LEXINGTON NY",
+        "lonDD": "-74.34027778",
+        "latDD": "42.23694444"
+      },
+      "SiteID": "01349705"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01349711",
+        "station_nm": "WEST KILL BELOW HUNTER BROOK NEAR SPRUCETON NY",
+        "lonDD": "-74.2769444",
+        "latDD": "42.185"
+      },
+      "SiteID": "01349711"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01349810",
+        "station_nm": "WEST KILL NEAR WEST KILL NY",
+        "lonDD": "-74.3930556",
+        "latDD": "42.23027778"
+      },
+      "SiteID": "01349810"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01349950",
+        "station_nm": "BATAVIA KILL AT RED FALLS NEAR PRATTSVILLE NY",
+        "lonDD": "-74.39",
+        "latDD": "42.3083333"
+      },
+      "SiteID": "01349950"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01350000",
+        "station_nm": "SCHOHARIE CREEK AT PRATTSVILLE NY",
+        "lonDD": "-74.4366667",
+        "latDD": "42.31944444"
+      },
+      "SiteID": "01350000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01350035",
+        "station_nm": "BEAR KILL NEAR PRATTSVILLE NY",
+        "lonDD": "-74.4516667",
+        "latDD": "42.33805556"
+      },
+      "SiteID": "01350035"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01350100",
+        "station_nm": "SCHOHARIE RESERVOIR NEAR GRAND GORGE NY",
+        "lonDD": "-74.4445923",
+        "latDD": "42.3559156"
+      },
+      "SiteID": "01350100"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01362342",
+        "station_nm": "HOLLOW TREE BROOK AT LANESVILLE NY",
+        "lonDD": "-74.265",
+        "latDD": "42.1422222"
+      },
+      "SiteID": "01362342"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01362100",
+        "station_nm": "ROELIFF JANSEN KILL NR HILLSDALE NY",
+        "lonDD": "-73.52",
+        "latDD": "42.15388889"
+      },
+      "SiteID": "01362100"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01372500",
+        "station_nm": "WAPPINGER CREEK NEAR WAPPINGERS FALLS NY",
+        "lonDD": "-73.8725",
+        "latDD": "41.65305556"
+      },
+      "SiteID": "01372500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "0137449480",
+        "station_nm": "EAST BRANCH CROTON RIVER NEAR PUTNAM LAKE NY",
+        "lonDD": "-73.5560833",
+        "latDD": "41.44725"
+      },
+      "SiteID": "0137449480"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01374505",
+        "station_nm": "EAST BRANCH CROTON RIVER AT BREWSTER NY",
+        "lonDD": "-73.6069444",
+        "latDD": "41.39444444"
+      },
+      "SiteID": "01374505"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01374531",
+        "station_nm": "EAST BRANCH CROTON RIVER NEAR CROTON FALLS NY",
+        "lonDD": "-73.63875",
+        "latDD": "41.37377778"
+      },
+      "SiteID": "01374531"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01374559",
+        "station_nm": "WEST BRANCH CROTON RIVER AT RICHARDSVILLE NY",
+        "lonDD": "-73.76",
+        "latDD": "41.47055556"
+      },
+      "SiteID": "01374559"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01374581",
+        "station_nm": "W BR CROTON RIVER BELOW DAM NEAR KENT CLIFFS NY",
+        "lonDD": "-73.73638889",
+        "latDD": "41.4497222"
+      },
+      "SiteID": "01374581"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01374598",
+        "station_nm": "HORSE POUND BROOK NEAR LAKE CARMEL NY",
+        "lonDD": "-73.6894722",
+        "latDD": "41.4758611"
+      },
+      "SiteID": "01374598"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "0137462010",
+        "station_nm": "WEST BRANCH CROTON RIVER NEAR CARMEL NY",
+        "lonDD": "-73.69375",
+        "latDD": "41.41180556"
+      },
+      "SiteID": "0137462010"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01374701",
+        "station_nm": "WEST BRANCH CROTON RIVER NEAR CROTON FALLS NY",
+        "lonDD": "-73.6679722",
+        "latDD": "41.358"
+      },
+      "SiteID": "01374701"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "412149073445601",
+        "station_nm": "Local number, P-1217, Carmel NY",
+        "lonDD": "-73.74875",
+        "latDD": "41.3637222"
+      },
+      "SiteID": "412149073445601"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "412714073331301",
+        "station_nm": "Local number, P-1205, at Putnam Lake NY",
+        "lonDD": "-73.5531811",
+        "latDD": "41.45398296"
+      },
+      "SiteID": "412714073331301"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "414128073475201",
+        "station_nm": "Local number, Du-1009, ST Park, Pleasant Valley NY",
+        "lonDD": "-73.7976111",
+        "latDD": "41.6913333"
+      },
+      "SiteID": "414128073475201"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "414737073563301",
+        "station_nm": "Local number, Du-321, near Hyde Park NY",
+        "lonDD": "-73.9420816",
+        "latDD": "41.79370429"
+      },
+      "SiteID": "414737073563301"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01365000",
+        "station_nm": "RONDOUT CREEK NEAR LOWES CORNERS NY",
+        "lonDD": "-74.4872222",
+        "latDD": "41.86638889"
+      },
+      "SiteID": "01365000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01417000",
+        "station_nm": "EAST BRANCH DELAWARE RIVER AT DOWNSVILLE NY",
+        "lonDD": "-74.97638889",
+        "latDD": "42.075"
+      },
+      "SiteID": "01417000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01425000",
+        "station_nm": "WEST BRANCH DELAWARE RIVER AT STILESVILLE NY",
+        "lonDD": "-75.3961111",
+        "latDD": "42.0747222"
+      },
+      "SiteID": "01425000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01427500",
+        "station_nm": "CALLICOON CREEK AT CALLICOON NY",
+        "lonDD": "-75.0483333",
+        "latDD": "41.7608333"
+      },
+      "SiteID": "01427500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01438000",
+        "station_nm": "NEVERSINK RIVER AT PORT JERVIS NY",
+        "lonDD": "-74.6848851",
+        "latDD": "41.361205"
+      },
+      "SiteID": "01438000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "013621955",
+        "station_nm": "BIRCH CREEK AT BIG INDIAN NY",
+        "lonDD": "-74.4519444",
+        "latDD": "42.10888889"
+      },
+      "SiteID": "013621955"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01362200",
+        "station_nm": "ESOPUS CREEK AT ALLABEN NY",
+        "lonDD": "-74.38027778",
+        "latDD": "42.11694444"
+      },
+      "SiteID": "01362200"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01362230",
+        "station_nm": "DIVERSION FROM SCHOHARIE RESERVOIR NY",
+        "lonDD": "-74.3637599",
+        "latDD": "42.11453416"
+      },
+      "SiteID": "01362230"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "0136230002",
+        "station_nm": "WOODLAND CREEK ABOVE MOUTH AT PHOENICIA NY",
+        "lonDD": "-74.3345833",
+        "latDD": "42.0797222"
+      },
+      "SiteID": "0136230002"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01362370",
+        "station_nm": "STONY CLOVE CREEK BLW OX CLOVE AT CHICHESTER NY",
+        "lonDD": "-74.31088889",
+        "latDD": "42.10202778"
+      },
+      "SiteID": "01362370"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01362497",
+        "station_nm": "LITTLE BEAVER KILL AT BEECHFORD NEAR MT TREMPER NY",
+        "lonDD": "-74.26638889",
+        "latDD": "42.01944444"
+      },
+      "SiteID": "01362497"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01362500",
+        "station_nm": "ESOPUS CREEK AT COLDBROOK NY",
+        "lonDD": "-74.2705556",
+        "latDD": "42.01416667"
+      },
+      "SiteID": "01362500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01363382",
+        "station_nm": "BUSH KILL BLW MALTBY HOLLOW BK AT WEST SHOKAN NY",
+        "lonDD": "-74.2930556",
+        "latDD": "41.96555556"
+      },
+      "SiteID": "01363382"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01363556",
+        "station_nm": "ESOPUS CREEK NEAR LOMONTVILLE NY",
+        "lonDD": "-74.1453611",
+        "latDD": "41.8793333"
+      },
+      "SiteID": "01363556"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01364500",
+        "station_nm": "ESOPUS CREEK AT MOUNT MARION NY",
+        "lonDD": "-73.9719444",
+        "latDD": "42.03777778"
+      },
+      "SiteID": "01364500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01367500",
+        "station_nm": "RONDOUT CREEK AT ROSENDALE NY",
+        "lonDD": "-74.0861111",
+        "latDD": "41.84305556"
+      },
+      "SiteID": "01367500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01371500",
+        "station_nm": "WALLKILL RIVER AT GARDINER NY",
+        "lonDD": "-74.16527778",
+        "latDD": "41.6861111"
+      },
+      "SiteID": "01371500"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "413428074085701",
+        "station_nm": "Local number, O-2288, Town of Montgomery NY",
+        "lonDD": "-74.14927778",
+        "latDD": "41.5743611"
+      },
+      "SiteID": "413428074085701"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "414429074052001",
+        "station_nm": "Local number, U-1620, SUNY New Paltz NY",
+        "lonDD": "-74.08888889",
+        "latDD": "41.74155556"
+      },
+      "SiteID": "414429074052001"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "414948074035001",
+        "station_nm": "Local number, U-1619, Tillson NY",
+        "lonDD": "-74.06388889",
+        "latDD": "41.83"
+      },
+      "SiteID": "414948074035001"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01354500",
+        "station_nm": "MOHAWK RIVER AT FREEMAN'S BRIDGE AT SCHENECTADY NY",
+        "lonDD": "-73.93075",
+        "latDD": "42.83052778"
+      },
+      "SiteID": "01354500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01358000",
+        "station_nm": "HUDSON RIVER AT GREEN ISLAND NY",
+        "lonDD": "-73.68888889",
+        "latDD": "42.7522222"
+      },
+      "SiteID": "01358000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01302020",
+        "station_nm": "BRONX RIVER AT NY BOTANICAL GARDEN AT BRONX NY",
+        "lonDD": "-73.87438889",
+        "latDD": "40.86230556"
+      },
+      "SiteID": "01302020"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01374781",
+        "station_nm": "TITICUS RIVER BELOW JUNE ROAD AT SALEM CENTER NY",
+        "lonDD": "-73.5914722",
+        "latDD": "41.3273611"
+      },
+      "SiteID": "01374781"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01374821",
+        "station_nm": "TITICUS RIVER AT PURDYS STATION NY",
+        "lonDD": "-73.6558333",
+        "latDD": "41.32719444"
+      },
+      "SiteID": "01374821"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01374890",
+        "station_nm": "CROSS RIVER NEAR CROSS RIVER NY",
+        "lonDD": "-73.6018611",
+        "latDD": "41.2602222"
+      },
+      "SiteID": "01374890"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01374901",
+        "station_nm": "CROSS RIVER AT KATONAH NY",
+        "lonDD": "-73.6655556",
+        "latDD": "41.2661111"
+      },
+      "SiteID": "01374901"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01374930",
+        "station_nm": "MUSCOOT RIVER AT BALDWIN PLACE NY",
+        "lonDD": "-73.7686944",
+        "latDD": "41.33813889"
+      },
+      "SiteID": "01374930"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01374941",
+        "station_nm": "MUSCOOT RIVER BELOW DAM AT AMAWALK NY",
+        "lonDD": "-73.75363889",
+        "latDD": "41.2876111"
+      },
+      "SiteID": "01374941"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01375000",
+        "station_nm": "CROTON R AT NEW CROTON DAM NR CROTON-ON-HUDSON NY",
+        "lonDD": "-73.85888889",
+        "latDD": "41.22502778"
+      },
+      "SiteID": "01375000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01376269",
+        "station_nm": "HUDSON RIVER AT PIERMONT NY",
+        "lonDD": "-73.8960556",
+        "latDD": "41.04319444"
+      },
+      "SiteID": "01376269"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01376500",
+        "station_nm": "SAW MILL RIVER AT YONKERS NY",
+        "lonDD": "-73.8861111",
+        "latDD": "40.93638889"
+      },
+      "SiteID": "01376500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01376800",
+        "station_nm": "HACKENSACK RIVER AT WEST NYACK NY",
+        "lonDD": "-73.96388889",
+        "latDD": "41.09555556"
+      },
+      "SiteID": "01376800"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01387400",
+        "station_nm": "RAMAPO RIVER AT RAMAPO NY",
+        "lonDD": "-74.1686111",
+        "latDD": "41.14027778"
+      },
+      "SiteID": "01387400"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01387420",
+        "station_nm": "RAMAPO RIVER AT SUFFERN NY",
+        "lonDD": "-74.16027778",
+        "latDD": "41.1183333"
+      },
+      "SiteID": "01387420"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "410853073554001",
+        "station_nm": "Local number, Ro-543, at Rockland Lake NY",
+        "lonDD": "-73.9276944",
+        "latDD": "41.148"
+      },
+      "SiteID": "410853073554001"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "411421073481202",
+        "station_nm": "Local number, We-5020, Yorktown Heights NY",
+        "lonDD": "-73.8029122",
+        "latDD": "41.2392609"
+      },
+      "SiteID": "411421073481202"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "411802073593001",
+        "station_nm": "Local number, Ro-18, Bear Mtn State Park NY",
+        "lonDD": "-73.9912515",
+        "latDD": "41.3006494"
+      },
+      "SiteID": "411802073593001"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01417500",
+        "station_nm": "EAST BRANCH DELAWARE RIVER AT HARVARD NY",
+        "lonDD": "-75.11927778",
+        "latDD": "42.0245833"
+      },
+      "SiteID": "01417500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01420500",
+        "station_nm": "BEAVER KILL AT COOKS FALLS NY",
+        "lonDD": "-74.9797222",
+        "latDD": "41.94638889"
+      },
+      "SiteID": "01420500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01421000",
+        "station_nm": "EAST BRANCH DELAWARE RIVER AT FISHS EDDY NY",
+        "lonDD": "-75.1741667",
+        "latDD": "41.97305556"
+      },
+      "SiteID": "01421000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01423000",
+        "station_nm": "WEST BRANCH DELAWARE RIVER AT WALTON NY",
+        "lonDD": "-75.14",
+        "latDD": "42.1661111"
+      },
+      "SiteID": "01423000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "0142400103",
+        "station_nm": "TROUT CREEK NEAR TROUT CREEK NY",
+        "lonDD": "-75.2794444",
+        "latDD": "42.1736111"
+      },
+      "SiteID": "0142400103"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01425000",
+        "station_nm": "WEST BRANCH DELAWARE RIVER AT STILESVILLE NY",
+        "lonDD": "-75.3961111",
+        "latDD": "42.0747222"
+      },
+      "SiteID": "01425000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01426500",
+        "station_nm": "WEST BRANCH DELAWARE RIVER AT HALE EDDY NY",
+        "lonDD": "-75.3836111",
+        "latDD": "42.00305556"
+      },
+      "SiteID": "01426500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01427000",
+        "station_nm": "WEST BRANCH DELAWARE RIVER AT HANCOCK NY",
+        "lonDD": "-75.2916667",
+        "latDD": "41.9522222"
+      },
+      "SiteID": "01427000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01427500",
+        "station_nm": "CALLICOON CREEK AT CALLICOON NY",
+        "lonDD": "-75.0483333",
+        "latDD": "41.7608333"
+      },
+      "SiteID": "01427500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01428500",
+        "station_nm": "DELAWARE R ABOVE LACKAWAXEN R NEAR BARRYVILLE NY",
+        "lonDD": "-74.9858333",
+        "latDD": "41.50888889"
+      },
+      "SiteID": "01428500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01433500",
+        "station_nm": "MONGAUP RIVER NEAR MONGAUP NY",
+        "lonDD": "-74.75888889",
+        "latDD": "41.46138889"
+      },
+      "SiteID": "01433500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01327500",
+        "station_nm": "GLENS FALLS FEEDER AT DUNHAM BASIN NY",
+        "lonDD": "-73.5465031",
+        "latDD": "43.30423926"
+      },
+      "SiteID": "01327500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01327750",
+        "station_nm": "HUDSON RIVER AT FORT EDWARD NY",
+        "lonDD": "-73.5958333",
+        "latDD": "43.26944444"
+      },
+      "SiteID": "01327750"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01328770",
+        "station_nm": "HUDSON RIVER AT THOMSON NY",
+        "lonDD": "-73.5849167",
+        "latDD": "43.12538889"
+      },
+      "SiteID": "01328770"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01329490",
+        "station_nm": "BATTEN KILL BELOW MILL AT BATTENVILLE NY",
+        "lonDD": "-73.4216667",
+        "latDD": "43.1086111"
+      },
+      "SiteID": "01329490"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01330000",
+        "station_nm": "GLOWEGEE CREEK AT WEST MILTON NY",
+        "lonDD": "-73.9272222",
+        "latDD": "43.03055556"
+      },
+      "SiteID": "01330000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01330884",
+        "station_nm": "SARATOGA LAKE AT STATE HWY 9P AT SARATOGA LAKE NY",
+        "lonDD": "-73.72113889",
+        "latDD": "43.0539722"
+      },
+      "SiteID": "01330884"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01334500",
+        "station_nm": "HOOSIC RIVER NEAR EAGLE BRIDGE NY",
+        "lonDD": "-73.3769444",
+        "latDD": "42.9386111"
+      },
+      "SiteID": "01334500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01354330",
+        "station_nm": "MOHAWK RIVER AT LOCK 8 NEAR SCHENECTADY NY",
+        "lonDD": "-73.9903722",
+        "latDD": "42.8281583"
+      },
+      "SiteID": "01354330"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01355475",
+        "station_nm": "MOHAWK RIVER AT REXFORD NY",
+        "lonDD": "-73.88725",
+        "latDD": "42.8511111"
+      },
+      "SiteID": "01355475"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01356000",
+        "station_nm": "MOHAWK RIVER AT VISCHER FERRY DAM NY",
+        "lonDD": "-73.8476667",
+        "latDD": "42.80419444"
+      },
+      "SiteID": "01356000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01357500",
+        "station_nm": "MOHAWK RIVER AT COHOES NY",
+        "lonDD": "-73.7075",
+        "latDD": "42.78527778"
+      },
+      "SiteID": "01357500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01360640",
+        "station_nm": "VALATIE KILL NEAR NASSAU NY",
+        "lonDD": "-73.59138889",
+        "latDD": "42.55194444"
+      },
+      "SiteID": "01360640"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "422241073274601",
+        "station_nm": "Local number, Cb-1071, Canaan NY",
+        "lonDD": "-73.46277778",
+        "latDD": "42.37805556"
+      },
+      "SiteID": "422241073274601"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "422622073410901",
+        "station_nm": "Local number, Cb-1072, at Niverville NY",
+        "lonDD": "-73.6858056",
+        "latDD": "42.4395833"
+      },
+      "SiteID": "422622073410901"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "423534073423401",
+        "station_nm": "Local number, Re-703, East Greenbush NY",
+        "lonDD": "-73.7090083",
+        "latDD": "42.5928579"
+      },
+      "SiteID": "423534073423401"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "424115073495301",
+        "station_nm": "Local number, A-654, SUNY Albany NY",
+        "lonDD": "-73.83138889",
+        "latDD": "42.6875"
+      },
+      "SiteID": "424115073495301"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "424311073423901",
+        "station_nm": "Local number, A-666, Watervliet NY",
+        "lonDD": "-73.71088889",
+        "latDD": "42.71980556"
+      },
+      "SiteID": "424311073423901"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "424859073585501",
+        "station_nm": "Local number, Sn-730, Schenectady NY",
+        "lonDD": "-73.9819444",
+        "latDD": "42.81638889"
+      },
+      "SiteID": "424859073585501"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "425048073472501",
+        "station_nm": "Local number, Sa-1285, Clifton Park NY",
+        "lonDD": "-73.7908056",
+        "latDD": "42.84638889"
+      },
+      "SiteID": "425048073472501"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "430327073475401",
+        "station_nm": "Local number, Sa-529, Saratoga Springs NY",
+        "lonDD": "-73.7978988",
+        "latDD": "43.05757479"
+      },
+      "SiteID": "430327073475401"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "431030073192101",
+        "station_nm": "Local number, W-533, Salem NY",
+        "lonDD": "-73.3220544",
+        "latDD": "43.1750761"
+      },
+      "SiteID": "431030073192101"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "431357073425301",
+        "station_nm": "Local number, Sa-1305, Moreau Lake NY",
+        "lonDD": "-73.7147222",
+        "latDD": "43.23266667"
+      },
+      "SiteID": "431357073425301"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01331095",
+        "station_nm": "HUDSON RIVER AT STILLWATER NY",
+        "lonDD": "-73.6516667",
+        "latDD": "42.93555556"
+      },
+      "SiteID": "01331095"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01335754",
+        "station_nm": "HUDSON RIVER ABOVE LOCK 1 NEAR WATERFORD NY",
+        "lonDD": "-73.6661111",
+        "latDD": "42.82916667"
+      },
+      "SiteID": "01335754"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01335755",
+        "station_nm": "HUDSON RIVER AT LOCK 1 NEAR WATERFORD NY",
+        "lonDD": "-73.6620622",
+        "latDD": "42.8239664"
+      },
+      "SiteID": "01335755"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01336000",
+        "station_nm": "MOHAWK RIVER BELOW DELTA DAM NEAR ROME NY",
+        "lonDD": "-75.43638889",
+        "latDD": "43.26444444"
+      },
+      "SiteID": "01336000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01338000",
+        "station_nm": "ORISKANY CREEK NEAR ORISKANY NY",
+        "lonDD": "-75.3378056",
+        "latDD": "43.14277778"
+      },
+      "SiteID": "01338000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01339060",
+        "station_nm": "SAUQUOIT CREEK AT WHITESBORO NY",
+        "lonDD": "-75.294",
+        "latDD": "43.11144444"
+      },
+      "SiteID": "01339060"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01342602",
+        "station_nm": "MOHAWK RIVER NEAR UTICA NY",
+        "lonDD": "-75.1579167",
+        "latDD": "43.09369444"
+      },
+      "SiteID": "01342602"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01342682",
+        "station_nm": "MOYER CREEK NEAR FRANKFORT NY",
+        "lonDD": "-75.1043056",
+        "latDD": "43.02694444"
+      },
+      "SiteID": "01342682"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01342730",
+        "station_nm": "STEELE CREEK AT ILION NY",
+        "lonDD": "-75.0416667",
+        "latDD": "43.0065833"
+      },
+      "SiteID": "01342730"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01342743",
+        "station_nm": "FULMER CREEK NEAR MOHAWK NY",
+        "lonDD": "-74.9904444",
+        "latDD": "42.9852222"
+      },
+      "SiteID": "01342743"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01346000",
+        "station_nm": "WEST CANADA CREEK AT KAST BRIDGE NY",
+        "lonDD": "-74.9883333",
+        "latDD": "43.06888889"
+      },
+      "SiteID": "01346000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01347000",
+        "station_nm": "MOHAWK RIVER NEAR LITTLE FALLS NY",
+        "lonDD": "-74.7794444",
+        "latDD": "43.0147222"
+      },
+      "SiteID": "01347000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01348000",
+        "station_nm": "EAST CANADA CREEK AT EAST CREEK NY",
+        "lonDD": "-74.7408333",
+        "latDD": "43.01666667"
+      },
+      "SiteID": "01348000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01348420",
+        "station_nm": "NORTH CREEK NEAR EPHRATAH NY",
+        "lonDD": "-74.5647222",
+        "latDD": "43.00777778"
+      },
+      "SiteID": "01348420"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01349000",
+        "station_nm": "OTSQUAGO CREEK AT FORT PLAIN NY",
+        "lonDD": "-74.63288889",
+        "latDD": "42.92925"
+      },
+      "SiteID": "01349000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01349150",
+        "station_nm": "CANAJOHARIE CREEK NEAR CANAJOHARIE NY",
+        "lonDD": "-74.6030556",
+        "latDD": "42.8761111"
+      },
+      "SiteID": "01349150"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01349527",
+        "station_nm": "MOHAWK R ABOVE STATE HIGHWAY 30A AT FONDA NY",
+        "lonDD": "-74.3720795",
+        "latDD": "42.95035136"
+      },
+      "SiteID": "01349527"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01354083",
+        "station_nm": "MOHAWK RIVER AT AMSTERDAM NY",
+        "lonDD": "-74.1918611",
+        "latDD": "42.934"
+      },
+      "SiteID": "01354083"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "425511074254001",
+        "station_nm": "Local number, Mt-411, at Randall NY",
+        "lonDD": "-74.4279167",
+        "latDD": "42.91975"
+      },
+      "SiteID": "425511074254001"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "430121074523001",
+        "station_nm": "Local number, He-1836, at Little Falls NY",
+        "lonDD": "-74.8750833",
+        "latDD": "43.02244444"
+      },
+      "SiteID": "430121074523001"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "430930074290301",
+        "station_nm": "Local number, Fu-275, at Wheelerville NY",
+        "lonDD": "-74.4841667",
+        "latDD": "43.15825"
+      },
+      "SiteID": "430930074290301"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "431227075233301",
+        "station_nm": "Local number, Oe-1457, Rome NY",
+        "lonDD": "-75.3925",
+        "latDD": "43.2075"
+      },
+      "SiteID": "431227075233301"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "431359075235501",
+        "station_nm": "Local number, Oe-1466, Rome NY",
+        "lonDD": "-75.3985",
+        "latDD": "43.23294444"
+      },
+      "SiteID": "431359075235501"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01365000",
+        "station_nm": "RONDOUT CREEK NEAR LOWES CORNERS NY",
+        "lonDD": "-74.4872222",
+        "latDD": "41.86638889"
+      },
+      "SiteID": "01365000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01365500",
+        "station_nm": "CHESTNUT CREEK AT GRAHAMSVILLE NY",
+        "lonDD": "-74.5394444",
+        "latDD": "41.845"
+      },
+      "SiteID": "01365500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01432900",
+        "station_nm": "MONGAUP RIVER AT MONGAUP VALLEY NY",
+        "lonDD": "-74.7805556",
+        "latDD": "41.66805556"
+      },
+      "SiteID": "01432900"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01434017",
+        "station_nm": "EAST BRANCH NEVERSINK RIVER NEAR CLARYVILLE NY",
+        "lonDD": "-74.54027778",
+        "latDD": "41.92527778"
+      },
+      "SiteID": "01434017"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01434025",
+        "station_nm": "BISCUIT BK ABOVE PIGEON BK AT FROST VALLEY NY",
+        "lonDD": "-74.5002222",
+        "latDD": "41.9960833"
+      },
+      "SiteID": "01434025"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01434498",
+        "station_nm": "WEST BRANCH NEVERSINK RIVER AT CLARYVILLE NY",
+        "lonDD": "-74.5747222",
+        "latDD": "41.92027778"
+      },
+      "SiteID": "01434498"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01435000",
+        "station_nm": "NEVERSINK RIVER NEAR CLARYVILLE NY",
+        "lonDD": "-74.59",
+        "latDD": "41.89"
+      },
+      "SiteID": "01435000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01436000",
+        "station_nm": "NEVERSINK RIVER AT NEVERSINK NY",
+        "lonDD": "-74.6355556",
+        "latDD": "41.82"
+      },
+      "SiteID": "01436000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01436690",
+        "station_nm": "NEVERSINK RIVER AT BRIDGEVILLE NY",
+        "lonDD": "-74.61688889",
+        "latDD": "41.63805556"
+      },
+      "SiteID": "01436690"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01437500",
+        "station_nm": "NEVERSINK RIVER AT GODEFFROY NY",
+        "lonDD": "-74.6019444",
+        "latDD": "41.4411111"
+      },
+      "SiteID": "01437500"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "412637074362301",
+        "station_nm": "Local number, O-2271, Myers Grove NY",
+        "lonDD": "-74.60638889",
+        "latDD": "41.4436111"
+      },
+      "SiteID": "412637074362301"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "414525074360601",
+        "station_nm": "Local number, Sv-535, Woodbourne NY",
+        "lonDD": "-74.6013611",
+        "latDD": "41.75675"
+      },
+      "SiteID": "414525074360601"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "042490673",
+        "station_nm": "NORTH BRANCH GRINDSTONE CREEK NEAR ALTMAR NY",
+        "lonDD": "-76.0944444",
+        "latDD": "43.49194444"
+      },
+      "SiteID": "042490673"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04249200",
+        "station_nm": "NORTH BRANCH SALMON RIVER AT REDFIELD NY",
+        "lonDD": "-75.81388889",
+        "latDD": "43.5422222"
+      },
+      "SiteID": "04249200"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04250200",
+        "station_nm": "SALMON RIVER AT PINEVILLE NY",
+        "lonDD": "-76.0376944",
+        "latDD": "43.53119444"
+      },
+      "SiteID": "04250200"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04250750",
+        "station_nm": "SANDY CREEK NEAR ADAMS NY",
+        "lonDD": "-76.0747222",
+        "latDD": "43.8133333"
+      },
+      "SiteID": "04250750"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04252500",
+        "station_nm": "BLACK RIVER NEAR BOONVILLE NY",
+        "lonDD": "-75.3066667",
+        "latDD": "43.51166667"
+      },
+      "SiteID": "04252500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04253300",
+        "station_nm": "SIXTH LAKE NEAR OLD FORGE NY",
+        "lonDD": "-74.78239259",
+        "latDD": "43.7453433"
+      },
+      "SiteID": "04253300"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04253400",
+        "station_nm": "FIRST LAKE AT OLD FORGE NY",
+        "lonDD": "-74.9696185",
+        "latDD": "43.71228976"
+      },
+      "SiteID": "04253400"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04254500",
+        "station_nm": "MOOSE RIVER AT MCKEEVER NY",
+        "lonDD": "-75.1105556",
+        "latDD": "43.61027778"
+      },
+      "SiteID": "04254500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04256000",
+        "station_nm": "INDEPENDENCE RIVER AT DONNATTSBURG NY",
+        "lonDD": "-75.3334444",
+        "latDD": "43.74680556"
+      },
+      "SiteID": "04256000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04256500",
+        "station_nm": "STILLWATER RESERVOIR NEAR BEAVER RIVER NY",
+        "lonDD": "-75.051017",
+        "latDD": "43.89728827"
+      },
+      "SiteID": "04256500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04257000",
+        "station_nm": "BEAVER R BLW STILLWATER DAM NR BEAVER RIVER NY",
+        "lonDD": "-75.0519444",
+        "latDD": "43.89888889"
+      },
+      "SiteID": "04257000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04258000",
+        "station_nm": "BEAVER RIVER AT CROGHAN NY",
+        "lonDD": "-75.4041667",
+        "latDD": "43.8972222"
+      },
+      "SiteID": "04258000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04258700",
+        "station_nm": "DEER RIVER AT DEER RIVER NY",
+        "lonDD": "-75.5905556",
+        "latDD": "43.93027778"
+      },
+      "SiteID": "04258700"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04260500",
+        "station_nm": "BLACK RIVER AT WATERTOWN NY",
+        "lonDD": "-75.9247222",
+        "latDD": "43.98555556"
+      },
+      "SiteID": "04260500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04262000",
+        "station_nm": "OSWEGATCHIE RIVER NEAR OSWEGATCHIE NY",
+        "lonDD": "-75.0744444",
+        "latDD": "44.2225"
+      },
+      "SiteID": "04262000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04262500",
+        "station_nm": "WEST BRANCH OSWEGATCHIE RIVER NEAR HARRISVILLE NY",
+        "lonDD": "-75.3308333",
+        "latDD": "44.18555556"
+      },
+      "SiteID": "04262500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04263000",
+        "station_nm": "OSWEGATCHIE RIVER NEAR HEUVELTON NY",
+        "lonDD": "-75.37888889",
+        "latDD": "44.5994444"
+      },
+      "SiteID": "04263000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04265100",
+        "station_nm": "ELM CREEK NEAR HERMON NY",
+        "lonDD": "-75.2133333",
+        "latDD": "44.4375"
+      },
+      "SiteID": "04265100"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04266500",
+        "station_nm": "RAQUETTE RIVER AT PIERCEFIELD NY",
+        "lonDD": "-74.5719444",
+        "latDD": "44.2347222"
+      },
+      "SiteID": "04266500"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "433112075091501",
+        "station_nm": "Local number, Oe-151, at Woodgate NY",
+        "lonDD": "-75.1537776",
+        "latDD": "43.5200686"
+      },
+      "SiteID": "433112075091501"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "440114075453701",
+        "station_nm": "Local number, J-178, at Felts Mills NY",
+        "lonDD": "-75.7603333",
+        "latDD": "44.02052778"
+      },
+      "SiteID": "440114075453701"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "440939075191301",
+        "station_nm": "Local number, L-174, Harrisville NY",
+        "lonDD": "-75.32027778",
+        "latDD": "44.1608333"
+      },
+      "SiteID": "440939075191301"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "441214075542101",
+        "station_nm": "Local number, J-176, at Orleans Four Corners NY",
+        "lonDD": "-75.9058611",
+        "latDD": "44.20394444"
+      },
+      "SiteID": "441214075542101"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04264331",
+        "station_nm": "ST. LAWRENCE R AT CORNWALL ONT NR MASSENA NY",
+        "lonDD": "-74.795",
+        "latDD": "45.0061111"
+      },
+      "SiteID": "04264331"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04265432",
+        "station_nm": "GRASS RIVER AT CHASE MILLS NY",
+        "lonDD": "-75.0780556",
+        "latDD": "44.84666667"
+      },
+      "SiteID": "04265432"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04267500",
+        "station_nm": "RAQUETTE RIVER AT SOUTH COLTON NY",
+        "lonDD": "-74.8836111",
+        "latDD": "44.5098333"
+      },
+      "SiteID": "04267500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04268000",
+        "station_nm": "RAQUETTE RIVER AT RAYMONDVILLE NY",
+        "lonDD": "-74.97888889",
+        "latDD": "44.83888889"
+      },
+      "SiteID": "04268000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04268200",
+        "station_nm": "PLUM BK NEAR GRANTVILLE NY",
+        "lonDD": "-74.9147222",
+        "latDD": "44.8794444"
+      },
+      "SiteID": "04268200"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04268800",
+        "station_nm": "WEST BRANCH ST. REGIS RIVER NEAR PARISHVILLE NY",
+        "lonDD": "-74.7372222",
+        "latDD": "44.5986111"
+      },
+      "SiteID": "04268800"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04269000",
+        "station_nm": "ST. REGIS RIVER AT BRASHER CENTER NY",
+        "lonDD": "-74.77888889",
+        "latDD": "44.8636111"
+      },
+      "SiteID": "04269000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04270200",
+        "station_nm": "LITTLE SALMON RIVER AT BOMBAY NY",
+        "lonDD": "-74.5569444",
+        "latDD": "44.94"
+      },
+      "SiteID": "04270200"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04270700",
+        "station_nm": "TROUT RIVER AT TROUT RIVER NY",
+        "lonDD": "-74.2986111",
+        "latDD": "44.9897222"
+      },
+      "SiteID": "04270700"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04271500",
+        "station_nm": "GREAT CHAZY RIVER AT PERRY MILLS NY",
+        "lonDD": "-73.5008333",
+        "latDD": "45.0"
+      },
+      "SiteID": "04271500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04271815",
+        "station_nm": "LITTLE CHAZY RIVER NEAR CHAZY NY",
+        "lonDD": "-73.415",
+        "latDD": "44.9022222"
+      },
+      "SiteID": "04271815"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04273500",
+        "station_nm": "SARANAC RIVER AT PLATTSBURGH NY",
+        "lonDD": "-73.4711111",
+        "latDD": "44.68166667"
+      },
+      "SiteID": "04273500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04273700",
+        "station_nm": "SALMON RIVER AT SOUTH PLATTSBURGH NY",
+        "lonDD": "-73.4947222",
+        "latDD": "44.64"
+      },
+      "SiteID": "04273700"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04273800",
+        "station_nm": "LITTLE AUSABLE RIVER NEAR VALCOUR NY",
+        "lonDD": "-73.4961111",
+        "latDD": "44.59416667"
+      },
+      "SiteID": "04273800"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04274000",
+        "station_nm": "W BR AUSABLE R NR LAKE PLACID NY",
+        "lonDD": "-73.91638889",
+        "latDD": "44.3111111"
+      },
+      "SiteID": "04274000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04275000",
+        "station_nm": "EAST BRANCH AUSABLE RIVER AT AU SABLE FORKS NY",
+        "lonDD": "-73.6809722",
+        "latDD": "44.43738889"
+      },
+      "SiteID": "04275000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04275500",
+        "station_nm": "AUSABLE RIVER NEAR AU SABLE FORKS NY",
+        "lonDD": "-73.6425",
+        "latDD": "44.45138889"
+      },
+      "SiteID": "04275500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04276500",
+        "station_nm": "BOUQUET RIVER AT WILLSBORO NY",
+        "lonDD": "-73.3944444",
+        "latDD": "44.3583333"
+      },
+      "SiteID": "04276500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04294413",
+        "station_nm": "LAKE CHAMPLAIN AT PORT HENRY NY",
+        "lonDD": "-73.4535",
+        "latDD": "44.05275"
+      },
+      "SiteID": "04294413"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04295000",
+        "station_nm": "RICHELIEU R (LAKE CHAMPLAIN) AT ROUSES POINT NY",
+        "lonDD": "-73.3598555",
+        "latDD": "44.99615019"
+      },
+      "SiteID": "04295000"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "441644073315101",
+        "station_nm": "Local number, Ex-157, near Lewis NY",
+        "lonDD": "-73.53088889",
+        "latDD": "44.2788611"
+      },
+      "SiteID": "441644073315101"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "444904074455201",
+        "station_nm": "Local number, St-40, near Brasher Falls NY",
+        "lonDD": "-74.7640799",
+        "latDD": "44.8178312"
+      },
+      "SiteID": "444904074455201"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "445052073350201",
+        "station_nm": "Local number, Cl-145, SUNY Plattsburgh NY",
+        "lonDD": "-73.584",
+        "latDD": "44.848"
+      },
+      "SiteID": "445052073350201"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "445216074593001",
+        "station_nm": "Local number, St-404, near Louisville NY",
+        "lonDD": "-74.99131549",
+        "latDD": "44.87116167"
+      },
+      "SiteID": "445216074593001"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "445511074103901",
+        "station_nm": "Local number, F-60, at Burke NY",
+        "lonDD": "-74.1771757",
+        "latDD": "44.91974017"
+      },
+      "SiteID": "445511074103901"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "445511074103902",
+        "station_nm": "Local number, F-854, at Burke NY",
+        "lonDD": "-74.1771201",
+        "latDD": "44.91971239"
+      },
+      "SiteID": "445511074103902"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "445805073380501",
+        "station_nm": "Local number, Cl-242, at Mooers Forks NY",
+        "lonDD": "-73.6346944",
+        "latDD": "44.9680833"
+      },
+      "SiteID": "445805073380501"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01350080",
+        "station_nm": "MANOR KILL AT WEST CONESVILLE NEAR GILBOA NY",
+        "lonDD": "-74.4130556",
+        "latDD": "42.37694444"
+      },
+      "SiteID": "01350080"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01350101",
+        "station_nm": "SCHOHARIE CREEK AT GILBOA NY",
+        "lonDD": "-74.4505556",
+        "latDD": "42.3972222"
+      },
+      "SiteID": "01350101"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01350120",
+        "station_nm": "PLATTER KILL AT GILBOA NY",
+        "lonDD": "-74.4472222",
+        "latDD": "42.4061111"
+      },
+      "SiteID": "01350120"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01350140",
+        "station_nm": "MINE KILL NEAR NORTH BLENHEIM NY",
+        "lonDD": "-74.4730556",
+        "latDD": "42.42888889"
+      },
+      "SiteID": "01350140"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01350180",
+        "station_nm": "SCHOHARIE CREEK AT NORTH BLENHEIM NY",
+        "lonDD": "-74.4622222",
+        "latDD": "42.4658333"
+      },
+      "SiteID": "01350180"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01350355",
+        "station_nm": "SCHOHARIE CREEK AT BREAKABEEN NY",
+        "lonDD": "-74.4105556",
+        "latDD": "42.53694444"
+      },
+      "SiteID": "01350355"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01361500",
+        "station_nm": "CATSKILL CREEK AT OAK HILL NY",
+        "lonDD": "-74.1515556",
+        "latDD": "42.40527778"
+      },
+      "SiteID": "01361500"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "421746074180201",
+        "station_nm": "Local number, G-831, near Ashland NY",
+        "lonDD": "-74.3005833",
+        "latDD": "42.29616667"
+      },
+      "SiteID": "421746074180201"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "421903074152301",
+        "station_nm": "Local number, G-644, Windham NY",
+        "lonDD": "-74.2559763",
+        "latDD": "42.31758396"
+      },
+      "SiteID": "421903074152301"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "423530074191701",
+        "station_nm": "Local number, So-604, at Middleburgh NY",
+        "lonDD": "-74.32138889",
+        "latDD": "42.5918333"
+      },
+      "SiteID": "423530074191701"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01349527",
+        "station_nm": "MOHAWK R ABOVE STATE HIGHWAY 30A AT FONDA NY",
+        "lonDD": "-74.3720795",
+        "latDD": "42.95035136"
+      },
+      "SiteID": "01349527"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01351500",
+        "station_nm": "SCHOHARIE CREEK AT BURTONSVILLE NY",
+        "lonDD": "-74.26277778",
+        "latDD": "42.8"
+      },
+      "SiteID": "01351500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01359139",
+        "station_nm": "HUDSON RIVER AT ALBANY NY",
+        "lonDD": "-73.7475",
+        "latDD": "42.6461111"
+      },
+      "SiteID": "01359139"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01359165",
+        "station_nm": "HUDSON RIVER AT PORT OF ALBANY NY",
+        "lonDD": "-73.7589167",
+        "latDD": "42.61952778"
+      },
+      "SiteID": "01359165"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01359525",
+        "station_nm": "NORMANS KILL AT KARLSFELD NY",
+        "lonDD": "-73.8455556",
+        "latDD": "42.64777778"
+      },
+      "SiteID": "01359525"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01359528",
+        "station_nm": "NORMANS KILL AT ALBANY NY",
+        "lonDD": "-73.8055556",
+        "latDD": "42.6333333"
+      },
+      "SiteID": "01359528"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01361000",
+        "station_nm": "KINDERHOOK CREEK AT ROSSMAN NY",
+        "lonDD": "-73.74388889",
+        "latDD": "42.33055556"
+      },
+      "SiteID": "01361000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01363556",
+        "station_nm": "ESOPUS CREEK NEAR LOMONTVILLE NY",
+        "lonDD": "-74.1453611",
+        "latDD": "41.8793333"
+      },
+      "SiteID": "01363556"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01364500",
+        "station_nm": "ESOPUS CREEK AT MOUNT MARION NY",
+        "lonDD": "-73.9719444",
+        "latDD": "42.03777778"
+      },
+      "SiteID": "01364500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01372043",
+        "station_nm": "HUDSON RIVER NEAR POUGHKEEPSIE NY",
+        "lonDD": "-73.94069299",
+        "latDD": "41.72176015"
+      },
+      "SiteID": "01372043"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01372058",
+        "station_nm": "HUDSON RIVER BELOW POUGHKEEPSIE NY",
+        "lonDD": "-73.9445821",
+        "latDD": "41.65092687"
+      },
+      "SiteID": "01372058"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01413088",
+        "station_nm": "EAST BRANCH DELAWARE RIVER AT ROXBURY NY",
+        "lonDD": "-74.5591944",
+        "latDD": "42.29380556"
+      },
+      "SiteID": "01413088"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01413398",
+        "station_nm": "BUSH KILL NEAR ARKVILLE NY",
+        "lonDD": "-74.60138889",
+        "latDD": "42.1508333"
+      },
+      "SiteID": "01413398"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01413408",
+        "station_nm": "DRY BROOK AT ARKVILLE",
+        "lonDD": "-74.6233333",
+        "latDD": "42.14666667"
+      },
+      "SiteID": "01413408"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01413500",
+        "station_nm": "EAST BRANCH DELAWARE RIVER AT MARGARETVILLE NY",
+        "lonDD": "-74.6536111",
+        "latDD": "42.1447222"
+      },
+      "SiteID": "01413500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01414000",
+        "station_nm": "PLATTE KILL AT DUNRAVEN NY",
+        "lonDD": "-74.6955556",
+        "latDD": "42.13305556"
+      },
+      "SiteID": "01414000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01414500",
+        "station_nm": "MILL BROOK NEAR DUNRAVEN NY",
+        "lonDD": "-74.7305556",
+        "latDD": "42.1061111"
+      },
+      "SiteID": "01414500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01415000",
+        "station_nm": "TREMPER KILL NEAR ANDES NY",
+        "lonDD": "-74.8186111",
+        "latDD": "42.12"
+      },
+      "SiteID": "01415000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01417000",
+        "station_nm": "EAST BRANCH DELAWARE RIVER AT DOWNSVILLE NY",
+        "lonDD": "-74.97638889",
+        "latDD": "42.075"
+      },
+      "SiteID": "01417000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01421610",
+        "station_nm": "WEST BRANCH DELAWARE RIVER AT HOBART NY",
+        "lonDD": "-74.66888889",
+        "latDD": "42.37138889"
+      },
+      "SiteID": "01421610"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01421618",
+        "station_nm": "TOWN BROOK SOUTHEAST OF HOBART NY",
+        "lonDD": "-74.6622222",
+        "latDD": "42.3611111"
+      },
+      "SiteID": "01421618"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01421900",
+        "station_nm": "WEST BRANCH DELAWARE RIVER UPSTREAM FROM DELHI NY",
+        "lonDD": "-74.9072222",
+        "latDD": "42.28027778"
+      },
+      "SiteID": "01421900"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01422500",
+        "station_nm": "LITTLE DELAWARE RIVER NEAR DELHI NY",
+        "lonDD": "-74.9016667",
+        "latDD": "42.2522222"
+      },
+      "SiteID": "01422500"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "421948074483701",
+        "station_nm": "Local number, D-503, Bloomville NY",
+        "lonDD": "-74.8101944",
+        "latDD": "42.32991667"
+      },
+      "SiteID": "421948074483701"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "421948074483702",
+        "station_nm": "Local number, D-522, Bloomville NY",
+        "lonDD": "-74.8101667",
+        "latDD": "42.32994444"
+      },
+      "SiteID": "421948074483702"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01311992",
+        "station_nm": "ARBUTUS POND OUTLET NEAR NEWCOMB NY",
+        "lonDD": "-74.2355556",
+        "latDD": "43.9822222"
+      },
+      "SiteID": "01311992"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01312000",
+        "station_nm": "HUDSON RIVER NEAR NEWCOMB NY",
+        "lonDD": "-74.1316667",
+        "latDD": "43.96666667"
+      },
+      "SiteID": "01312000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01314500",
+        "station_nm": "INDIAN LAKE NEAR INDIAN LAKE NY",
+        "lonDD": "-74.2759825",
+        "latDD": "43.75562018"
+      },
+      "SiteID": "01314500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01315000",
+        "station_nm": "INDIAN RIVER NEAR INDIAN LAKE NY",
+        "lonDD": "-74.2672222",
+        "latDD": "43.75638889"
+      },
+      "SiteID": "01315000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01315500",
+        "station_nm": "HUDSON RIVER AT NORTH CREEK NY",
+        "lonDD": "-73.9833333",
+        "latDD": "43.7008333"
+      },
+      "SiteID": "01315500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01317000",
+        "station_nm": "SCHROON RIVER AT RIVERBANK NY",
+        "lonDD": "-73.7375",
+        "latDD": "43.60944444"
+      },
+      "SiteID": "01317000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01318500",
+        "station_nm": "HUDSON RIVER AT HADLEY NY",
+        "lonDD": "-73.8441667",
+        "latDD": "43.31888889"
+      },
+      "SiteID": "01318500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01321000",
+        "station_nm": "SACANDAGA RIVER NEAR HOPE NY",
+        "lonDD": "-74.27027778",
+        "latDD": "43.35277778"
+      },
+      "SiteID": "01321000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01323500",
+        "station_nm": "GREAT SACANDAGA LAKE AT CONKLINGVILLE NY",
+        "lonDD": "-73.92706958",
+        "latDD": "43.3159042"
+      },
+      "SiteID": "01323500"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01325000",
+        "station_nm": "SACANDAGA RIVER AT STEWARTS BRIDGE NR HADLEY NY",
+        "lonDD": "-73.8672222",
+        "latDD": "43.31138889"
+      },
+      "SiteID": "01325000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01342797",
+        "station_nm": "VLY BROOK NEAR MOREHOUSEVILLE NY",
+        "lonDD": "-74.83277778",
+        "latDD": "43.39277778"
+      },
+      "SiteID": "01342797"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01343060",
+        "station_nm": "WEST CANADA CREEK NEAR WILMURT NY",
+        "lonDD": "-74.95777778",
+        "latDD": "43.3661111"
+      },
+      "SiteID": "01343060"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01343403",
+        "station_nm": "BLACK CREEK NEAR GRAY NY",
+        "lonDD": "-74.9591944",
+        "latDD": "43.28277778"
+      },
+      "SiteID": "01343403"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "01343900",
+        "station_nm": "HINCKLEY RESERVOIR AT HINCKLEY NY",
+        "lonDD": "-75.10794",
+        "latDD": "43.3114579"
+      },
+      "SiteID": "01343900"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04278000",
+        "station_nm": "LAKE GEORGE AT ROGERS ROCK NY",
+        "lonDD": "-73.45789738",
+        "latDD": "43.80783798"
+      },
+      "SiteID": "04278000"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04279085",
+        "station_nm": "LAKE CHAMPLAIN NORTH OF WHITEHALL NY",
+        "lonDD": "-73.4184475",
+        "latDD": "43.62173216"
+      },
+      "SiteID": "04279085"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "site_no": "04280450",
+        "station_nm": "METTAWEE RIVER NEAR MIDDLE GRANVILLE NY",
+        "lonDD": "-73.2841667",
+        "latDD": "43.46388889"
+      },
+      "SiteID": "04280450"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "431841074573201",
+        "station_nm": "Local number, He-627, Ohio NY",
+        "lonDD": "-74.9589167",
+        "latDD": "43.31141667"
+      },
+      "SiteID": "431841074573201"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "432832074122201",
+        "station_nm": "Local number, H-3, near Griffin NY",
+        "lonDD": "-74.2056909",
+        "latDD": "43.47562219"
+      },
+      "SiteID": "432832074122201"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "433001073474701",
+        "station_nm": "Local number, Wr-80, Warrensburg NY",
+        "lonDD": "-73.7964167",
+        "latDD": "43.50044444"
+      },
+      "SiteID": "433001073474701"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "433258073440201",
+        "station_nm": "Local number, Wr-84, near Bolton NY",
+        "lonDD": "-73.7339722",
+        "latDD": "43.54941667"
+      },
+      "SiteID": "433258073440201"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "site_no": "435253073440701",
+        "station_nm": "Local number, Ex-150, Severance NY",
+        "lonDD": "-73.7348522",
+        "latDD": "43.8814491"
+      },
+      "SiteID": "435253073440701"
+    }
+  ],
+  "metadata": {
+    "development": "Written by Todd Siskin and Martyn Smith",
+    "description": "Data Section Site collection for NY Water Science Center",
+    "created": "03/18/17 02:05 AM"
+  }
+}

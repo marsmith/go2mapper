@@ -1,0 +1,2358 @@
+{
+  "SitesCollection": [
+    {
+      "items": {
+        "SiteID": "01199477",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 1209 days ago [Cond: CSG]\r"
+          }
+        },
+        "name": "STONY BK NR DOVER PLAINS NY ",
+        "users": "albaldwi"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01300800",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 133 days ago\r"
+          }
+        },
+        "name": "MAMARONECK R AT WINFIELD AVE AT MAMARONECK NY ",
+        "users": "lbuss"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01301000",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 133 days ago\r"
+          }
+        },
+        "name": "MAMARONECK RIVER AT MAMARONECK NY ",
+        "users": "lbuss"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01302125",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 641 days ago\r"
+          }
+        },
+        "name": "GABBLERS CREEK AT LITTLE NECK NY ",
+        "users": "acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01302250",
+        "goflags": {
+          "1": {
+            "go2flag": "1DCP",
+            "go2msg": "(DCPid 175F77AA) LRGS has not received a transmission in 46 hours\r"
+          },
+          "2": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid 175F77AA) DCP has missed 25 xmit(s) (100%) in the last day, 25 (14%) in the last 7 Days\r"
+          },
+          "3": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid 175F77AA) NOAA reports 50 missing xmits in the last 24 hours\r"
+          }
+        },
+        "name": "EAST CREEK AT SANDS POINT NY ",
+        "users": "kcolella"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01302845",
+        "goflags": {
+          "1": {
+            "go2flag": "1DCP",
+            "go2msg": "LRGS has not received a transmission in over 170 hours from PASS-assigned DCPid 175F9458\r"
+          },
+          "2": {
+            "go2flag": "2TIME",
+            "go2msg": "Time to visit this gage. NWIS shows last visit was 68 days ago\r"
+          }
+        },
+        "name": "FROST CREEK AT SHEEP LN BRIDGE AT LATTINGTOWN NY ",
+        "users": "kcolella"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01303500",
+        "goflags": {
+          "1": {
+            "go2flag": "2DCP",
+            "go2msg": "During the last 3 days, the battery voltage has been as low as 10.8v\r"
+          },
+          "2": {
+            "go2flag": "3GH",
+            "go2msg": "The stage has been flat (+/- .00 ft) for the last 2.7 days and MAY have a problem.\r"
+          }
+        },
+        "name": "COLD SPRING BROOK AT COLD SPRING HARBOR NY ",
+        "users": "adlange"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01303600",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 314 days ago\r"
+          }
+        },
+        "name": "MILL CREEK NEAR HUNTINGTON NY ",
+        "users": "acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01303800",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 164 days ago\r"
+          }
+        },
+        "name": "NORTHEAST BR NISSEQUOGUE R AT SMITHTOWN, N.Y. ",
+        "users": "acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01303900",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 164 days ago\r"
+          }
+        },
+        "name": "NORTHEAST BR NISSEQUOGUE R NEAR SMITHTOWN, N. ",
+        "users": "acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304000",
+        "goflags": {
+          "1": {
+            "go2flag": "1GH",
+            "go2msg": "The stage has been flat (+/- .00 ft) for more than one week, and MAY have a problem.\r"
+          },
+          "2": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid DD01B6C4) DCP has missed 9 xmit(s) (36%) in the last day, 81 (47%) in the last 7 Days\r"
+          },
+          "3": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid DD01B6C4) NOAA reports 18 missing xmits in the last 24 hours\r"
+          }
+        },
+        "name": "NISSEQUOGUE RIVER NEAR SMITHTOWN NY ",
+        "users": "asimonso"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304051",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 91 days ago\r"
+          }
+        },
+        "name": "STONY BROOK R AT STONY BROOK NY ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304057",
+        "goflags": {
+          "1": {
+            "go2flag": "4DCP",
+            "go2msg": "During the last 3 days, the battery voltage has been as low as 11.4v\r"
+          }
+        },
+        "name": "FLAX POND AT OLD FIELD NY ",
+        "users": "kcolella"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304070",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 91 days ago\r"
+          }
+        },
+        "name": "TRIBUTARY TO PORT JEFFERSON HARBOR NY ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304100",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 91 days ago\r"
+          }
+        },
+        "name": "WADING RIVER AT WADING RIVER, NY ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304250",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 95 days ago\r"
+          }
+        },
+        "name": "LAUREL LAKE NEAR MATTITUCK NY ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304400",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 374 days ago\r"
+          }
+        },
+        "name": "PECONIC RIVER NEAR MANORVILLE, N.Y. ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304500",
+        "goflags": {
+          "1": {
+            "go2flag": "2DCP",
+            "go2msg": "During the last 3 days, the battery voltage has been as low as 11.1v\r"
+          }
+        },
+        "name": "PECONIC RIVER AT RIVERHEAD NY ",
+        "users": "asimonso"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304510",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 109 days ago\r"
+          }
+        },
+        "name": "PECONIC RIVER AT NUGENT DR., RIVERHEAD, NY ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304562",
+        "goflags": {
+          "1": {
+            "go2flag": "2DCP",
+            "go2msg": "During the last 3 days, the battery voltage has been as low as 10.9v\r"
+          },
+          "2": {
+            "go2flag": "2TIME",
+            "go2msg": "Time to visit this gage. NWIS shows last visit was 68 days ago\r"
+          }
+        },
+        "name": "PECONIC RIVER AT COUNTY HWY 105 AT RIVERHEAD NY ",
+        "users": "racart"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304600",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 103 days ago\r"
+          }
+        },
+        "name": "BIG FRESH POND OUTLET AT NORTH SEA NY ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304660",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 103 days ago\r"
+          }
+        },
+        "name": "LIGONEE BROOK AT SAG HARBOR NY ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304705",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 143 days ago\r"
+          }
+        },
+        "name": "GEORGICA POND NEAR APAQUOQUE NY ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304760",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 1059 days ago\r"
+          }
+        },
+        "name": "QUANTUCK CREEK AT QUOGUE NY ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304860",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 1056 days ago\r"
+          }
+        },
+        "name": "SEATUCK CREEK AT EASTPORT NY ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304920",
+        "goflags": {
+          "1": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid DDE972F6) DCP has sent 4 random transmissions in the last 24 hours\r"
+          }
+        },
+        "name": "MORICHES BAY AT EAST MORICHES NY ",
+        "users": "rbehrens"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304960",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 1056 days ago\r"
+          }
+        },
+        "name": "FORGE RIVER AT MORICHES, NY ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304990",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 312 days ago\r"
+          }
+        },
+        "name": "CARMANS RIVER AT MIDDLE ISLAND NY ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304995",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 312 days ago\r"
+          }
+        },
+        "name": "CARMANS RIVER NEAR YAPHANK NY ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304998",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 312 days ago\r"
+          }
+        },
+        "name": "CARMANS RIVER BELOW LOWER LAKE AT YAPHANK NY ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01305040",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 311 days ago\r"
+          }
+        },
+        "name": "CARMANS RIVER AT SOUTHHAVEN NY ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01306000",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 75 days ago\r"
+          }
+        },
+        "name": "PATCHOGUE RIVER AT PATCHOGUE NY ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01306400",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 75 days ago\r"
+          }
+        },
+        "name": "GREEN CREEK AT WEST SAYVILLE NY ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01306460",
+        "goflags": {
+          "1": {
+            "go2flag": "2DCP",
+            "go2msg": "During the last 3 days, the battery voltage has been as low as 11.1v\r"
+          }
+        },
+        "name": "CONNETQUOT BK NR CENTRAL ISLIP NY ",
+        "users": "asimonso"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01307000",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 75 days ago\r"
+          }
+        },
+        "name": "CHAMPLIN CREEK AT ISLIP NY ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01307500",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 857 days ago\r"
+          }
+        },
+        "name": "PENATAQUIT CREEK AT BAY SHORE NY ",
+        "users": "acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01308500",
+        "goflags": {
+          "1": {
+            "go2flag": "4GH",
+            "go2msg": "The stage has been flat (+/- .00 ft) for the last 1.0 days and MAY have a problem.\r"
+          }
+        },
+        "name": "CARLLS RIVER AT BABYLON NY ",
+        "users": "asimonso"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01309000",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 633 days ago\r"
+          }
+        },
+        "name": "SANTAPOGUE CREEK AT LINDENHURST NY ",
+        "users": "acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01309200",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 633 days ago\r"
+          }
+        },
+        "name": "NEGUNTATOGUE CREEK AT LINDENHURST NY ",
+        "users": "acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01309350",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 633 days ago\r"
+          }
+        },
+        "name": "AMITYVILLE CREEK AT AMITYVILLE NY ",
+        "users": "acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01309400",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 633 days ago\r"
+          }
+        },
+        "name": "CARMAN CREEK AT AMITYVILLE NY ",
+        "users": "acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01309500",
+        "goflags": {
+          "1": {
+            "go2flag": "iGH",
+            "go2msg": "The stage has been flat (+/- .00 ft) for the last 1.0 days and MAY have a problem.\r"
+          }
+        },
+        "name": "MASSAPEQUA CREEK AT MASSAPEQUA NY ",
+        "users": "adlange"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01309700",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 605 days ago\r"
+          }
+        },
+        "name": "SEAFORD CREEK AT SEAFORD, N.Y. ",
+        "users": "acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01309800",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 604 days ago\r"
+          }
+        },
+        "name": "SEAMANS CREEK AT SEAFORD, N.Y. ",
+        "users": "acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01309950",
+        "goflags": {
+          "1": {
+            "go2flag": "iGH",
+            "go2msg": "The stage has been flat (+/- .00 ft) for the last 0.9 days and MAY have a problem.\r"
+          }
+        },
+        "name": "BELLMORE CREEK NEAR BELLMORE NY ",
+        "users": "adlange"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01310100",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 604 days ago\r"
+          }
+        },
+        "name": "NEWBRIDGE CREEK AT MERRICK, N.Y. ",
+        "users": "acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01310200",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 604 days ago\r"
+          }
+        },
+        "name": "CEDAR SWAMP CREEK AT MERRICK, N.Y. ",
+        "users": "acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01310510",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 313 days ago\r"
+          }
+        },
+        "name": "EAST BRANCH FREEPORT CREEK AT FREEPORT ",
+        "users": "MD-12, acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01310515",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 313 days ago\r"
+          }
+        },
+        "name": "WEST BRANCH FREEPORT CREEK AT FREEPORT, NY ",
+        "users": "MD-11, acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01310521",
+        "goflags": {
+          "1": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid 17D737BE) DCP has missed 3 xmit(s) (12%) in the last day, 3 (1%) in the last 7 Days\r"
+          },
+          "2": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid 17D737BE) NOAA reports 6 missing xmits in the last 24 hours\r"
+          }
+        },
+        "name": "HUDSON BAY AT FREEPORT NY ",
+        "users": "rbehrens"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01310600",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 604 days ago\r"
+          }
+        },
+        "name": "MILLBURN CREEK AT BALDWIN NY ",
+        "users": "acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01310740",
+        "goflags": {
+          "1": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid 1777D21A) DCP has sent 8 random transmissions in the last 24 hours\r"
+          }
+        },
+        "name": "REYNOLDS CHANNEL AT POINT LOOKOUT NY ",
+        "users": "racart"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01310800",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 1307 days ago\r"
+          }
+        },
+        "name": "SOUTH POND OUTLET AT ROCKVILLE CENTRE NY ",
+        "users": "acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01311000",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 77 days ago\r"
+          }
+        },
+        "name": "PINES BROOK AT MALVERNE NY ",
+        "users": "acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01311200",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 313 days ago\r"
+          }
+        },
+        "name": "MOTTS CREEK AT VALLEY STREAM, N.Y. ",
+        "users": "acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01311500",
+        "goflags": {
+          "1": {
+            "go2flag": "3GH",
+            "go2msg": "The stage has been flat (+/- .00 ft) for the last 2.2 days and MAY have a problem.\r"
+          }
+        },
+        "name": "VALLEY STREAM AT VALLEY STREAM NY ",
+        "users": "adlange"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01311875",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 97 days ago [Cond: Normal]\r"
+          }
+        },
+        "name": "ROCKAWAY INLET NEAR FLOYD BENNETT FIELD NY ",
+        "users": "asimonso, racart"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01327500",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 92 days ago\r"
+          }
+        },
+        "name": "GLENS FALLS FEEDER AT DUNHAM BASIN NY ",
+        "users": "lfieldss, mulvihil"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01336000",
+        "goflags": {
+          "1": {
+            "go2flag": "4GH",
+            "go2msg": "The stage has been flat (+/- .00 ft) for the last 1.9 days and MAY have a problem.\r"
+          }
+        },
+        "name": "MOHAWK RIVER BELOW DELTA DAM NEAR ROME NY ",
+        "users": "tlsmith"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01349700",
+        "goflags": {
+          "1": {
+            "go2flag": "2TIME",
+            "go2msg": "Time to make a Qm. NWIS shows last Qm was 67 days ago [Normal]\r"
+          }
+        },
+        "name": "EAST KILL NEAR JEWETT CENTER NY ",
+        "users": "bzatorsk"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01349705",
+        "goflags": {
+          "1": {
+            "go2flag": "2TIME",
+            "go2msg": "Time to make a Qm. NWIS shows last Qm was 67 days ago [Normal]\r"
+          }
+        },
+        "name": "SCHOHARIE CREEK NEAR LEXINGTON NY ",
+        "users": "bzatorsk"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01350080",
+        "goflags": {
+          "1": {
+            "go2flag": "1GH",
+            "go2msg": "The DCP Xmitted 59 minutes ago, but stage data is 2336 minutes old in NWISweb. \r"
+          }
+        },
+        "name": "MANOR KILL AT WEST CONESVILLE NEAR GILBOA NY ",
+        "users": "kmcgrath"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01354500",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 157 days ago [Cond: Normal]\r"
+          }
+        },
+        "name": "MOHAWK RIVER AT FREEMAN'S BRIDGE AT SCHENECTADY NY ",
+        "users": "cgazoori"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01355475",
+        "goflags": {
+          "1": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid DE2DC2C0) NOAA reports 4 missing xmits in the last 24 hours\r"
+          }
+        },
+        "name": "MOHAWK RIVER AT REXFORD NY ",
+        "users": "lfieldss"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01358000",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 140 days ago [Cond: Normal]\r"
+          }
+        },
+        "name": "HUDSON RIVER AT GREEN ISLAND NY ",
+        "users": "cgazoori"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01359165",
+        "goflags": {
+          "1": {
+            "go2flag": "4TIME",
+            "go2msg": "Visit within 8 days. NWIS shows last visit was 60 days ago\r"
+          }
+        },
+        "name": "HUDSON RIVER AT PORT OF ALBANY NY ",
+        "users": "thoffman"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01359525",
+        "goflags": {
+          "1": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid DD41459C) DCP has missed 3 xmit(s) (12%) in the last day, 4 (2%) in the last 7 Days\r"
+          },
+          "2": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid DD41459C) NOAA reports 6 missing xmits in the last 24 hours\r"
+          }
+        },
+        "name": "NORMANS KILL AT KARLSFELD NY ",
+        "users": "thoffman"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01359528",
+        "goflags": {
+          "1": {
+            "go2flag": "3TIME",
+            "go2msg": "Time to make a Qm again in 6 days. NWIS shows last Qm was 62 days ago [Normal]\r"
+          }
+        },
+        "name": "NORMANS KILL AT ALBANY NY ",
+        "users": "thoffman"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01361000",
+        "goflags": {
+          "1": {
+            "go2flag": "3TIME",
+            "go2msg": "Time to make a Qm again in 6 days. NWIS shows last Qm was 62 days ago [Normal]\r"
+          }
+        },
+        "name": "KINDERHOOK CREEK AT ROSSMAN NY ",
+        "users": "thoffman"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01361500",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 1084 days ago [Cond: CSG]\r"
+          }
+        },
+        "name": "CATSKILL CREEK AT OAK HILL NY ",
+        "users": "kmcgrath"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01362100",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 1374 days ago [Cond: CSG]\r"
+          }
+        },
+        "name": "ROELIFF JANSEN KILL NR HILLSDALE NY ",
+        "users": "albaldwi"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01362322",
+        "goflags": {
+          "1": {
+            "go2flag": "5GAP",
+            "go2msg": "The current Q (1.67) is in a measurement definition GAP in the lower portion of the rating\r"
+          }
+        },
+        "name": "MYRTLE BROOK AT STATE HWY 214 AT EDGEWOOD NY ",
+        "users": "bzatorsk, jsiemion"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01362336",
+        "goflags": {
+          "1": {
+            "go2flag": "5GAP",
+            "go2msg": "The current Q (9.77) is in a measurement definition GAP in the lower portion of the rating\r"
+          }
+        },
+        "name": "STONY CLOVE CR AT JANSSEN RD AT LANESVILLE NY ",
+        "users": "bzatorsk, jsiemion"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01362342",
+        "goflags": {
+          "1": {
+            "go2flag": "6SHFT",
+            "go2msg": "The current Q (1.26) is in a Qm definition GAP (Qms > 50% from shifted-rating were ignored)\r"
+          },
+          "2": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid DD10F0AA) NOAA reports 2 missing xmits in the last 24 hours\r"
+          }
+        },
+        "name": "HOLLOW TREE BROOK AT LANESVILLE NY ",
+        "users": "bzatorsk"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01362368",
+        "goflags": {
+          "1": {
+            "go2flag": "1DCP",
+            "go2msg": "LRGS has not received a transmission in over 170 hours from PASS-assigned DCPid DE454240\r"
+          }
+        },
+        "name": "OX CLOVE NEAR MOUTH AT CHICHESTER NY ",
+        "users": "bzatorsk, jsiemion"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01362500",
+        "goflags": {
+          "1": {
+            "go2flag": "4DCP",
+            "go2msg": "(DCPid 177CE428) 3 xmits in the last 24 hours contained bad characters\r"
+          }
+        },
+        "name": "ESOPUS CREEK AT COLDBROOK NY ",
+        "users": "kdreisig"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01363382",
+        "goflags": {
+          "1": {
+            "go2flag": "3DCP",
+            "go2msg": "(DCPid 17A7E47A) Min DCP Signal Strength of the last 24 hours is 27\r"
+          },
+          "2": {
+            "go2flag": "3TIME",
+            "go2msg": "Time to make a Qm again in 5 days. NWIS shows last Qm was 63 days ago [Normal]\r"
+          },
+          "3": {
+            "go2flag": "4DCP",
+            "go2msg": "During the last 3 days, the battery voltage has been as low as 11.6v\r"
+          },
+          "4": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid 17A7E47A) DCP has missed 3 xmit(s) (12%) in the last day, 3 (1%) in the last 7 Days\r"
+          },
+          "5": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid 17A7E47A) NOAA reports 6 missing xmits in the last 24 hours\r"
+          }
+        },
+        "name": "BUSH KILL BLW MALTBY HOLLOW BK AT WEST SHOKAN NY ",
+        "users": "kdreisig"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01365000",
+        "goflags": {
+          "1": {
+            "go2flag": "3TIME",
+            "go2msg": "Time to make a Qm again in 7 days. NWIS shows last Qm was 61 days ago [Normal]\r"
+          }
+        },
+        "name": "RONDOUT CREEK NEAR LOWES CORNERS NY ",
+        "users": "mhendric, vdiffren"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01365500",
+        "goflags": {
+          "1": {
+            "go2flag": "3TIME",
+            "go2msg": "Time to make a Qm again in 7 days. NWIS shows last Qm was 61 days ago [Normal]\r"
+          }
+        },
+        "name": "CHESTNUT CREEK AT GRAHAMSVILLE NY ",
+        "users": "mhendric"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01368500",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 1509 days ago [Cond: CSG]\r"
+          },
+          "2": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this CSG. NWIS shows last visit was 112 days ago\r"
+          }
+        },
+        "name": "RUTGERS CREEK AT GARDNERVILLE NY ",
+        "users": "mhendric"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01372043",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 81 days ago\r"
+          }
+        },
+        "name": "HUDSON RIVER NEAR POUGHKEEPSIE NY ",
+        "users": "thoffman"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01372058",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 81 days ago\r"
+          }
+        },
+        "name": "HUDSON RIVER BELOW POUGHKEEPSIE NY ",
+        "users": "thoffman"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01374250",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 868 days ago [Cond: CSG]\r"
+          }
+        },
+        "name": "PEEKSKILL HOLLOW CR AT TOMPKINS CORNERS NY ",
+        "users": "albaldwi"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01376500",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 1052 days ago [Cond: CSG]\r"
+          }
+        },
+        "name": "SAW MILL RIVER AT YONKERS NY ",
+        "users": "lbuss"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01413088",
+        "goflags": {
+          "1": {
+            "go2flag": "3TIME",
+            "go2msg": "Time to make a Qm again in 6 days. NWIS shows last Qm was 62 days ago [Normal]\r"
+          }
+        },
+        "name": "EAST BRANCH DELAWARE RIVER AT ROXBURY NY ",
+        "users": "aanders"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01413408",
+        "goflags": {
+          "1": {
+            "go2flag": "3TIME",
+            "go2msg": "Time to make a Qm again in 7 days. NWIS shows last Qm was 61 days ago [Normal]\r"
+          }
+        },
+        "name": "DRY BROOK AT ARKVILLE ",
+        "users": "aanders"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01413500",
+        "goflags": {
+          "1": {
+            "go2flag": "3TIME",
+            "go2msg": "Time to make a Qm again in 7 days. NWIS shows last Qm was 61 days ago [Normal]\r"
+          }
+        },
+        "name": "EAST BRANCH DELAWARE RIVER AT MARGARETVILLE NY ",
+        "users": "aanders"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01415000",
+        "goflags": {
+          "1": {
+            "go2flag": "3TIME",
+            "go2msg": "Time to make a Qm again in 6 days. NWIS shows last Qm was 62 days ago [Normal]\r"
+          }
+        },
+        "name": "TREMPER KILL NEAR ANDES NY ",
+        "users": "aanders"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01417000",
+        "goflags": {
+          "1": {
+            "go2flag": "3TIME",
+            "go2msg": "Time to make a Qm again in 6 days. NWIS shows last Qm was 62 days ago [Normal]\r"
+          }
+        },
+        "name": "EAST BRANCH DELAWARE RIVER AT DOWNSVILLE NY ",
+        "users": "aanders, vdiffren"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01417500",
+        "goflags": {
+          "1": {
+            "go2flag": "2TIME",
+            "go2msg": "Time to make a Qm. NWIS shows last Qm was 68 days ago [Normal]\r"
+          }
+        },
+        "name": "EAST BRANCH DELAWARE RIVER AT HARVARD NY ",
+        "users": "mulvihil"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01420500",
+        "goflags": {
+          "1": {
+            "go2flag": "2TIME",
+            "go2msg": "Time to make a Qm. NWIS shows last Qm was 67 days ago [Normal]\r"
+          }
+        },
+        "name": "BEAVER KILL AT COOKS FALLS NY ",
+        "users": "mulvihil"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01421000",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 124 days ago [Cond: Normal]\r"
+          }
+        },
+        "name": "EAST BRANCH DELAWARE RIVER AT FISHS EDDY NY ",
+        "users": "mulvihil"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01421610",
+        "goflags": {
+          "1": {
+            "go2flag": "3TIME",
+            "go2msg": "Time to make a Qm again in 5 days. NWIS shows last Qm was 63 days ago [Normal]\r"
+          }
+        },
+        "name": "WEST BRANCH DELAWARE RIVER AT HOBART NY ",
+        "users": "aanders"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01422500",
+        "goflags": {
+          "1": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid DD416370) DCP has sent 21 random transmissions in the last 24 hours\r"
+          }
+        },
+        "name": "LITTLE DELAWARE RIVER NEAR DELHI NY ",
+        "users": "aanders"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01423000",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 123 days ago [Cond: Normal]\r"
+          }
+        },
+        "name": "WEST BRANCH DELAWARE RIVER AT WALTON NY ",
+        "users": "mulvihil"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01423900",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 2384 days ago\r"
+          }
+        },
+        "name": "DIVERSION FROM CANNONSVILLE RESERVOIR NY ",
+        "users": "vdiffren"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01425000",
+        "goflags": {
+          "1": {
+            "go2flag": "2TIME",
+            "go2msg": "Time to make a Qm. NWIS shows last Qm was 68 days ago [Normal]\r"
+          },
+          "2": {
+            "go2flag": "iGH",
+            "go2msg": "The stage has been flat (+/- .00 ft) for the last 0.9 days and MAY have a problem.\r"
+          }
+        },
+        "name": "WEST BRANCH DELAWARE RIVER AT STILESVILLE NY ",
+        "users": "mulvihil, vdiffren"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01426000",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 654 days ago\r"
+          }
+        },
+        "name": "OQUAGA CREEK AT DEPOSIT NY ",
+        "users": "vdiffren"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01426500",
+        "goflags": {
+          "1": {
+            "go2flag": "2TIME",
+            "go2msg": "Time to make a Qm. NWIS shows last Qm was 67 days ago [Normal]\r"
+          }
+        },
+        "name": "WEST BRANCH DELAWARE RIVER AT HALE EDDY NY ",
+        "users": "mulvihil"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01427000",
+        "goflags": {
+          "1": {
+            "go2flag": "2TIME",
+            "go2msg": "Time to visit this gage. NWIS shows last visit was 68 days ago\r"
+          }
+        },
+        "name": "WEST BRANCH DELAWARE RIVER AT HANCOCK NY ",
+        "users": "mulvihil"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01427500",
+        "goflags": {
+          "1": {
+            "go2flag": "2TIME",
+            "go2msg": "Time to visit this gage. NWIS shows last visit was 69 days ago\r"
+          }
+        },
+        "name": "CALLICOON CREEK AT CALLICOON NY ",
+        "users": "mulvihil, vdiffren"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01427510",
+        "goflags": {
+          "1": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid 1667F2CA) NOAA reports 2 missing xmits in the last 24 hours\r"
+          }
+        },
+        "name": "DELAWARE RIVER AT CALLICOON NY ",
+        "users": "mulvihil"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01428000",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 872 days ago\r"
+          }
+        },
+        "name": "TENMILE RIVER AT TUSTEN NY ",
+        "users": "vdiffren"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01428500",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 127 days ago [Cond: Normal]\r"
+          }
+        },
+        "name": "DELAWARE R ABOVE LACKAWAXEN R NEAR BARRYVILLE NY ",
+        "users": "mulvihil"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01432160",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 110 days ago\r"
+          }
+        },
+        "name": "DELAWARE RIVER AT BARRYVILLE NY ",
+        "users": "mhendric"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01432805",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 112 days ago\r"
+          },
+          "2": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid DD53611A) DCP has missed 12 xmit(s) (48%) in the last day, 12 (7%) in the last 7 Days\r"
+          },
+          "3": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid DD53611A) NOAA reports 24 missing xmits in the last 24 hours\r"
+          }
+        },
+        "name": "DELAWARE RIVER AT POND EDDY NY ",
+        "users": "mhendric"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01432900",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 110 days ago [Cond: Normal]\r"
+          }
+        },
+        "name": "MONGAUP RIVER AT MONGAUP VALLEY NY ",
+        "users": "mhendric"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01433500",
+        "goflags": {
+          "1": {
+            "go2flag": "2TIME",
+            "go2msg": "Time to make a Qm. NWIS shows last Qm was 67 days ago [Normal]\r"
+          }
+        },
+        "name": "MONGAUP RIVER NEAR MONGAUP NY ",
+        "users": "mulvihil"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01434017",
+        "goflags": {
+          "1": {
+            "go2flag": "1GH",
+            "go2msg": "The DCP Xmitted 26 minutes ago, but stage data is 25376 minutes old in NWISweb. \r"
+          },
+          "2": {
+            "go2flag": "3TIME",
+            "go2msg": "Time to make a Qm again in 7 days. NWIS shows last Qm was 61 days ago [Normal]\r"
+          }
+        },
+        "name": "EAST BRANCH NEVERSINK RIVER NEAR CLARYVILLE NY ",
+        "users": "mhendric"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01434025",
+        "goflags": {
+          "1": {
+            "go2flag": "2TIME",
+            "go2msg": "Time to make a Qm. NWIS shows last Qm was 111 days ago [Ice]\r"
+          }
+        },
+        "name": "BISCUIT BK ABOVE PIGEON BK AT FROST VALLEY NY ",
+        "users": "mhendric"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01435000",
+        "goflags": {
+          "1": {
+            "go2flag": "3TIME",
+            "go2msg": "Time to make a Qm again in 7 days. NWIS shows last Qm was 61 days ago [Normal]\r"
+          }
+        },
+        "name": "NEVERSINK RIVER NEAR CLARYVILLE NY ",
+        "users": "mhendric"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01435800",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 2384 days ago\r"
+          }
+        },
+        "name": "DIVERSION FROM NEVERSINK RESERVOIR NY ",
+        "users": "vdiffren"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01436000",
+        "goflags": {
+          "1": {
+            "go2flag": "4TIME",
+            "go2msg": "Time to make a Qm again in 8 days. NWIS shows last Qm was 60 days ago [Normal]\r"
+          }
+        },
+        "name": "NEVERSINK RIVER AT NEVERSINK NY ",
+        "users": "mhendric"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01436690",
+        "goflags": {
+          "1": {
+            "go2flag": "4TIME",
+            "go2msg": "Time to make a Qm again in 8 days. NWIS shows last Qm was 60 days ago [Normal]\r"
+          }
+        },
+        "name": "NEVERSINK RIVER AT BRIDGEVILLE NY ",
+        "users": "mhendric"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01437500",
+        "goflags": {
+          "1": {
+            "go2flag": "4TIME",
+            "go2msg": "Time to make a Qm again in 8 days. NWIS shows last Qm was 60 days ago [Normal]\r"
+          }
+        },
+        "name": "NEVERSINK RIVER AT GODEFFROY NY ",
+        "users": "mhendric"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01438000",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 270 days ago\r"
+          }
+        },
+        "name": "NEVERSINK RIVER AT PORT JERVIS NY ",
+        "users": "vdiffren"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01505000",
+        "goflags": {
+          "1": {
+            "go2flag": "4DCP",
+            "go2msg": "(DCPid DD6660AA) 2 xmits in the last 24 hours contained bad characters\r"
+          },
+          "2": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid DD6660AA) NOAA reports 2 missing xmits in the last 24 hours\r"
+          }
+        },
+        "name": "CHENANGO RIVER AT SHERBURNE NY ",
+        "users": "amorgan"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01510610",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 1437 days ago [Cond: CSG]\r"
+          }
+        },
+        "name": "MERRILL CREEK TRIB NEAR TEXAS VALLEY NY ",
+        "users": "aglilien"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01511500",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 711 days ago [Cond: CSG]\r"
+          }
+        },
+        "name": "TIOUGHNIOGA RIVER AT ITASKA NY ",
+        "users": "aglilien"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01514000",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 709 days ago [Cond: CSG]\r"
+          }
+        },
+        "name": "OWEGO CREEK NEAR OWEGO NY ",
+        "users": "aglilien"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01514801",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 2019 days ago [Cond: CSG]\r"
+          }
+        },
+        "name": "CATATONK CREEK NEAR OWEGO NY ",
+        "users": "aglilien"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01528320",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 1037 days ago [Cond: CSG]\r"
+          }
+        },
+        "name": "COHOCTON RIVER AT BATH NY ",
+        "users": "nmillima"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04215500",
+        "goflags": {
+          "1": {
+            "go2flag": "3TIME",
+            "go2msg": "Time to make a Qm again in 4 days. NWIS shows last Qm was 106 days ago [Ice]\r"
+          }
+        },
+        "name": "CAZENOVIA CREEK AT EBENEZER NY ",
+        "users": "rdye"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04219767",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 1075 days ago [Cond: CSG]\r"
+          }
+        },
+        "name": "EIGHTEENMILE CREEK AT NEWFANE NY ",
+        "users": "rdye"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "0422016550",
+        "goflags": {
+          "1": {
+            "go2flag": "4DCP",
+            "go2msg": "During the last 3 days, the battery voltage has been as low as 11.7v\r"
+          }
+        },
+        "name": "OAK ORCHARD CREEK NEAR KENYONVILLE NY ",
+        "users": "rdye"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04232050",
+        "goflags": {
+          "1": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid DE49B358) DCP has missed 4 xmit(s) (16%) in the last day, 4 (2%) in the last 7 Days\r"
+          },
+          "2": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid DE49B358) NOAA reports 8 missing xmits in the last 24 hours\r"
+          }
+        },
+        "name": "ALLEN CREEK NEAR ROCHESTER NY ",
+        "users": "rdjohnso"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "042320578",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 1037 days ago [Cond: CSG]\r"
+          }
+        },
+        "name": "BEAR CREEK AT ONTARIO NY ",
+        "users": "rdjohnso"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04232730",
+        "goflags": {
+          "1": {
+            "go2flag": "1DCP",
+            "go2msg": "LRGS has not received a transmission in over 170 hours from PASS-assigned DCPid DDADC79E\r"
+          }
+        },
+        "name": "SENECA RIVER NEAR SENECA FALLS NY ",
+        "users": "jsgrover"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "0423401815",
+        "goflags": {
+          "1": {
+            "go2flag": "3TIME",
+            "go2msg": "Time to make a Qm again in 5 days. NWIS shows last Qm was 105 days ago [Ice]\r"
+          }
+        },
+        "name": "SALMON CREEK NEAR LUDLOWVILLE NY ",
+        "users": "jsgrover"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "0423403092",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 1037 days ago [Cond: CSG]\r"
+          }
+        },
+        "name": "TRUMANSBURG CREEK NEAR TRUMANSBURG NY ",
+        "users": "jsgrover"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04237496",
+        "goflags": {
+          "1": {
+            "go2flag": "2TIME",
+            "go2msg": "Time to make a Qm. NWIS shows last Qm was 68 days ago [Normal]\r"
+          }
+        },
+        "name": "SENECA RIVER NEAR BALDWINSVILLE NY ",
+        "users": "hzajd"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04240495",
+        "goflags": {
+          "1": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid DE4950AA) NOAA reports 2 missing xmits in the last 24 hours\r"
+          }
+        },
+        "name": "ONONDAGA LAKE AT LIVERPOOL NY ",
+        "users": "awaite"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04247000",
+        "goflags": {
+          "1": {
+            "go2flag": "4TIME",
+            "go2msg": "Time to make a Qm again in 8 days. NWIS shows last Qm was 60 days ago [Normal]\r"
+          }
+        },
+        "name": "ONEIDA RIVER NEAR EUCLID NY ",
+        "users": "hzajd"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04247055",
+        "goflags": {
+          "1": {
+            "go2flag": "4TIME",
+            "go2msg": "Time to make a Qm again in 8 days. NWIS shows last Qm was 60 days ago [Normal]\r"
+          }
+        },
+        "name": "OSWEGO RIVER NEAR PHOENIX NY ",
+        "users": "hzajd"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04249200",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 113 days ago [Cond: Normal]\r"
+          }
+        },
+        "name": "NORTH BRANCH SALMON RIVER AT REDFIELD NY ",
+        "users": "bmcdonal"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04254500",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 1068 days ago [Cond: CSG]\r"
+          }
+        },
+        "name": "MOOSE RIVER AT MCKEEVER NY ",
+        "users": "bmcdonal"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04256000",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 111 days ago [Cond: Normal]\r"
+          }
+        },
+        "name": "INDEPENDENCE RIVER AT DONNATTSBURG NY ",
+        "users": "bmcdonal"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04256500",
+        "goflags": {
+          "1": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid DD2AC212) NOAA reports 2 missing xmits in the last 24 hours\r"
+          }
+        },
+        "name": "STILLWATER RESERVOIR NEAR BEAVER RIVER NY ",
+        "users": "bmcdonal"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04258700",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 1073 days ago [Cond: CSG]\r"
+          }
+        },
+        "name": "DEER RIVER AT DEER RIVER NY ",
+        "users": "bmcdonal"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04264331",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this gage. NWIS shows last visit was 284 days ago\r"
+          }
+        },
+        "name": "ST. LAWRENCE R AT CORNWALL ONT NR MASSENA NY ",
+        "users": "kplanty, lfieldss"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04266500",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 103 days ago [Cond: Stable]\r"
+          }
+        },
+        "name": "RAQUETTE RIVER AT PIERCEFIELD NY ",
+        "users": "bmcdonal"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04268800",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to make a Qm. NWIS shows last Qm was 134 days ago [Cond: Stable]\r"
+          }
+        },
+        "name": "WEST BRANCH ST. REGIS RIVER NEAR PARISHVILLE NY ",
+        "users": "kplanty"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04271815",
+        "goflags": {
+          "1": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid 1707E22C) NOAA reports 2 missing xmits in the last 24 hours\r"
+          }
+        },
+        "name": "LITTLE CHAZY RIVER NEAR CHAZY NY ",
+        "users": "kplanty"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04279085",
+        "goflags": {
+          "1": {
+            "go2flag": "2TIME",
+            "go2msg": "Time to visit this gage. NWIS shows last visit was 133 days ago\r"
+          }
+        },
+        "name": "LAKE CHAMPLAIN NORTH OF WHITEHALL NY ",
+        "users": "pguse"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "403505073401301",
+        "goflags": {
+          "1": {
+            "go2flag": "2TIME",
+            "go2msg": "Time to visit this gage. NWIS shows last GW visit was 34 days ago\r"
+          }
+        },
+        "name": "N 11002. 1 ",
+        "users": "mzuck"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "403517073430702",
+        "goflags": {
+          "1": {
+            "go2flag": "2TIME",
+            "go2msg": "Time to visit this gage. NWIS shows last GW visit was 34 days ago\r"
+          }
+        },
+        "name": "N 6702. 1 ",
+        "users": "mzuck"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "403727073154503",
+        "goflags": {
+          "1": {
+            "go2flag": "MODEM",
+            "go2msg": "The latest value for this site in NWISweb is 90 hours old\r"
+          }
+        },
+        "name": "S 21311. 1 ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "403727073154601",
+        "goflags": {
+          "1": {
+            "go2flag": "MODEM",
+            "go2msg": "The latest value for this site in NWISweb is 90 hours old\r"
+          }
+        },
+        "name": "S 21091. 1 ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "403805073121002",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this GW gage. NWIS shows last visit was 43 days ago\r"
+          }
+        },
+        "name": "S125986. 1 ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "404505073131501",
+        "goflags": {
+          "1": {
+            "go2flag": "1DCP",
+            "go2msg": "LRGS has not received a transmission in over 170 hours from PASS-assigned DCPid DD38B6E8\r"
+          }
+        },
+        "name": "S123414. 1 ",
+        "users": "mzuck"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "404530073181102",
+        "goflags": {
+          "1": {
+            "go2flag": "4TIME",
+            "go2msg": "Visit within 8 days. NWIS shows last GW visit was 27 days ago\r"
+          }
+        },
+        "name": "S 76016. 2 ",
+        "users": "mzuck"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "404553073351201",
+        "goflags": {
+          "1": {
+            "go2flag": "MODEM",
+            "go2msg": "The latest value for this site in NWISweb is 13 hours old\r"
+          }
+        },
+        "name": "N 1616. 3 ",
+        "users": "rbehrens"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "404751073240903",
+        "goflags": {
+          "1": {
+            "go2flag": "4TIME",
+            "go2msg": "Visit within 8 days. NWIS shows last GW visit was 27 days ago\r"
+          }
+        },
+        "name": "S 16874. 3 ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "404812073004101",
+        "goflags": {
+          "1": {
+            "go2flag": "4TIME",
+            "go2msg": "Visit within 9 days. NWIS shows last GW visit was 26 days ago\r"
+          }
+        },
+        "name": "S 3521. 1 ",
+        "users": "acacace"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "404931073382101",
+        "goflags": {
+          "1": {
+            "go2flag": "3TIME",
+            "go2msg": "Visit within 5 days. NWIS shows last GW visit was 90 days ago\r"
+          }
+        },
+        "name": "N 110. 1 ",
+        "users": "rbehrens"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "404932073055902",
+        "goflags": {
+          "1": {
+            "go2flag": "MODEM",
+            "go2msg": "The latest value for this site in NWISweb is 92 hours old\r"
+          }
+        },
+        "name": "S 33380. 1 ",
+        "users": "mzuck"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "404935073055901",
+        "goflags": {
+          "1": {
+            "go2flag": "MODEM",
+            "go2msg": "The latest value for this site in NWISweb is 92 hours old\r"
+          }
+        },
+        "name": "S 33379. 1 ",
+        "users": "mzuck"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "405030073180601",
+        "goflags": {
+          "1": {
+            "go2flag": "4TIME",
+            "go2msg": "Visit within 8 days. NWIS shows last GW visit was 27 days ago\r"
+          }
+        },
+        "name": "S 65602. 1 ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "405149072532201",
+        "goflags": {
+          "1": {
+            "go2flag": "3TIME",
+            "go2msg": "Visit within 3 days. NWIS shows last GW visit was 92 days ago\r"
+          }
+        },
+        "name": "S 5517. 1 ",
+        "users": "rbehrens"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "405249073010701",
+        "goflags": {
+          "1": {
+            "go2flag": "2DCP",
+            "go2msg": "During the last 3 days, the battery voltage has been as low as 10.6v\r"
+          }
+        },
+        "name": "S120291. 1 ",
+        "users": "mcomo, srivera"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "420703079442501",
+        "goflags": {
+          "1": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid CE07357C) DCP has missed 3 xmit(s) (12%) in the last day, 3 (1%) in the last 7 Days\r"
+          },
+          "2": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid CE07357C) NOAA reports 4 missing xmits in the last 24 hours\r"
+          }
+        },
+        "name": "FINDLEY LAKE RAIN GAGE ",
+        "users": "mbjennin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "422622073410901",
+        "goflags": {
+          "1": {
+            "go2flag": "iGH",
+            "go2msg": "The stage has been flat (+/- .00 ft) for the last 0.9 days and MAY have a problem.\r"
+          }
+        },
+        "name": "Local number, Cb-1072, at Niverville NY ",
+        "users": "lfieldss"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "422917076275702",
+        "goflags": {
+          "1": {
+            "go2flag": "3GH",
+            "go2msg": "The stage has been flat (+/- .00 ft) for the last 2.0 days and MAY have a problem.\r"
+          }
+        },
+        "name": "Ithaca subdistrict experimental test site 2\r",
+        "users": ""
+      }
+    },
+    {
+      "items": {
+        "SiteID": "424017074301501",
+        "goflags": {
+          "1": {
+            "go2flag": "1TIME",
+            "go2msg": "Past time to visit this GW gage. NWIS shows last visit was 168 days ago\r"
+          }
+        },
+        "name": "Local number, So-602, SUNY Cobleskill NY ",
+        "users": "kmcgrath"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "424115073495301",
+        "goflags": {
+          "1": {
+            "go2flag": "iGH",
+            "go2msg": "The stage has been flat (+/- .00 ft) for the last 0.9 days and MAY have a problem.\r"
+          }
+        },
+        "name": "Local number, A-654, SUNY Albany NY ",
+        "users": "lfieldss"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "424129077495502",
+        "goflags": {
+          "1": {
+            "go2flag": "iGH",
+            "go2msg": "The current stage (0.07) is greater than the critical stage (0.01) labeled in go2 as \"EF_meas\"\r"
+          }
+        },
+        "name": "NY-TL2 ALFRED TILE EDGE OF FIELD, SONYEA ",
+        "users": "akowalcz"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "424131077495802",
+        "goflags": {
+          "1": {
+            "go2flag": "iGH",
+            "go2msg": "The current stage (0.09) is greater than the critical stage (0.01) labeled in go2 as \"EF_meas\"\r"
+          }
+        },
+        "name": "NY-TL1 ALFRED TILE EDGE OF FIELD, SONYEA NY ",
+        "users": "akowalcz"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "425520078535601",
+        "goflags": {
+          "1": {
+            "go2flag": "iGH",
+            "go2msg": "The current stage (0.06) is greater than the critical stage (0.01) labeled in go2 as \"GI_meas\"\r"
+          }
+        },
+        "name": "MANHOLE, DELEVAN ST, 110 FT WEST OF NIAGARA ST ",
+        "users": "vshao"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "425543078535001",
+        "goflags": {
+          "1": {
+            "go2flag": "iGH",
+            "go2msg": "The current stage (0.02) is greater than the critical stage (0.01) labeled in go2 as \"GI_meas\"\r"
+          }
+        },
+        "name": "MANHOLE, 50 FT E NIAGARA ST, 115 FT S SCAJAQUADA C ",
+        "users": "vshao"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "430930074290301",
+        "goflags": {
+          "1": {
+            "go2flag": "4DCP",
+            "go2msg": "During the last 3 days, the battery voltage has been as low as 11.5v\r"
+          },
+          "2": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid 1722C2EE) DCP has missed 5 xmit(s) (20%) in the last day, 5 (2%) in the last 7 Days\r"
+          },
+          "3": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid 1722C2EE) NOAA reports 8 missing xmits in the last 24 hours\r"
+          }
+        },
+        "name": "Local number, Fu-275, at Wheelerville NY ",
+        "users": "tlsmith"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "431227075233301",
+        "goflags": {
+          "1": {
+            "go2flag": "2DCP",
+            "go2msg": "During the last 3 days, the battery voltage has been as low as 11.1v\r"
+          }
+        },
+        "name": "Local number, Oe-1457, Rome NY ",
+        "users": "tlsmith"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "435253073440701",
+        "goflags": {
+          "1": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid DDA992D8) NOAA reports 2 missing xmits in the last 24 hours\r"
+          }
+        },
+        "name": "Local number, Ex-150, Severance NY ",
+        "users": "pguse"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "445805073380501",
+        "goflags": {
+          "1": {
+            "go2flag": "3DCP",
+            "go2msg": "(DCPid 1685524C) 10 xmits in the last 24 hours contained bad characters\r"
+          },
+          "2": {
+            "go2flag": "iDCP",
+            "go2msg": "(DCPid 1685524C) NOAA reports 2 missing xmits in the last 24 hours\r"
+          }
+        },
+        "name": "Local number, Cl-242, at Mooers Forks NY ",
+        "users": "kplanty"
+      }
+    }
+  ],
+  "metadata": {
+    "created": "03/20/17 06:45 AM",
+    "description": "Daily GO2 error flags for NY Water Science Center",
+    "development": "Written by Todd Siskin and Martyn Smith"
+  }
+}

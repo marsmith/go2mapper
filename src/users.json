@@ -1,0 +1,26 @@
+{
+"employees":[
+	{ "user": "d018e6ab-7ab2-4a76-b671-aaa7eb33baf0", "color": "blue", "ID": "GW"},
+	{ "user": "5c824055-b536-4f50-93bb-9f47e6fdc97a", "color": "gray", "ID": "TH"},	
+	{ "user": "36d300da-651b-463a-8431-b85e0f714fad", "color": "light_blue", "ID": "CM"},
+	{ "user": "592ea7e3-779f-4ae4-a2b3-7105d7d9f938", "color": "light_green", "ID": "BM"},
+	{ "user": "0d366375-cfdc-4f48-bbc0-41e788ef50cc", "color": "orange", "ID": "AA"},
+	{ "user": "0726c630-eb4b-4d49-9a12-7c6424056901", "color": "pink", "ID": "PG"},
+	{ "user": "0ded8c6e-dbf5-4b6c-9224-bfc611718772", "color": "purple", "ID": "KM"},
+	{ "user": "2ac6f9eb-12e7-4550-90d2-4592ff6b1bf6", "color": "red", "ID": "TS"},
+	{ "user": "e741d11f-700e-4055-9185-101e5596d4b5", "color": "yellow", "ID": "MH"},
+	{ "user": "5156f801-6578-48f1-a533-e5c2d7019314", "color": "brown", "ID": "JA"},
+	{ "user": "bd7cf3e8-a82c-4b9f-9a6a-52fe5099621a", "color": "dark_green", "ID": "KP"},
+	{ "user": "6faf146b-fed5-402a-aa20-0c11dc6f980f", "color": "dark_blue", "ID": "CG"},
+	{ "user": "cad21dcf-0be5-436d-95f8-1a48741053c1", "color": "black", "ID": "KR"},
+	{ "user": "c720f503-c15f-4abb-be45-44696435ca45", "color": "dark_orange", "ID": "JZ"},
+	{ "user": "d6ba7744-cdb1-43c2-81f0-e7aae9a5f828", "color": "a", "ID": "AB"},
+	{ "user": "410b408b-c700-4dbd-8713-b59b45bea3d7", "color": "safari", "ID": "JB"},
+	{ "user": "951ba0bf-bfea-4ed6-9dcf-fae71ce81d84", "color": "black_i", "ID": "AL"},
+	{ "user": "8204e42c-e1c4-497b-9135-d7bb3f138d83", "color": "blue_i", "ID": "RJ"},
+	{ "user": "b7c55f14-057b-48cc-93ff-420e665a6e0c", "color": "brown_i", "ID": "MJ"},
+	{ "user": "ffd47386-ab67-46c6-b058-25a327734702", "color": "dark_blue_i", "ID": "JM"},
+	{ "user": "d6251a90-a775-470d-b266-fe1cec03f6e6", "color": "dark_green_i", "ID": "JW"},
+	{ "user": "42d3e397-1250-4151-a228-32a29147af51", "color": "pink_i", "ID": "HZ"}
+]
+}

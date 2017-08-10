@@ -1,0 +1,36 @@
+{
+  "name": "go2mapper-v2",
+  "version": "1.0.4",
+  "description": "Mapping Interface for Go2",
+  "main": "webpack.config.js",
+  "scripts": {
+    "webpack:w": "webpack --watch",
+    "webpack-dev-server": "webpack-dev-server",
+    "build": "webpack",
+    "start": "concurrently \"npm run webpack:w\" \"npm run webpack-dev-server\" "
+  },
+  "author": "Martyn J. Smith",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@turf/convex": "^3.5.2",
+    "bootstrap": "^3.3.7",
+    "esri-leaflet": "^2.0.4",
+    "highcharts": "^5.0.2",
+    "jquery": "^3.1.1",
+    "leaflet": "^1.0.1",
+    "moment": "^2.15.2"
+  },
+  "devDependencies": {
+    "babel-loader": "^6.2.4",
+    "concurrently": "^2.0.0",
+    "copy-webpack-plugin": "^4.0.0",
+    "core-js": "^2.4.0",
+    "css-loader": "^0.23.1",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-merge": "^0.15.0"
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "SitesCollection": [
+    {
+      "items": {
+        "SiteID": "01302250",
+        "goflags": {
+          "1": {
+            "go2flag": "1DCP",
+            "go2msg": "(DCPid 175F77AA) LRGS has not received a transmission in 30 hours\r"
+          }
+        },
+        "name": "EAST CREEK AT SANDS POINT NY ",
+        "users": "kcolella"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01302845",
+        "goflags": {
+          "1": {
+            "go2flag": "1DCP",
+            "go2msg": "LRGS has not received a transmission in over 170 hours from PASS-assigned DCPid 175F9458\r"
+          }
+        },
+        "name": "FROST CREEK AT SHEEP LN BRIDGE AT LATTINGTOWN NY ",
+        "users": "kcolella"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01304000",
+        "goflags": {
+          "1": {
+            "go2flag": "2DCP",
+            "go2msg": "(DCPid DD01B6C4) LRGS has not received a transmission in 19 hours\r"
+          }
+        },
+        "name": "NISSEQUOGUE RIVER NEAR SMITHTOWN NY ",
+        "users": "asimonso"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01350080",
+        "goflags": {
+          "1": {
+            "go2flag": "1GH",
+            "go2msg": "The DCP Xmitted 57 minutes ago, but stage data is 1374 minutes old in NWISweb. \r"
+          }
+        },
+        "name": "MANOR KILL AT WEST CONESVILLE NEAR GILBOA NY ",
+        "users": "kmcgrath"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01362322",
+        "goflags": {
+          "1": {
+            "go2flag": "5GAP",
+            "go2msg": "The current Q (1.74) is in a measurement definition GAP in the lower portion of the rating\r"
+          }
+        },
+        "name": "MYRTLE BROOK AT STATE HWY 214 AT EDGEWOOD NY ",
+        "users": "bzatorsk, jsiemion"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01362336",
+        "goflags": {
+          "1": {
+            "go2flag": "5GAP",
+            "go2msg": "The current Q (10.2) is in a measurement definition GAP in the lower portion of the rating\r"
+          }
+        },
+        "name": "STONY CLOVE CR AT JANSSEN RD AT LANESVILLE NY ",
+        "users": "bzatorsk, jsiemion"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01362342",
+        "goflags": {
+          "1": {
+            "go2flag": "6SHFT",
+            "go2msg": "The current Q (1.34) is in a Qm definition GAP (Qms > 50% from shifted-rating were ignored)\r"
+          }
+        },
+        "name": "HOLLOW TREE BROOK AT LANESVILLE NY ",
+        "users": "bzatorsk"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01362368",
+        "goflags": {
+          "1": {
+            "go2flag": "1DCP",
+            "go2msg": "LRGS has not received a transmission in over 170 hours from PASS-assigned DCPid DE454240\r"
+          }
+        },
+        "name": "OX CLOVE NEAR MOUTH AT CHICHESTER NY ",
+        "users": "bzatorsk, jsiemion"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01434017",
+        "goflags": {
+          "1": {
+            "go2flag": "1GH",
+            "go2msg": "The DCP Xmitted 24 minutes ago, but stage data is 24414 minutes old in NWISweb. \r"
+          }
+        },
+        "name": "EAST BRANCH NEVERSINK RIVER NEAR CLARYVILLE NY ",
+        "users": "mhendric"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04232730",
+        "goflags": {
+          "1": {
+            "go2flag": "1DCP",
+            "go2msg": "LRGS has not received a transmission in over 170 hours from PASS-assigned DCPid DDADC79E\r"
+          }
+        },
+        "name": "SENECA RIVER NEAR SENECA FALLS NY ",
+        "users": "jsgrover"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "403727073154503",
+        "goflags": {
+          "1": {
+            "go2flag": "MODEM",
+            "go2msg": "The latest value for this site in NWISweb is 74 hours old\r"
+          }
+        },
+        "name": "S 21311. 1 ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "403727073154601",
+        "goflags": {
+          "1": {
+            "go2flag": "MODEM",
+            "go2msg": "The latest value for this site in NWISweb is 74 hours old\r"
+          }
+        },
+        "name": "S 21091. 1 ",
+        "users": "sholewin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "404505073131501",
+        "goflags": {
+          "1": {
+            "go2flag": "1DCP",
+            "go2msg": "LRGS has not received a transmission in over 170 hours from PASS-assigned DCPid DD38B6E8\r"
+          }
+        },
+        "name": "S123414. 1 ",
+        "users": "mzuck"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "404932073055902",
+        "goflags": {
+          "1": {
+            "go2flag": "MODEM",
+            "go2msg": "The latest value for this site in NWISweb is 76 hours old\r"
+          }
+        },
+        "name": "S 33380. 1 ",
+        "users": "mzuck"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "404935073055901",
+        "goflags": {
+          "1": {
+            "go2flag": "MODEM",
+            "go2msg": "The latest value for this site in NWISweb is 76 hours old\r"
+          }
+        },
+        "name": "S 33379. 1 ",
+        "users": "mzuck"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "424129077495502",
+        "goflags": {
+          "1": {
+            "go2flag": "iGH",
+            "go2msg": "The current stage (0.06) is greater than the critical stage (0.01) labeled in go2 as \"EF_meas\"\r"
+          }
+        },
+        "name": "NY-TL2 ALFRED TILE EDGE OF FIELD, SONYEA ",
+        "users": "akowalcz"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "424131077495802",
+        "goflags": {
+          "1": {
+            "go2flag": "iGH",
+            "go2msg": "The current stage (0.09) is greater than the critical stage (0.01) labeled in go2 as \"EF_meas\"\r"
+          }
+        },
+        "name": "NY-TL1 ALFRED TILE EDGE OF FIELD, SONYEA NY ",
+        "users": "akowalcz"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "425520078535601",
+        "goflags": {
+          "1": {
+            "go2flag": "iGH",
+            "go2msg": "The current stage (0.09) is greater than the critical stage (0.01) labeled in go2 as \"GI_meas\"\r"
+          }
+        },
+        "name": "MANHOLE, DELEVAN ST, 110 FT WEST OF NIAGARA ST ",
+        "users": "vshao"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "425543078535001",
+        "goflags": {
+          "1": {
+            "go2flag": "iGH",
+            "go2msg": "The current stage (0.06) is greater than the critical stage (0.01) labeled in go2 as \"GI_meas\"\r"
+          }
+        },
+        "name": "MANHOLE, 50 FT E NIAGARA ST, 115 FT S SCAJAQUADA C ",
+        "users": "vshao"
+      }
+    }
+  ],
+  "metadata": {
+    "created": "03/19/17 02:30 PM",
+    "description": "Daily GO2 error flags for NY Water Science Center",
+    "development": "Written by Todd Siskin and Martyn Smith"
+  }
+}
