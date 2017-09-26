@@ -1,6 +1,6 @@
 {
   "name": "go2mapper-v2",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Mapping Interface for Go2",
   "main": "webpack.config.js",
   "scripts": {
