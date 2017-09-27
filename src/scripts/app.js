@@ -441,8 +441,7 @@ function loadTrips() {
 							siteList[site].getPopup().setContent(siteList[site].properties.popupContent);
 						}
 						else {
-							//if (process.env.NODE_ENV === 'development') console.log('This site does not exist in the master SiteList.json: ', site);
-							$('#missingSites').append('<li>' + site + '</li>');
+							if (process.env.NODE_ENV === 'development') console.log('This site does not exist in the master SiteList.json: ', site);
 						}
 					});
 				});
