@@ -13,6 +13,9 @@
 // 10.26.2016 mjs - conversion to leaflet.js
 // 10.28.2016 mjs - update syling, mobile friendliness
 // 08.25.2017 mjs - bring all user config to the top
+// 10-25-2017 dky - close popup on zoom change
+//                - remove/add wscLayer by zoom level
+//                - changed 'AHPS' to NWS site ID in NWS forecast text.
 
 //START user config variables
 var MapX = '-76.2'; //set initial map longitude
@@ -140,6 +143,19 @@ $( document ).ready(function() {
 	sitesLayer.on('click', function(e) { 
 		showNWISgraph(e);
 	});
+
+	// close popup on zoom
+	// remove/add wscLayer by zoom level
+	map.on("zoomend", function(){
+		map.closePopup();
+		zoomLev = map.getZoom();
+		if (zoomLev > 9){
+			if (map.hasLayer(wscLayer)) map.removeLayer(wscLayer);
+		}else{
+			if (! map.hasLayer(wscLayer)) map.addLayer(wscLayer);
+		}
+	});
+
 	/*  END EVENT HANDLERS */
 });
 
@@ -240,13 +256,15 @@ function showNWISgraph(e) {
 						}
 						//if there is AHPS data, add a new series to the graph
 						else {
+							var nwsid = $(feedResponse).find("site").attr('id');
 							var forecastSeries = {
 								tooltip: {
 									pointFormat: pointFormat
 								},
 								showInLegend: true, 
 								color: '#009933',
-								name: 'NWS River Forecast (AHPS)',
+								//name: 'NWS River Forecast (AHPS)',
+								name: 'NWS River Forecast (' + nwsid + ')',
 								data: valueArray
 							}
 							graphData.push(forecastSeries);
@@ -715,6 +733,9 @@ function resetView() {
 	$("#centerSelect").val( $("#centerSelect option:first-child").val() );
 	$("#tripSelect").find("option:gt(0)").remove();
 
+	// clear any open popup
+	 map.closePopup();
+
 	//turn people off if they are on
 	if ($('#togglePeople').hasClass('btn-primary')) togglePeople();
 
@@ -728,6 +749,9 @@ function resetView() {
 
 	//clear selected radar
 	$('.radarBtn').removeClass('active');
+
+	// restore wscLayer if needed
+	if (! map.hasLayer(wscLayer)) map.addLayer(wscLayer);
 
 	//reset view
 	map.setView([MapY, MapX], 7);
