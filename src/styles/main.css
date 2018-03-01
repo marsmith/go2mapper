@@ -44,7 +44,7 @@
 }
 
 .top-menu-brand > img {
-      height: 50px !important;
+  height: 50px !important;
 }
 
 .app-name{
@@ -100,6 +100,7 @@ html, body, #mapDiv {
 
 body {
   padding-top: 70px;
+  padding-bottom: 83px;
   padding-left:270px;
 }
 
@@ -143,7 +144,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #1d1d2b;
+  background-color: #00264c;
   z-index: 9;
 }
 
@@ -206,10 +207,11 @@ body {
   height: calc(100% - 70px);
   float: left;
   background-color: #20202f;
-  margin-top: 65px;
+  /* margin-top: 65px; */
   position: fixed;
   bottom: 0;
   left: 0;
+  padding-bottom: 83px;
   z-index: 999;
   transition: left .5s ease;
 }

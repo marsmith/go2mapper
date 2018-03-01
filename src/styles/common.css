@@ -112,8 +112,11 @@ footer.footer {
     clear:both;
 	background: #00264c;
 	padding-bottom: 0px;
-	position: relative;
-	width: 100%;
+    position: fixed;
+    left:0;
+    bottom:0;
+    width: 100%;
+    z-index:9999;
 	border-top: 1px solid #E5E5E5;
 }
 
@@ -127,6 +130,11 @@ footer.footer .footer-doi ul.menu li a {
     color: #ffffff;
     float: left;
     font-size: 12px;
+}
+
+footer.footer ul li a:hover {
+    background-color: transparent;
+    cursor:pointer;
 }
 
 footer.footer .footer-doi ul.menu li:first-of-type {
