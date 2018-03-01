@@ -47,6 +47,7 @@ v2
 [OHWSC](https://oh.water.usgs.gov/maps/go2/)
 [MIWSC](https://mi.water.usgs.gov/maps/go2/)
 [WAWSC](https://wa.water.usgs.gov/go2mapper/)
+[CAWSC](https://ca.water.usgs.gov/emaps/go2/)
 
 v1
 [INWSC](https://in.water.usgs.gov/datas/go2mapper/)
@@ -54,7 +55,6 @@ v1
 [SAWSC](https://www2.usgs.gov/water/southatlantic/usgs/maps/go2/)
 
 In progress
-CAWSC
 AKWSC
 
 

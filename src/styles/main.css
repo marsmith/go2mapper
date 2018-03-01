@@ -43,6 +43,10 @@
     padding-top: 18px;
 }
 
+.top-menu-brand > img {
+      height: 50px !important;
+}
+
 .app-name{
     position: relative;
     top:-2px;
