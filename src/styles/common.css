@@ -105,9 +105,10 @@ input,button{font-family:inherit;font-size:inherit;line-height:inherit}
     list-style: none;
 }
 
-.nav:before, .nav:after {
-   content: none;
-}
+.menu.nav:before, .menu.nav:after{
+    content: none;
+ }
+ 
 footer.footer {
     clear:both;
 	background: #00264c;
