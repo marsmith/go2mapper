@@ -485,7 +485,7 @@ function loadGo2(go2json) {
 				if (masterSite.properties.siteID === thisWarning.items.SiteID) {
 					if (!masterSite.properties.tripName) {
 						//if (process.env.NODE_ENV === 'development') console.log('This site does not exist in TripList.json: ', masterSite.properties.siteID);
-						$('#noTripSites').append('<li>' + masterSite.properties.siteID + '</li>')
+						//$('#noTripSites').append('<li>' + masterSite.properties.siteID + '</li>')
 					}
 
 					var sitetype = masterSite.properties.siteType;

@@ -187,30 +187,40 @@
     </div>
     
     <div id="aboutModal" class="modal fade"  tabindex="-1" role="dialog" >
-        <div class="modal-dialog  modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button class="close" type="button" data-dismiss="modal" aria-hidden="true" style="color:gray;">&times;</button>
-                    <h4 class="modal-title">NY WSC Go2 Mapper</h4>
-                </div>
-                <div id="aboutModalBody" class="modal-body">
-                    <ul class="nav nav-tabs" id="aboutModalTabs">
-                        <li role="presentation" class="active"><a id="aboutTab" href="#aboutTabPane" data-toggle="tab"><i class="fa fa-question-circle"></i>&nbsp;About the application</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="aboutTabPane"><br>
-                            <p>Developed by Martyn Smith and Todd Siskin of the NY WSC.  Licensed under <a href="./license.txt" target="_blank">Apache 2.0</a></p>
-                            <p>Portions of this application were developed in conjuction with <a href="https://wim.usgs.gov" target="_blank">Web Informatics and Mapping (WiM)</a></p>
-                            <p>Icons created by David McCulloch, USGS</p><br>
-                            <span id="appVersion"></span>
+            <div class="modal-dialog  modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" type="button" data-dismiss="modal" aria-hidden="true" style="color:gray;">&times;</button>
+                        <h4 class="modal-title">NY WSC Go2 Mapper</h4>
+                    </div>
+                    <div id="aboutModalBody" class="modal-body">
+                        <ul class="nav nav-tabs" id="aboutModalTabs">
+                            <li role="presentation" class="active"><a id="aboutTab" href="#aboutTabPane" data-toggle="tab"><i class="fa fa-question-circle"></i>&nbsp;About the application</a></li>
+                            <li role="presentation"><a id="disclaimerTab" href="#disclaimerTabPane" data-toggle="tab"><i class="fa fa-exclamation-circle"></i>&nbsp;Disclaimer</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="aboutTabPane"><br><br><br>
+                                <p>Interactive web mapping application used to display Go2 warning messages and field personnel locations. The Go2 system is used by USGS staff to monitor the maintenance of USGS gages.</p>
+                                <p>Developed by Martyn Smith and Todd Siskin of the NY WSC.<br>
+                                Portions of this application were developed in conjuction with <a href="https://wim.usgs.gov" target="_blank">Web Informatics and Mapping (WiM)</a><br>
+                                Icons created by David McCulloch, USGS</p>
+                                <span id="appVersion"></span>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="disclaimerTabPane"><br><br><br>
+                                <h4>USGS Software User Rights Notice</h4>
+                                <p>Software and related material (data and (or) documentation), contained in or furnished in connection with a software distribution, are made available by the U.S. Geological Survey (USGS) to be used in the public interest and in the advancement of science, subject to the following restrictions and understandings.</p>
+                                  
+                                <p>Because the software and related material are free and provided "as is," the authors, the USGS, and the United States Government have made no warranty, express or implied, as to accuracy or completeness and are not obligated to provide the user with any support, consulting, training or assistance of any kind with regard to the use, operation, and performance of this software nor to provide the user with any updates, revisions, new versions or "bug fixes".</p>
+                                  
+                                <p>The user assumes all risk for any damages whatsoever resulting from loss of use, data, or profits arising in connection with the access, use, quality, or performance of this software.</p>	
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!--<div class="modal-footer">
-                </div>-->
-            </div><!-- /.modal-content -->
-        </div> <!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+                    <!--<div class="modal-footer">
+                    </div>-->
+                </div><!-- /.modal-content -->
+            </div> <!-- /.modal-dialog -->
+        </div><!-- /.modal -->
 
     <div id="mapDiv">
         <div id="NWSlegend"></div>

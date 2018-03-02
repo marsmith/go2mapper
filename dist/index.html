@@ -9,9 +9,10 @@
     <script src="./scripts/bundle.min.js"></script>  
   </head>
   <body>
+    
     <div id="top-menu">
         <div class="title">
-            <a class='top-menu-brand hidden-xs' href="https://www.usgs.gov"><img src="images/usgs-logo.png"></a>
+            <a class='top-menu-brand hidden-xs' href="https://www.usgs.gov"><img src="images/logo.png"></a>
             <span class="app-name">NY WSC Go2 Mapper</span><span class="app-name-mobile">USGS NY WSC Go2 Mapper</span> 
         </div>
         <div id="mobile-main-menu">
@@ -185,47 +186,125 @@
         </div>
     </div>
     
-
     <div id="aboutModal" class="modal fade"  tabindex="-1" role="dialog" >
-        <div class="modal-dialog  modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button class="close" type="button" data-dismiss="modal" aria-hidden="true" style="color:gray;">&times;</button>
-                    <h4 class="modal-title">NY WSC Go2 Mapper</h4>
-                </div>
-                <div id="aboutModalBody" class="modal-body">
-                    <ul class="nav nav-tabs" id="aboutModalTabs">
-                        <li role="presentation" class="active"><a id="aboutTab" href="#aboutTabPane" data-toggle="tab"><i class="fa fa-question-circle"></i>&nbsp;About the application</a></li>
-                        <li role="presentation"><a id="disclaimerTab" href="#disclaimerTabPane" data-toggle="tab"><i class="fa fa-exclamation-circle"></i>&nbsp;Site Information</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="aboutTabPane"><br>
-                            <p>Developed by Martyn Smith and Todd Siskin of the NY WSC.  Licensed under <a href="./license.txt" target="_blank">Apache 2.0</a></p>
-                            <p>Portions of this application were developed in conjuction with <a href="https://wim.usgs.gov" target="_blank">Web Informatics and Mapping (WiM)</a></p>
-                            <p>Icons created by David McCulloch, USGS</p><br>
-                            <span id="appVersion"></span>
-                        </div>
-                        <div role="tabpanel" class="tab-pane" id="disclaimerTabPane"><br>
-                            <div class="row">
-                                <div class="col-sm-6"><h4>Missing Sites in SiteList.json</h4>
-                                    <ul id="missingSites"></ul>
-                                </div>
-                                <div class="col-sm-6"><h4>Missing Sites in TripList.json</h4>
-                                    <ul id="noTripSites"></ul>
-                                </div>
+            <div class="modal-dialog  modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" type="button" data-dismiss="modal" aria-hidden="true" style="color:gray;">&times;</button>
+                        <h4 class="modal-title">NY WSC Go2 Mapper</h4>
+                    </div>
+                    <div id="aboutModalBody" class="modal-body">
+                        <ul class="nav nav-tabs" id="aboutModalTabs">
+                            <li role="presentation" class="active"><a id="aboutTab" href="#aboutTabPane" data-toggle="tab"><i class="fa fa-question-circle"></i>&nbsp;About the application</a></li>
+                            <li role="presentation"><a id="disclaimerTab" href="#disclaimerTabPane" data-toggle="tab"><i class="fa fa-exclamation-circle"></i>&nbsp;Disclaimer</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="aboutTabPane"><br><br><br>
+                                <p>Interactive web mapping application used to display Go2 warning messages and field personnel locations. The Go2 system is used by USGS staff to monitor the maintenance of USGS gages.</p>
+                                <p>Developed by Martyn Smith and Todd Siskin of the NY WSC.<br>
+                                Portions of this application were developed in conjuction with <a href="https://wim.usgs.gov" target="_blank">Web Informatics and Mapping (WiM)</a><br>
+                                Icons created by David McCulloch, USGS</p>
+                                <span id="appVersion"></span>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="disclaimerTabPane"><br><br><br>
+                                <h4>USGS Software User Rights Notice</h4>
+                                <p>Software and related material (data and (or) documentation), contained in or furnished in connection with a software distribution, are made available by the U.S. Geological Survey (USGS) to be used in the public interest and in the advancement of science, subject to the following restrictions and understandings.</p>
+                                  
+                                <p>Because the software and related material are free and provided "as is," the authors, the USGS, and the United States Government have made no warranty, express or implied, as to accuracy or completeness and are not obligated to provide the user with any support, consulting, training or assistance of any kind with regard to the use, operation, and performance of this software nor to provide the user with any updates, revisions, new versions or "bug fixes".</p>
+                                  
+                                <p>The user assumes all risk for any damages whatsoever resulting from loss of use, data, or profits arising in connection with the access, use, quality, or performance of this software.</p>	
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--<div class="modal-footer">
-                </div>-->
-            </div><!-- /.modal-content -->
-        </div> <!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+                    <!--<div class="modal-footer">
+                    </div>-->
+                </div><!-- /.modal-content -->
+            </div> <!-- /.modal-dialog -->
+        </div><!-- /.modal -->
 
     <div id="mapDiv">
         <div id="NWSlegend"></div>
         <div id="radarTimeStamp" style="font-size:x-small;"></div>
     </div>
+
+    <!-- BEGIN USGS Footer Template -->
+    <footer class="footer">
+        <div class="tmp-container">
+            <!-- .footer-wrap -->
+                <!-- .footer-doi -->
+                <div class="footer-doi">
+                    <!-- footer nav links -->
+                    <ul class="menu nav">
+                        <li class="first leaf menu-links menu-level-1"><a href="https://www.doi.gov/privacy">DOI Privacy Policy</a></li>
+                        <li class="leaf menu-links menu-level-1"><a href="https://www.usgs.gov/laws/policies_notices.html">Legal</a></li>
+                        <li class="leaf menu-links menu-level-1"><a href="https://www2.usgs.gov/laws/accessibility.html">Accessibility</a></li>
+                        <li class="leaf menu-links menu-level-1"><a href="https://www.usgs.gov/sitemap.html">Site Map</a></li>
+                        <li class="last leaf menu-links menu-level-1"><a href="https://answers.usgs.gov/">Contact USGS</a></li>
+                    </ul>
+                    <!--/ footer nav links -->      
+                </div>
+                <!-- /.footer-doi -->
+
+                <hr>
+
+            <!-- .footer-utl-links -->
+            <div class="footer-doi">
+                <ul class="menu nav">
+                    <li class="first leaf menu-links menu-level-1"><a href="https://www.doi.gov/">U.S. Department of the Interior</a></li>
+                    <li class="leaf menu-links menu-level-1"><a href="https://www.doioig.gov/">DOI Inspector General</a></li>
+                    <li class="leaf menu-links menu-level-1"><a href="https://www.whitehouse.gov/">White House</a></li>
+                    <li class="leaf menu-links menu-level-1"><a href="https://www.whitehouse.gov/omb/e-gov/">E-gov</a></li>
+                    <li class="leaf menu-links menu-level-1"><a href="https://www.whitehouse.gov/open">Open Government</a></li>
+                    <li class="leaf menu-links menu-level-1"><a href="https://www.doi.gov/pmb/eeo/no-fear-act">No Fear Act</a></li>
+                    <li class="last leaf menu-links menu-level-1"><a href="https://www2.usgs.gov/foia">FOIA</a></li>
+                </ul>
+                </div>			
+            <!-- /.footer-utl-links -->
+            <!-- .footer-social-links -->
+            <div class="footer-social-links hidden-sm hidden-xs">
+                <ul class="social">
+                    <li class="follow">Follow</li>
+                    <li class="twitter">
+                        <a href="https://twitter.com/usgs" target="_blank">
+                            <i class="fa fa-twitter-square"><span class="only">Twitter</span></i>
+                        </a>
+                    </li>
+                    <li class="facebook">
+                        <a href="https://facebook.com/usgeologicalsurvey" target="_blank">
+                            <i class="fa fa-facebook-square"><span class="only">Facebook</span></i>
+                        </a>
+                    </li>
+                    <li class="googleplus">
+                        <a href="https://plus.google.com/112624925658443863798/posts" target="_blank">
+                            <i class="fa fa-google-plus-square"><span class="only">Google+</span></i>
+                        </a>
+                    </li>
+                    <li class="github">
+                        <a href="https://github.com/usgs" target="_blank">
+                            <i class="fa fa-github"><span class="only">GitHub</span></i>
+                        </a>
+                    </li>
+                    <li class="flickr">
+                        <a href="https://flickr.com/usgeologicalsurvey" target="_blank">
+                            <i class="fa fa-flickr"><span class="only">Flickr</span></i>
+                        </a>
+                    </li>
+                    <li class="youtube">
+                        <a href="http://youtube.com/usgs" target="_blank">
+                            <i class="fa fa-youtube-play"><span class="only">YouTube</span></i>
+                        </a>
+                    </li>
+                    <li class="instagram">
+                        <a href="https://instagram.com/usgs" target="_blank">
+                            <i class="fa fa-instagram"><span class="only">Instagram</span></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.footer-social-links -->
+        </div>
+            <!-- /.footer-wrap -->	
+    </footer>
+    <!-- END USGS Footer Template- -->
   </body>
 </html>
