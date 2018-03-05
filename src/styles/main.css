@@ -335,40 +335,6 @@ body {
   border: 0;
 }
 
-footer.footer .footer-social-links {
-	color: #ffffff;
-	font-size: 12px;
-	padding-right: 0;
-}
-
-footer.footer .footer-social-links ul {
-    float: right;
-	margin-top: 0px;
-}
-
-footer.footer .footer-social-links ul li.follow {
-    padding-top: 6px;
-    padding-right: 5px;
-}
-
-footer.footer .footer-social-links ul li {
-    float: left;
-    height: 24px;
-    margin: 0 2px;
-    list-style: none;
-    list-style-type: none;
-}
-
-footer.footer .footer-social-links ul li:last-of-type {
-    margin-right: 0px;
-}
-
-footer.footer .footer-social-links ul li a i {
-	color:#fff;
-	font-size: 24px;
-}
-
-
 /************* END MAIN MENU **************/
 
 /************** Mobile friendly stuff *********/
