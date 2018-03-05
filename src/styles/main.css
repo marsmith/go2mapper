@@ -100,7 +100,6 @@ html, body, #mapDiv {
 
 body {
   padding-top: 70px;
-  padding-bottom: 83px;
   padding-left:270px;
 }
 
@@ -144,18 +143,12 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #00264c;
+  background-color: #1d1d2b;
   z-index: 9;
 }
 
 #top-menu > div:not(.logo) {
   float: left;
-}
-
-#top-menu .title {
-  border-right: 1px solid #191924;
-  min-width: 270px;
-  /*cursor: pointer;*/
 }
 
 #mobile-main-menu {
@@ -180,12 +173,18 @@ body {
     ===========================
 */
 
+.panel-group {
+  margin-bottom:0px;
+}
+
 .identification {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 9pt;
-    display: block;
-    padding:8px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  opacity: .5;
 }
 
 .panel-heading .accordion-toggle:after {
@@ -207,11 +206,10 @@ body {
   height: calc(100% - 70px);
   float: left;
   background-color: #20202f;
-  /* margin-top: 65px; */
+  margin-top: 65px;
   position: fixed;
   bottom: 0;
   left: 0;
-  padding-bottom: 83px;
   z-index: 999;
   transition: left .5s ease;
 }
@@ -221,88 +219,11 @@ body {
   height: 100%;
 }
 
-/************* END MAIN MENU **************/
-
-/************** All other stuff *********/
-
-@media (max-width: 1020px) {
-  #top-menu {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    width: 100%;
-    border-bottom: 1px solid #191924;
-  }
-
-  #top-menu #mobile-main-menu {
-    -webkit-order: 0;
-    order: 0;
-  }
-
-  #top-menu .title {
-    -webkit-order: 1;
-    order: 1;
-    width: calc(100% - 95px);
-    text-align: center;
-    min-width: 1px;
-  }
-
-  #mobile-main-menu {
-    display: inline-block;
-  }
-
-  #main-menu {
-    left: -100%;
-    height: calc(100% - 69px);
-  }
-
-  .isOpenMenu #main-menu {
-    left: 0;
-  }
-
-  body {
-    padding-left:0px;
-  }
-}
-
-@media (max-width: 600px) {
-
-  #main-menu {
-    height: calc(100% - 70px);
-  }
-
-}
-
-@media (max-width: 767px) {
-
-  .app-name {
-    display: none;
-  }
-
-  .app-name-mobile {
-    display: inline;
-    font-size:small;
-  }
-
-}
-
-pre {
-  word-wrap: normal;
-  word-break: normal;
-}
-
-/************** All other stuff *********/
 
 #main-menu {
   background-color: #ECEEF3;
   font-family: 'Open Sans', sans-serif;
   min-height: 0 !important;
-}
-@media (max-width: 991px) {
-  #main-menu {
-    background-color: rgba(236, 238, 243, 0.8);
-  }
 }
 
 #main-menu .sidebar-panel {
@@ -384,4 +305,103 @@ pre {
 #main-menu .slick-btn-selection {
   background-color: rgba(236, 238, 243, 0.5);
   border-color: #4574CC !important;
+}
+
+.footer-links {
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  opacity: .5;
+}
+
+.footer-links a {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 4px;
+  font-size: 8pt;  
+}
+
+.only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+footer.footer .footer-social-links {
+	color: #ffffff;
+	font-size: 12px;
+	padding-right: 0;
+}
+
+footer.footer .footer-social-links ul {
+    float: right;
+	margin-top: 0px;
+}
+
+footer.footer .footer-social-links ul li.follow {
+    padding-top: 6px;
+    padding-right: 5px;
+}
+
+footer.footer .footer-social-links ul li {
+    float: left;
+    height: 24px;
+    margin: 0 2px;
+    list-style: none;
+    list-style-type: none;
+}
+
+footer.footer .footer-social-links ul li:last-of-type {
+    margin-right: 0px;
+}
+
+footer.footer .footer-social-links ul li a i {
+	color:#fff;
+	font-size: 24px;
+}
+
+
+/************* END MAIN MENU **************/
+
+/************** Mobile friendly stuff *********/
+
+@media (max-width: 767px) {
+  #mobile-main-menu {
+    display: inline-block;
+  }
+
+  #main-menu {
+    left: -100%;
+    height: calc(100% - 69px);
+  }
+
+  .isOpenMenu #main-menu {
+    left: 0;
+  }
+
+  body {
+    padding-left:0px;
+  }
+
+  #main-menu {
+    height: calc(100% - 70px);
+  }
+
+  .app-name {
+    display: none;
+  }
+
+  .app-name-mobile {
+    display: inline;
+    font-size:small;
+  }
+
 }

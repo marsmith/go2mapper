@@ -11,16 +11,17 @@
   <body>
     
     <div id="top-menu">
+            <div id="mobile-main-menu">
+                    <span class="glyphicon glyphicon-menu-hamburger" ></span>
+                </div>
         <div class="title">
             <a class='top-menu-brand hidden-xs' href="https://www.usgs.gov"><img src="images/logo.png"></a>
             <span class="app-name">NY WSC Go2 Mapper</span><span class="app-name-mobile">USGS NY WSC Go2 Mapper</span> 
         </div>
-        <div id="mobile-main-menu">
-            <span class="glyphicon glyphicon-menu-hamburger" ></span>
-        </div>
 
-        <button id="aboutButton" class="btn btn-default top-menu-btn pull-right hidden-xs">
-            <i class="glyphicon glyphicon-info-sign"></i><span>&nbsp;&nbsp;About</span>
+
+        <button id="aboutButton" class="btn btn-default top-menu-btn pull-right">
+            <i class="glyphicon glyphicon-info-sign"></i><span class="hidden-xs">&nbsp;&nbsp;About</span>
         </button>
     </div>
 
@@ -181,6 +182,55 @@
                     </div>
 
                     <div id="info" class="identification pull-right">Developed by USGS NY WSC</div>
+
+                    <div class="footer-links">
+                        <!-- footer nav links -->
+                        <a href="https://www.doi.gov/privacy">DOI Privacy Policy</a>
+                        <a href="https://www.usgs.gov/laws/policies_notices.html">Legal</a>
+                        <a href="https://www2.usgs.gov/laws/accessibility.html">Accessibility</a>
+                        <a href="https://www.usgs.gov/sitemap.html">Site Map</a>
+                        <a href="https://answers.usgs.gov/">Contact USGS</a>
+                        <!--/ footer nav links -->      
+                    </div>
+
+                    <div class="footer-links">
+                        <!-- footer nav links -->
+                        <a href="https://www.doi.gov/">U.S. Department of the Interior</a>
+                        <a href="https://www.doioig.gov/">DOI Inspector General</a>
+                        <a href="https://www.whitehouse.gov/">White House</a>
+                        <a href="https://www.whitehouse.gov/omb/e-gov/">E-gov</a>
+                        <a href="https://www.whitehouse.gov/open">Open Government</a>
+                        <a href="https://www.doi.gov/pmb/eeo/no-fear-act">No Fear Act</a>
+                        <a href="https://www2.usgs.gov/foia">FOIA</a>
+                        <!--/ footer nav links -->      
+                    </div>
+
+                    <!-- .footer-social-links -->
+                    <div class="footer-links">
+                        <a href="https://twitter.com/usgs" target="_blank">
+                            <i class="fa fa-twitter-square"><span class="only">Twitter</span></i>
+                        </a>
+                        <a href="https://facebook.com/usgeologicalsurvey" target="_blank">
+                            <i class="fa fa-facebook-square"><span class="only">Facebook</span></i>
+                        </a>
+                        <a href="https://plus.google.com/112624925658443863798/posts" target="_blank">
+                            <i class="fa fa-google-plus-square"><span class="only">Google+</span></i>
+                        </a>
+                        <a href="https://github.com/usgs" target="_blank">
+                            <i class="fa fa-github"><span class="only">GitHub</span></i>
+                        </a>
+
+                        <a href="https://flickr.com/usgeologicalsurvey" target="_blank">
+                            <i class="fa fa-flickr"><span class="only">Flickr</span></i>
+                        </a>
+
+                        <a href="http://youtube.com/usgs" target="_blank">
+                            <i class="fa fa-youtube-play"><span class="only">YouTube</span></i>
+                        </a>
+                        <a href="https://instagram.com/usgs" target="_blank">
+                            <i class="fa fa-instagram"><span class="only">Instagram</span></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -232,84 +282,5 @@
         <div id="radarTimeStamp" style="font-size:x-small;"></div>
     </div>
 
-    <!-- BEGIN USGS Footer Template -->
-    <footer class="footer">
-        <div class="tmp-container">
-            <!-- .footer-wrap -->
-                <!-- .footer-doi -->
-                <div class="footer-doi">
-                    <!-- footer nav links -->
-                    <ul class="menu nav">
-                        <li class="first leaf menu-links menu-level-1"><a href="https://www.doi.gov/privacy">DOI Privacy Policy</a></li>
-                        <li class="leaf menu-links menu-level-1"><a href="https://www.usgs.gov/laws/policies_notices.html">Legal</a></li>
-                        <li class="leaf menu-links menu-level-1"><a href="https://www2.usgs.gov/laws/accessibility.html">Accessibility</a></li>
-                        <li class="leaf menu-links menu-level-1"><a href="https://www.usgs.gov/sitemap.html">Site Map</a></li>
-                        <li class="last leaf menu-links menu-level-1"><a href="https://answers.usgs.gov/">Contact USGS</a></li>
-                    </ul>
-                    <!--/ footer nav links -->      
-                </div>
-                <!-- /.footer-doi -->
-
-                <hr>
-
-            <!-- .footer-utl-links -->
-            <div class="footer-doi">
-                <ul class="menu nav">
-                    <li class="first leaf menu-links menu-level-1"><a href="https://www.doi.gov/">U.S. Department of the Interior</a></li>
-                    <li class="leaf menu-links menu-level-1"><a href="https://www.doioig.gov/">DOI Inspector General</a></li>
-                    <li class="leaf menu-links menu-level-1"><a href="https://www.whitehouse.gov/">White House</a></li>
-                    <li class="leaf menu-links menu-level-1"><a href="https://www.whitehouse.gov/omb/e-gov/">E-gov</a></li>
-                    <li class="leaf menu-links menu-level-1"><a href="https://www.whitehouse.gov/open">Open Government</a></li>
-                    <li class="leaf menu-links menu-level-1"><a href="https://www.doi.gov/pmb/eeo/no-fear-act">No Fear Act</a></li>
-                    <li class="last leaf menu-links menu-level-1"><a href="https://www2.usgs.gov/foia">FOIA</a></li>
-                </ul>
-                </div>			
-            <!-- /.footer-utl-links -->
-            <!-- .footer-social-links -->
-            <div class="footer-social-links hidden-sm hidden-xs">
-                <ul class="social">
-                    <li class="follow">Follow</li>
-                    <li class="twitter">
-                        <a href="https://twitter.com/usgs" target="_blank">
-                            <i class="fa fa-twitter-square"><span class="only">Twitter</span></i>
-                        </a>
-                    </li>
-                    <li class="facebook">
-                        <a href="https://facebook.com/usgeologicalsurvey" target="_blank">
-                            <i class="fa fa-facebook-square"><span class="only">Facebook</span></i>
-                        </a>
-                    </li>
-                    <li class="googleplus">
-                        <a href="https://plus.google.com/112624925658443863798/posts" target="_blank">
-                            <i class="fa fa-google-plus-square"><span class="only">Google+</span></i>
-                        </a>
-                    </li>
-                    <li class="github">
-                        <a href="https://github.com/usgs" target="_blank">
-                            <i class="fa fa-github"><span class="only">GitHub</span></i>
-                        </a>
-                    </li>
-                    <li class="flickr">
-                        <a href="https://flickr.com/usgeologicalsurvey" target="_blank">
-                            <i class="fa fa-flickr"><span class="only">Flickr</span></i>
-                        </a>
-                    </li>
-                    <li class="youtube">
-                        <a href="http://youtube.com/usgs" target="_blank">
-                            <i class="fa fa-youtube-play"><span class="only">YouTube</span></i>
-                        </a>
-                    </li>
-                    <li class="instagram">
-                        <a href="https://instagram.com/usgs" target="_blank">
-                            <i class="fa fa-instagram"><span class="only">Instagram</span></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.footer-social-links -->
-        </div>
-            <!-- /.footer-wrap -->	
-    </footer>
-    <!-- END USGS Footer Template- -->
   </body>
 </html>

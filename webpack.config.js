@@ -19,8 +19,9 @@ var common = {
         vendor: [
             'leaflet/dist/leaflet.css',
             'bootstrap/dist/css/bootstrap.css',
+            'font-awesome/css/font-awesome.css',
             PATHS.src + '/styles/main.css', 
-            PATHS.src + '/styles/common.css', 
+            // PATHS.src + '/styles/common.css', 
             'leaflet', 
             'esri-leaflet', 
             'jquery', 
