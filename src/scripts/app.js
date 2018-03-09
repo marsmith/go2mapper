@@ -387,14 +387,7 @@ function loadWSCboundaries() {
 			"color": "#ff8c66",
 			"opacity": 0.3
 		};
-		var geoJSONlayer = L.geoJSON(data, {style: function(feature) {
-			switch (feature.properties.Office) {
-				case 'Coram': return {color: "#deeaee"};
-				case 'Troy':   return {color: "#b1cbbb"};
-				case 'Ithaca':   return {color: "#eea29a"};
-			}
-		}
-		});
+		var geoJSONlayer = L.geoJSON(data, {style: myStyle});
 		wscLayer.addLayer(geoJSONlayer);
 	});
 }
