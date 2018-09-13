@@ -11,7 +11,7 @@
 run `npm install` to install dependencies
 
 #### Customize application
-run `npm start` to launch a development web server with live reloading.  Then edit `/src/scripts/app.js`  'user config variables' section near the top of the file:
+You can utlize the `/dist` package by editing user confiruation variables in: `/dist/appConfig.js`.  If doing a full build, edit `/src/appConfig.js`.
 
 ```JavaScript
 var MapX = '-76.2'; //set initial map longitude
