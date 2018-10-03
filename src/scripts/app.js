@@ -364,6 +364,7 @@ function loadWSCboundaries() {
 		});
 		var myStyle = {
 			"color": "#ff8c66",
+			"weight": 0,
 			"opacity": 0.3
 		};
 		var geoJSONlayer = L.geoJSON(data, {style: myStyle});
