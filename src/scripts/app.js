@@ -474,7 +474,7 @@ function loadGo2(go2json) {
 					for (var item in thisWarning.items.goflags) {
 
 						//skip 1DCP flags temporarily
-						if (thisWarning.items.goflags[item].go2flag != '1DCP') {
+						//if (thisWarning.items.goflags[item].go2flag != '1DCP') {
 							go2text = go2text + '<div class="alert alert-warning"><b>' + thisWarning.items.goflags[item].go2flag + ':</b> ' + thisWarning.items.goflags[item].go2msg + '</div>';
 
 							var thisFlag = thisWarning.items.goflags[item].go2flag
@@ -484,7 +484,7 @@ function loadGo2(go2json) {
 								thisFlag = 'iGH_meas';
 							}
 							go2flags.push(thisFlag)
-						}
+						//}
 					}
 
 					//set the icon based on the flag
