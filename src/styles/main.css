@@ -117,6 +117,10 @@ body {
        url('../fonts/OpenSans-Regular.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
 
+#graphLoader p {
+  text-align:center;
+}
+
 #NWSlegend {
 	position: absolute;
 	right: 20px;

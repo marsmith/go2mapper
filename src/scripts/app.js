@@ -11,7 +11,7 @@
 // updates:
 // 04.02.2013 mjs - Created
 // 10.26.2016 mjs - conversion to leaflet.js
-// 10.28.2016 mjs - update syling, mobile friendliness
+// 10.28.2016 mjs - update styling, mobile friendliness
 // 08.25.2017 mjs - bring all user config to the top
 
 //global variables
@@ -172,37 +172,73 @@ function showNWISgraph(e) {
 		$.getJSON('https://staging.waterservices.usgs.gov/nwis/iv/?format=nwjson&sites=' + e.layer.properties.siteID + '&parameterCd=' + parameterCodes + '&period=' + timePeriod, function(data) {
 
 			if (!data.data || data.data[0].time_series_data.length <= 0) {
-				console.log('Found an NWIS site, but it had no data in waterservices: ', e.layer.properties.siteID)
+				setTimeout(function(){ $('#graphLoader').hide(); }, 500);
+				console.log('Found an NWIS site, but it had no data in waterservices: ', e.layer.properties.siteID);
+				
 				return;
 			}
 			var graphData = [];
 
-			//set labels
-			var yLabel = 'Discharge, cfs';
-			var pointFormat = 'Discharge: {point.y} cfs';
-			if (e.layer.properties.siteType === 'gw') {
-				yLabel = 'Elevation, ft';
-				pointFormat = 'Elevation: {point.y} ft';
-			}
+			console.log('NWIS data:',data);
 
-			var usgsSeries = {
-				tooltip: {
-					pointFormat: pointFormat
-				},
-				showInLegend: false, 
-				data: data.data[0].time_series_data
-			}
-			graphData.push(usgsSeries)
+			//set labels
+			var yLabel = '';
+			var pointFormat = '';
+
+			// if (e.layer.properties.siteType === 'gw') {
+			// 	yLabel = 'Elevation, ft';
+			// 	pointFormat = 'Elevation: {point.y} ft';
+			// }
+
+			$.each(data.data, function( index, seriesData ) {
+
+				if (seriesData.parameter_name === 'Discharge') {
+					yLabel = 'Discharge, cfs';
+					pointFormat = 'Discharge: {point.y} cfs';
+				}
+
+				else if (seriesData.parameter_name === 'Elevation, ocean/est, NGVD29') {
+
+					seriesData.parameter_name += ', ft';
+					if (seriesData.loc_web_ds.length > 0) seriesData.parameter_name += ' (' + seriesData.loc_web_ds + ')';
+					else yLabel = seriesData.parameter_name;
+					pointFormat = seriesData.parameter_name + ': {point.y}';
+				}
+
+				else if (seriesData.parameter_name === 'Water level, depth LSD') {
+					yLabel = 'Elevation, ft';
+					pointFormat = 'Elevation: {point.y} ft';
+				}
+
+				var series = {
+					tooltip: {
+						pointFormat: pointFormat
+					},
+					showInLegend: false, 
+					data:seriesData.time_series_data,
+					name: seriesData.parameter_name
+				}
+				graphData.push(series);
+			});
+
+
 
 			//get NOAA forecast values if this is an AHPS Site 
 			if (siteList[e.layer.properties.siteID].properties.ahpsID) {
 				console.log('Found AHPS site: ',siteList[e.layer.properties.siteID].properties.ahpsID, '  Querying AHPS...');
-				var url = 'https://water.weather.gov/ahps2/hydrograph_to_xml.php?gage=' + e.layer.properties.ahpsID + '&output=xml';
-				var query = 'select * from xml where url="' + url + '"';
+				var AHPSurl = 'https://water.weather.gov/ahps2/hydrograph_to_xml.php?gage=' + e.layer.properties.ahpsID + '&output=xml';
+				console.log('AHPS page url:',AHPSurl);
+				var url = './proxy.php?url=';
+
+				//use staging if were in dev mode or on amazon s3
+				if (process.env.NODE_ENV === 'development' || location.hostname.match('wim') ) { url = 'http://staging-ny.water.usgs.gov/maps/go2/proxy.php?url=';}
+
 				$.ajax({
-					url: 'https://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent(query),
+					url: url + AHPSurl,
 					dataType: 'xml',
 					success: function(feedResponse) {
+
+						//console.log('Response:',feedResponse)
 						var valueArray = [];
 						$(feedResponse).find("forecast").find("datum").each(function(){
 							var date = $(this).find('valid').text();
@@ -215,7 +251,7 @@ function showNWISgraph(e) {
 						valueArray.sort();
 
 						if (valueArray.length <= 1) {
-							console.log('Found an AHPS Site, but no AHPS data was found: ', e.layer.properties.siteID, e.layer.properties.ahpsID)
+							console.log('Found an AHPS Site, but no AHPS data was found: ', e.layer.properties.siteID, e.layer.properties.ahpsID);
 						}
 						//if there is AHPS data, add a new series to the graph
 						else {
@@ -231,7 +267,7 @@ function showNWISgraph(e) {
 							graphData.push(forecastSeries);
 						}
 
-						//console.log('Calling showgraph function now...');
+						console.log('Calling showgraph function now...');
 						showGraph(graphData, yLabel);
 					}
 				});
@@ -240,15 +276,18 @@ function showNWISgraph(e) {
 			//if no AHPS data, just show USGS data
 			else {
 				console.log('Did not find AHPS site for USGS Site: ', e.layer.properties.siteID);
-				showGraph(graphData, yLabel);
+				setTimeout(function(){ showGraph(graphData, yLabel); }, 500);
+				
 			}
 		});
 	}
 }
 
 function showGraph(graphData, yLabel) {
+	console.log('Calling showGraph',graphData)
 	//if there is some data, show the div
 	$('#graphContainer').show();
+	$('#graphLoader').hide();
 
 	Highcharts.setOptions({
 		global: { useUTC: false },
@@ -416,7 +455,7 @@ function loadTrips() {
 							siteList[site].properties.tripName = trip.TripName;
 							siteList[site].properties.tripOwner = trip.TripOwner;
 							//overwrite popup with added trip data
-							siteList[site].properties.popupContent = '<b>' + site + '</b></br></br>' + siteList[site].properties.siteName+ '</br><a href="https://waterdata.usgs.gov/nwis/inventory/?site_no=' + site + '" target="_blank">Access Data</a></br></br><b>Office: </b>' + WSC.OfficeName + '</br><b>Trip Name: </b>' + siteList[site].properties.tripName + '</br><b>Trip Owner: </b>' + siteList[site].properties.tripOwner + '<div id="graphContainer" style="width:100%; height:200px;display:none;"></div>';
+							siteList[site].properties.popupContent = '<b>' + site + '</b></br></br>' + siteList[site].properties.siteName+ '</br><a href="https://waterdata.usgs.gov/nwis/inventory/?site_no=' + site + '" target="_blank">Access Data</a></br></br><b>Office: </b>' + WSC.OfficeName + '</br><b>Trip Name: </b>' + siteList[site].properties.tripName + '</br><b>Trip Owner: </b>' + siteList[site].properties.tripOwner + '<div id="graphLoader"><p><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw graph-loader"></i></p></div><div id="graphContainer" style="width:100%; height:200px;display:none;"></div>';
 
 							siteList[site].getPopup().setContent(siteList[site].properties.popupContent);
 						}

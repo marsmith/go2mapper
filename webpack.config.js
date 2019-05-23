@@ -85,7 +85,7 @@ switch(process.env.npm_lifecycle_event) {
             new webpack.DefinePlugin({ 'process.env.NODE_ENV': JSON.stringify('development') }),
             new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.min.js'),
         ],
-        devtool: 'eval-source-map',
+        //devtool: 'eval-source-map',
         devServer: {
             // hot: true,
             // inline: true,
