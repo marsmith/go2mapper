@@ -13,6 +13,7 @@
 // 10.26.2016 mjs - conversion to leaflet.js
 // 10.28.2016 mjs - update styling, mobile friendliness
 // 08.25.2017 mjs - bring all user config to the top
+// 05.28.2019 mjs - updates to graphing, add PHP proxy for AHPS sites
 
 //global variables
 var siteList = {};
@@ -294,7 +295,7 @@ function showGraph(graphData, yLabel) {
 		lang: { thousandsSep: ','}
 	});
 
-	Highcharts.chart('graphContainer', {
+	var chartSetup = {
 		chart: {
 			type: 'line',
 			spacingTop: 20,
@@ -322,7 +323,13 @@ function showGraph(graphData, yLabel) {
 			title: { text: yLabel }
 		},
 		series: graphData
-	});
+	};
+
+	//type specific overrides
+	if (graphData[0].name === 'Discharge') chartSetup.yAxis.type = 'logarithmic';
+	if (graphData[0].name === 'Water level, depth LSD') chartSetup.yAxis.reversed = true;
+
+	Highcharts.chart('graphContainer', chartSetup);
 }
 
 function selectCenter(selectedCenter) {
@@ -425,7 +432,7 @@ function loadSites() {
 			siteList[site.SiteID].properties.siteName = site.Attributes.station_nm;
 			siteList[site.SiteID].properties.siteType = site.Attributes.site_type;
 			//set default popup with minimal info
-			siteList[site.SiteID].properties.popupContent = '<b>' + site.SiteID + '</b></br></br>' + site.Attributes.station_nm + '</br><a href="https://waterdata.usgs.gov/nwis/inventory/?site_no=' + site.SiteID + '" target="_blank">Access Data</a></br></br>';
+			siteList[site.SiteID].properties.popupContent = '<b>' + site.SiteID + '</b></br></br>' + site.Attributes.station_nm + '</br><a href="https://waterdata.usgs.gov/nwis/inventory/?site_no=' + site.SiteID + '" target="_blank">Access Data</a></br><div id="graphLoader"><p><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw graph-loader"></i>Loading graph data...</p></div><div id="graphContainer" style="width:100%; height:200px;display:none;"></div>';
 			siteList[site.SiteID].bindPopup(siteList[site.SiteID].properties.popupContent, {minWidth: 300});
 
 			//add to layergroup
@@ -454,8 +461,9 @@ function loadTrips() {
 							//add trip data to the site object
 							siteList[site].properties.tripName = trip.TripName;
 							siteList[site].properties.tripOwner = trip.TripOwner;
+							
 							//overwrite popup with added trip data
-							siteList[site].properties.popupContent = '<b>' + site + '</b></br></br>' + siteList[site].properties.siteName+ '</br><a href="https://waterdata.usgs.gov/nwis/inventory/?site_no=' + site + '" target="_blank">Access Data</a></br></br><b>Office: </b>' + WSC.OfficeName + '</br><b>Trip Name: </b>' + siteList[site].properties.tripName + '</br><b>Trip Owner: </b>' + siteList[site].properties.tripOwner + '<div id="graphLoader"><p><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw graph-loader"></i></p></div><div id="graphContainer" style="width:100%; height:200px;display:none;"></div>';
+							siteList[site].properties.popupContent = '<b>' + site + '</b></br></br>' + siteList[site].properties.siteName+ '</br><a href="https://waterdata.usgs.gov/nwis/inventory/?site_no=' + site + '" target="_blank">Access Data</a></br></br><b>Office: </b>' + WSC.OfficeName + '</br><b>Trip Name: </b>' + siteList[site].properties.tripName + '</br><b>Trip Owner: </b>' + siteList[site].properties.tripOwner + '<div id="graphLoader"><p><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw graph-loader"></i>Loading graph data...</p></div><div id="graphContainer" style="width:100%; height:200px;display:none;"></div>';
 
 							siteList[site].getPopup().setContent(siteList[site].properties.popupContent);
 						}
