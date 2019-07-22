@@ -168,7 +168,9 @@ function addNWSlayers() {
 
 function showNWISgraph(e) {	
 	if (e.layer.properties.siteType === 'sw' || e.layer.properties.siteType === 'gw') {
-		var parameterCodes = '00060,72019,62619';
+		//var parameterCodes = '00060,72019,62619';
+		//var parameterCodes = '00060,62614,62615,62619,72214,72264,72019';
+		var parameterCodes = '00060,00065,62614,62615,62619,72214,72264,72019';
 		var timePeriod = 'P7D';
 		$.getJSON('https://staging.waterservices.usgs.gov/nwis/iv/?format=nwjson&sites=' + e.layer.properties.siteID + '&parameterCd=' + parameterCodes + '&period=' + timePeriod, function(data) {
 
@@ -185,43 +187,80 @@ function showNWISgraph(e) {
 			//set labels
 			var yLabel = '';
 			var pointFormat = '';
-
-			// if (e.layer.properties.siteType === 'gw') {
-			// 	yLabel = 'Elevation, ft';
-			// 	pointFormat = 'Elevation: {point.y} ft';
-			// }
+			var dischargeFlag = false;
+			var series = {};
 
 			$.each(data.data, function( index, seriesData ) {
 
-				if (seriesData.parameter_name === 'Discharge') {
+				if (seriesData.parameter_name.indexOf('Discharge') !== -1) {
+					dischargeFlag = true;
 					yLabel = 'Discharge, cfs';
 					pointFormat = 'Discharge: {point.y} cfs';
+
+					series = {
+						tooltip: {
+							pointFormat: pointFormat
+						},
+						showInLegend: false, 
+						data:seriesData.time_series_data,
+						name: seriesData.parameter_name
+					};
+					graphData.push(series);
 				}
 
-				else if (seriesData.parameter_name === 'Elevation, ocean/est, NGVD29') {
-
+				else if (seriesData.parameter_name.indexOf('Elevation') !== -1) {
 					seriesData.parameter_name += ', ft';
 					if (seriesData.loc_web_ds.length > 0) seriesData.parameter_name += ' (' + seriesData.loc_web_ds + ')';
 					else yLabel = seriesData.parameter_name;
 					pointFormat = seriesData.parameter_name + ': {point.y}';
+
+					series = {
+						tooltip: {
+							pointFormat: pointFormat
+						},
+						showInLegend: false, 
+						data:seriesData.time_series_data,
+						name: seriesData.parameter_name
+					};
+					graphData.push(series);
 				}
 
 				else if (seriesData.parameter_name === 'Water level, depth LSD') {
 					yLabel = 'Elevation, ft';
 					pointFormat = 'Elevation: {point.y} ft';
+
+					series = {
+						tooltip: {
+							pointFormat: pointFormat
+						},
+						showInLegend: false, 
+						data:seriesData.time_series_data,
+						name: seriesData.parameter_name
+					};
+					graphData.push(series);
 				}
 
-				var series = {
-					tooltip: {
-						pointFormat: pointFormat
-					},
-					showInLegend: false, 
-					data:seriesData.time_series_data,
-					name: seriesData.parameter_name
+				//only put gage height i
+				else if (seriesData.parameter_name.indexOf('Gage height') !== -1 && !dischargeFlag) {
+
+					seriesData.parameter_name += ', ft';
+					if (seriesData.loc_web_ds.length > 0) seriesData.parameter_name += ' (' + seriesData.loc_web_ds + ')';
+					else yLabel = seriesData.parameter_name;
+					pointFormat = seriesData.parameter_name + ': {point.y}';
+
+					series = {
+						tooltip: {
+							pointFormat: pointFormat
+						},
+						showInLegend: false, 
+						data:seriesData.time_series_data,
+						name: seriesData.parameter_name
+					};
+					graphData.push(series);
 				}
-				graphData.push(series);
 			});
 
+			console.log('before all graph data:', graphData);
 
 
 			//get NOAA forecast values if this is an AHPS Site 
@@ -239,15 +278,21 @@ function showNWISgraph(e) {
 					dataType: 'xml',
 					success: function(feedResponse) {
 
-						//console.log('Response:',feedResponse)
+						console.log('Response:',feedResponse);
 						var valueArray = [];
 						$(feedResponse).find("forecast").find("datum").each(function(){
 							var date = $(this).find('valid').text();
-							var units = $(this).find('secondary').attr('units');
-							var value = parseFloat($(this).find('secondary').text());
-							if (units === 'kcfs') value = value * 1000;
+							if (!dischargeFlag) {
+								var units = $(this).find('primary').attr('units');
+								var value = parseFloat($(this).find('primary').text());
+							}
+							else {
+								var units = $(this).find('secondary').attr('units');
+								var value = parseFloat($(this).find('secondary').text());
+								if (units === 'kcfs') value = value * 1000;
+							}
 							var seconds = new Date(date)/1;
-							valueArray.push([seconds, value])
+							valueArray.push([seconds, value]);
 						});
 						valueArray.sort();
 
