@@ -13,7 +13,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@turf/convex": "^3.5.2",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "esri-leaflet": "^2.0.4",
     "font-awesome": "^4.7.0",
     "highcharts": "^5.0.2",
