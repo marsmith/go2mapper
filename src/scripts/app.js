@@ -14,6 +14,7 @@
 // 10.28.2016 mjs - update styling, mobile friendliness
 // 08.25.2017 mjs - bring all user config to the top
 // 05.28.2019 mjs - updates to graphing, add PHP proxy for AHPS sites
+// 11.01.2019 mjs - add go2fast
 
 //global variables
 var siteList = {};
@@ -75,6 +76,11 @@ $( document ).ready(function() {
 	$('#tripSelect').on('change', function() {
 		var tripData = {tripName:$('#tripSelect :selected').text(), tripOwner:$('#tripSelect :selected').attr('value'), tripCenter:$('#centerSelect :selected').text()};
 		selectTrip(tripData);
+	});
+
+	$('#go2typeSelect').on('change', function() {
+		var selectedGo2 = $('#go2typeSelect :selected').text();
+		selectGo2(selectedGo2);
 	});
 
 	$('.basemapBtn').click(function() {
@@ -280,17 +286,25 @@ function showNWISgraph(e) {
 
 						console.log('Response:',feedResponse);
 						var valueArray = [];
+						var someValues = false;
 						$(feedResponse).find("forecast").find("datum").each(function(){
 							var date = $(this).find('valid').text();
-							if (!dischargeFlag) {
+							if (!dischargeFlag && $(this).find('primary').attr('name') === 'Stage') {
 								var units = $(this).find('primary').attr('units');
 								var value = parseFloat($(this).find('primary').text());
+								someValues = true;
 							}
-							else {
+							//assume discharge
+							if (dischargeFlag && $(this).find('secondary').attr('name') === 'Flow') {
 								var units = $(this).find('secondary').attr('units');
 								var value = parseFloat($(this).find('secondary').text());
 								if (units === 'kcfs') value = value * 1000;
+								someValues = true;
 							}
+
+							//bail if we have nothing
+							if (!someValues) return;
+
 							var seconds = new Date(date)/1;
 							valueArray.push([seconds, value]);
 						});
@@ -533,6 +547,26 @@ function toggleGo2() {
 			return 'Show Go2Lite';
 		}
 	});
+}
+
+function selectGo2(method) {
+
+	console.log('in select go2:', method)
+
+	if (method ==='Go2') {
+		loadGo2(go2warningsJSON);
+		return 'Show Go2';
+	}
+	if (method ==='Go2Lite') {
+		loadGo2(go2liteWarningsJSON);
+		return 'Show Go2Lite';
+	}
+	if (method ==='Go2Fast') {
+		loadGo2(go2predictedWarningsJSON);
+		return 'Show Go2Fast';
+	}
+
+
 }
 
 function loadGo2(go2json) {

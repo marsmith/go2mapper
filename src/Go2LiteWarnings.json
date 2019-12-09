@@ -2,80 +2,67 @@
   "SitesCollection": [
     {
       "items": {
-        "SiteID": "01304562",
+        "SiteID": "01302600",
         "goflags": {
           "1": {
             "go2flag": "1DCP",
-            "go2msg": "LRGS has not received a transmission in over 170 hours from PASS-assigned DCPid 1661A278\r"
+            "go2msg": "(DCPid 175F872E) LRGS has not received a transmission in 48 hours"
           }
         },
-        "name": "PECONIC RIVER AT COUNTY HWY 105 AT RIVERHEAD NY ",
-        "users": "ncheung"
+        "name": "WEST POND AT GLEN COVE NY",
+        "users": "rbehrens, rwelk"
       }
     },
     {
       "items": {
-        "SiteID": "01362330",
+        "SiteID": "01315170",
         "goflags": {
           "1": {
-            "go2flag": "MODEM",
-            "go2msg": "The latest value for this site in NWISweb is 141 hours old\r"
+            "go2flag": "1DCP",
+            "go2msg": "(DCPid 173EA10A) LRGS has not received a transmission in 90 hours"
           }
         },
-        "name": "STONY CLOVE CREEK NEAR LANESVILLE NY\r",
-        "users": ""
+        "name": "DURGIN BROOK AT BOREAS RIVER NY",
+        "users": "ndeyette, pguse"
       }
     },
     {
       "items": {
-        "SiteID": "01362332",
+        "SiteID": "01372058",
         "goflags": {
           "1": {
-            "go2flag": "MODEM",
-            "go2msg": "The latest value for this site in NWISweb is 140 hours old\r"
+            "go2flag": "1DCP",
+            "go2msg": "LRGS has not received a transmission in over 170 hours from PASS-assigned DCPid 179010BA"
           }
         },
-        "name": "STONY CLOVE CREEK AT WRIGHT RD NEAR LANESVILLE NY\r",
-        "users": ""
+        "name": "HUDSON RIVER BELOW POUGHKEEPSIE NY",
+        "users": "tlsmith"
       }
     },
     {
       "items": {
-        "SiteID": "01362350",
+        "SiteID": "01374701",
         "goflags": {
           "1": {
-            "go2flag": "MODEM",
-            "go2msg": "The latest value for this site in NWISweb is 141 hours old\r"
+            "go2flag": "3DCP",
+            "go2msg": "(DCPid DDC51762) LRGS has not received a transmission in 7 hours"
           }
         },
-        "name": "STONY CLOVE CREEK AT CHICHESTER NY\r",
-        "users": ""
+        "name": "WEST BRANCH CROTON RIVER NEAR CROTON FALLS NY",
+        "users": "dianaphi"
       }
     },
     {
       "items": {
-        "SiteID": "01362356",
+        "SiteID": "01375000",
         "goflags": {
           "1": {
-            "go2flag": "MODEM",
-            "go2msg": "The latest value for this site in NWISweb is 143 hours old\r"
+            "go2flag": "3LRAT",
+            "go2msg": "The current Q (16.8) is 82% less than the lowest Qm in the last 2.8 year(s)"
           }
         },
-        "name": "WARNER CREEK AT SILVER HOLLOW RD NR CHICHESTER NY\r",
-        "users": ""
-      }
-    },
-    {
-      "items": {
-        "SiteID": "01362368",
-        "goflags": {
-          "1": {
-            "go2flag": "MODEM",
-            "go2msg": "The latest value for this site in NWISweb is 142 hours old\r"
-          }
-        },
-        "name": "OX CLOVE NEAR MOUTH AT CHICHESTER NY ",
-        "users": "bzatorsk, jsiemion"
+        "name": "CROTON R AT NEW CROTON DAM NR CROTON-ON-HUDSON NY",
+        "users": "khooey"
       }
     },
     {
@@ -84,37 +71,50 @@
         "goflags": {
           "1": {
             "go2flag": "MODEM",
-            "go2msg": "The latest value for this site in NWISweb is 9 hours old\r"
+            "go2msg": "The latest value for this site in NWISweb is 120 hours old"
           }
         },
-        "name": "HUDSON RIVER AT WATER GRANT STREET AT YONKERS NY\r",
+        "name": "HUDSON RIVER AT WATER GRANT STREET AT YONKERS NY",
         "users": ""
       }
     },
     {
       "items": {
-        "SiteID": "01421000",
+        "SiteID": "01376520",
         "goflags": {
           "1": {
-            "go2flag": "1GH",
-            "go2msg": "The DCP Xmitted 56 minutes ago, but stage data is 15968 minutes old in NWISweb. \r"
+            "go2flag": "MODEM",
+            "go2msg": "The latest value for this site in NWISweb is 18 hours old"
           }
         },
-        "name": "EAST BRANCH DELAWARE RIVER AT FISHS EDDY NY ",
-        "users": "mulvihil"
+        "name": "HUDSON RIVER AT PIER 26 AT NEW YORK NY",
+        "users": ""
       }
     },
     {
       "items": {
-        "SiteID": "01421618",
+        "SiteID": "01414000",
         "goflags": {
           "1": {
-            "go2flag": "2DCP",
-            "go2msg": "(DCPid 17E13100) LRGS has not received a transmission in 19 hours\r"
+            "go2flag": "1DCP",
+            "go2msg": "(DCPid 17F4C1DA) LRGS has not received a transmission in 44 hours"
           }
         },
-        "name": "TOWN BROOK SOUTHEAST OF HOBART NY ",
+        "name": "PLATTE KILL AT DUNRAVEN NY",
         "users": "sgstewar"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01423910",
+        "goflags": {
+          "1": {
+            "go2flag": "1DCP",
+            "go2msg": "(DCPid DF108BAC) LRGS has not received a transmission in 36 hours"
+          }
+        },
+        "name": "CANNONSVILLE RESERVOIR NEAR KELSEY NY",
+        "users": "mulvihil"
       }
     },
     {
@@ -122,135 +122,109 @@
         "SiteID": "01525981",
         "goflags": {
           "1": {
-            "go2flag": "5SHFT",
-            "go2msg": "The current Q (420) is in a Qm definition GAP (Qms > 50% from shifted-rating were ignored)\r"
+            "go2flag": "6SHFT",
+            "go2msg": "The current Q (58.2) is in a Qm definition GAP (Qms > 50% from shifted-rating were ignored)"
           }
         },
-        "name": "TUSCARORA CREEK ABOVE SOUTH ADDISON NY ",
+        "name": "TUSCARORA CREEK ABOVE SOUTH ADDISON NY",
         "users": "rdjohnso"
       }
     },
     {
       "items": {
-        "SiteID": "04213401",
+        "SiteID": "04214231",
+        "goflags": {
+          "1": {
+            "go2flag": "4GAP",
+            "go2msg": "The current Q (235) is in a measurement definition GAP in the upper portion of the rating"
+          }
+        },
+        "name": "S BR EIGHTEENMILE CR AT BLEY RD AT EDEN VALLEY",
+        "users": "bhayhurs"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04231600",
+        "goflags": {
+          "1": {
+            "go2flag": "1GH",
+            "go2msg": "The DCP Xmitted 43 minutes ago, but stage data is 296 minutes old in NWISweb."
+          }
+        },
+        "name": "GENESEE RIVER AT FORD STREET BRIDGE, ROCHESTER NY",
+        "users": "amorgan, mbjennin"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04274000",
         "goflags": {
           "1": {
             "go2flag": "2LRAT",
-            "go2msg": "The current Q (1.41) is 52% less than the lowest Qm ever (since 1993)\r"
+            "go2msg": "The current Q (141) is 63% less than the lowest Qm ever (since 1993)"
           }
         },
-        "name": "WALNUT CREEK AT US ROUTE 20 AT SILVER CREEK NY ",
-        "users": "rdjohnso"
-      }
-    },
-    {
-      "items": {
-        "SiteID": "04230650",
-        "goflags": {
-          "1": {
-            "go2flag": "3DCP",
-            "go2msg": "(DCPid CE7EBE4A) LRGS has not received a transmission in 9 hours\r"
-          }
-        },
-        "name": "GENESEE R AT BALLANTYNE BRIDGE NEAR MORTIMER NY ",
-        "users": "amorgan"
-      }
-    },
-    {
-      "items": {
-        "SiteID": "04279000",
-        "goflags": {
-          "1": {
-            "go2flag": "2LRAT",
-            "go2msg": "The current Q (39.9) is 10% less than the lowest Qm ever (since 1993)\r"
-          }
-        },
-        "name": "LA CHUTE AT TICONDEROGA NY ",
-        "users": "pguse"
-      }
-    },
-    {
-      "items": {
-        "SiteID": "04279085",
-        "goflags": {
-          "1": {
-            "go2flag": "iGH",
-            "go2msg": "The current stage (100.27) is greater than the critical stage (100.0) labeled in go2 as \"NWS_FS\"\r"
-          }
-        },
-        "name": "LAKE CHAMPLAIN NORTH OF WHITEHALL NY ",
-        "users": "pguse"
-      }
-    },
-    {
-      "items": {
-        "SiteID": "04294413",
-        "goflags": {
-          "1": {
-            "go2flag": "iGH",
-            "go2msg": "The current stage (100.28) is greater than the critical stage (100.0) labeled in go2 as \"NWS_FS\"\r"
-          }
-        },
-        "name": "LAKE CHAMPLAIN AT PORT HENRY NY ",
+        "name": "W BR AUSABLE R NR LAKE PLACID NY",
         "users": "bmcdonal"
       }
     },
     {
       "items": {
-        "SiteID": "04295000",
-        "goflags": {
-          "1": {
-            "go2flag": "iGH",
-            "go2msg": "The current stage (100.07) is greater than the critical stage (100.0) labeled in go2 as \"NWS_FS\"\r"
-          }
-        },
-        "name": "RICHELIEU R ",
-        "users": "LAKE CHAMPLAIN, bmcdonal"
-      }
-    },
-    {
-      "items": {
-        "SiteID": "404505073131501",
+        "SiteID": "405743072425701",
         "goflags": {
           "1": {
             "go2flag": "1DCP",
-            "go2msg": "LRGS has not received a transmission in over 170 hours from PASS-assigned DCPid DD38B6E8\r"
+            "go2msg": "(DCPid D11511D2) LRGS has not received a transmission in 118 hours"
           }
         },
-        "name": "S123414. 1 ",
-        "users": "gsilva, mzuck"
+        "name": "S 4271. 1",
+        "users": "gsilva"
       }
     },
     {
       "items": {
-        "SiteID": "405925072165601",
+        "SiteID": "420703079442501",
         "goflags": {
           "1": {
             "go2flag": "1DCP",
-            "go2msg": "LRGS has not received a transmission in over 170 hours from PASS-assigned DCPid 17660116\r"
+            "go2msg": "(DCPid CE07357C) LRGS has not received a transmission in 24 hours"
           }
         },
-        "name": "RAIN GAGE NEAR SAG HARBOR NY ",
-        "users": "eludkey"
+        "name": "FINDLEY LAKE RAIN GAGE",
+        "users": "rdjohnso"
       }
     },
     {
       "items": {
-        "SiteID": "425027076564401",
+        "SiteID": "422917076275702",
+        "goflags": {
+          "1": {
+            "go2flag": "1DCP",
+            "go2msg": "LRGS has not received a transmission in over 170 hours from PASS-assigned DCPid DD83577A"
+          }
+        },
+        "name": "Ithaca subdistrict experimental test site 2",
+        "users": ""
+      }
+    },
+    {
+      "items": {
+        "SiteID": "424129077495501",
         "goflags": {
           "1": {
             "go2flag": "MODEM",
-            "go2msg": "The latest value for this site in NWISweb is 10 hours old\r"
+            "go2msg": "The latest value for this site in NWISweb is 95 hours old"
           }
         },
-        "name": "SENECA LAKE PLATFORM\r",
-        "users": ""
+        "name": "NY-SW4 ALFRED FARMS EDGE OF FIELD, SONYEA NY",
+        "users": "akowalcz"
       }
     }
   ],
   "metadata": {
-    "created": "05/27/19 10:38 AM",
-    "createdFrom": "NYData Email",
+    "created": "12/09/19 10:45 AM",
+    "createdFrom": "/usr/local/wrdapp/go2/archive/20191209.go2lite.output",
     "description": "Daily GO2 error flags for NY Water Science Center",
     "development": "Written by Todd Siskin and Martyn Smith"
   }

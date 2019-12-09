@@ -1,0 +1,75 @@
+{
+  "SitesCollection": [
+    {
+      "items": {
+        "SiteID": "04213500",
+        "goflags": {
+          "1": {
+            "go2flag": "3hRAT",
+            "go2msg": "The NWS predicted Q (6320.0, 2019-12-10 12:00) is 292% greater than the highest non-poor Qm in the last 2.8 years"
+          }
+        },
+        "name": "CATTARAUGUS CREEK AT GOWANDA NY",
+        "users": "mbjennin, rdjohnso"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01332500",
+        "goflags": {
+          "1": {
+            "go2flag": "iGH",
+            "go2msg": "The NWS predicted stage (8.50, 2019-12-10 12:00) is greater than the critical stage (8.0) labeled in go2 as 'CSGmeas'"
+          }
+        },
+        "name": "HOOSIC RIVER NEAR WILLIAMSTOWN, MA",
+        "users": ""
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01334000",
+        "goflags": {
+          "1": {
+            "go2flag": "iGH",
+            "go2msg": "The NWS predicted stage (6.40, 2019-12-10 12:00) is greater than the critical stage (5.0) labeled in go2 as 'CSGmeas'"
+          }
+        },
+        "name": "WALLOOMSAC RIVER NEAR NORTH BENNINGTON, VT",
+        "users": ""
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04213500",
+        "goflags": {
+          "1": {
+            "go2flag": "iGH",
+            "go2msg": "The NWS predicted stage (6.30, 2019-12-10 12:00) is greater than the critical stage (6.0) labeled in go2 as 'CSGmeas'"
+          }
+        },
+        "name": "CATTARAUGUS CREEK AT GOWANDA NY",
+        "users": "mbjennin, rdjohnso"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04218518",
+        "goflags": {
+          "1": {
+            "go2flag": "iGH",
+            "go2msg": "The NWS predicted stage (5.60, 2019-12-11 00:00) is greater than the critical stage (5.5) labeled in go2 as 'CSGmeas'"
+          }
+        },
+        "name": "ELLICOTT CREEK BELOW WILLIAMSVILLE NY",
+        "users": "bhayhurs"
+      }
+    }
+  ],
+  "metadata": {
+    "created": "12/09/19 10:45 AM",
+    "createdFrom": "/usr/local/wrdapp/go2/archive/20191209.predicted.output",
+    "description": "Daily GO2Fast error flags for NY Water Science Center",
+    "development": "Written by Todd Siskin and Martyn Smith"
+  }
+}
