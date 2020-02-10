@@ -20,9 +20,15 @@
 var siteList = {};
 var tripList = {};
 var map;
+var popupChart;
 var layerLabels, layer, wscLayer, hullLayer, selectLayer, sitesLayer, peopleLayer, lr_NWS_layer, sr_NWS_layer, storm_NWS_layer, reflectivity_NWS_conus_layer;
 var showPeople = false;
 var refreshIntervalId;
+
+Highcharts.setOptions({
+	global: { useUTC: false },
+	lang: { thousandsSep: ','}
+});
 
 if (process.env.NODE_ENV !== 'production') {
   require('../index.html');
@@ -32,6 +38,31 @@ if (process.env.NODE_ENV !== 'production') {
 $( document ).ready(function() {
 	console.log('Application Information: ' + process.env.NODE_ENV + ' ' + 'version ' + VERSION);
 	$('#appVersion').html('Application Information: ' + process.env.NODE_ENV + ' ' + 'version ' + VERSION);
+	
+	$.ajaxQ = (function(){
+		var id = 0, Q = {};
+	  
+		$(document).ajaxSend(function(e, jqx){
+		  jqx._id = ++id;
+		  Q[jqx._id] = jqx;
+		});
+		$(document).ajaxComplete(function(e, jqx){
+		  delete Q[jqx._id];
+		});
+	  
+		return {
+		  abortAll: function(){
+			var r = [];
+			$.each(Q, function(i, jqx){
+			  r.push(jqx._id);
+			  jqx.abort();
+			});
+			return r;
+		  }
+		};
+	  
+	  })();
+
 
 	//create map
 	map = L.map('mapDiv',{zoomControl: false});
@@ -94,10 +125,6 @@ $( document ).ready(function() {
 		$('body').toggleClass('isOpenMenu');
 	});
 
-	$('#toggleGo2').click(function() {
-		toggleGo2();
-	});
-
 	$('#togglePeople').click(function() {
 		togglePeople();
 	});
@@ -124,21 +151,16 @@ $( document ).ready(function() {
 	});	
 
 	sitesLayer.on('click', function(e) { 
-		showNWISgraph(e);
+		openPopup(e);
+	});
+
+	map.on('popupopen', function(e) {
+		var px = map.project(e.target._popup._latlng); // find the pixel location on the map where the popup anchor is
+		px.y -= e.target._popup._container.clientHeight/2; // find the height of the popup container, divide by 2, subtract from the Y axis of marker location
+		map.panTo(map.unproject(px),{animate: true}); // pan to new center
 	});
 	/*  END EVENT HANDLERS */
 });
-
-function getAHPSids() {
-	$.getJSON(noaaSitesJSON, function(data) {
-		$.each(data, function( usgsSiteID, ahpsID ) {
-			if (siteList[usgsSiteID]) {
-				siteList[usgsSiteID].properties.ahpsID = ahpsID;
-			}
-		});
-	});
-}
-
 
 function addNWSlayers() {
 
@@ -172,29 +194,45 @@ function addNWSlayers() {
 	storm_NWS_layer.addLayer(L.imageOverlay(' https://radar.weather.gov/ridge/RadarImg/NTP/OKX_NTP_0.gif',[[38.245202,-75.713107],[43.477288,-70.005377]]));
 }
 
-function showNWISgraph(e) {	
+function openPopup(e) {	
+	console.log('OPENING POPUP...',e);
+
+	//cleanup
+	$('#graphContainer').remove();
+	$('.graphLoader').remove();
+	popupChart = undefined;
+	$.ajaxQ.abortAll();
+
+	//bind and open popup with dynamic content
+	e.layer.bindPopup(e.layer.properties.popupContent, {minWidth: 300}).openPopup();
+
 	if (e.layer.properties.siteType === 'sw' || e.layer.properties.siteType === 'gw') {
 		//var parameterCodes = '00060,72019,62619';
 		//var parameterCodes = '00060,62614,62615,62619,72214,72264,72019';
 		var parameterCodes = '00060,00065,62614,62615,62619,72214,72264,72019';
 		var timePeriod = 'P7D';
-		$.getJSON('https://staging.waterservices.usgs.gov/nwis/iv/?format=nwjson&sites=' + e.layer.properties.siteID + '&parameterCd=' + parameterCodes + '&period=' + timePeriod, function(data) {
+		$.getJSON(USGSwaterServicesURL + e.layer.properties.siteID + '&parameterCd=' + parameterCodes + '&period=' + timePeriod, function(data) {
 
 			if (!data.data || data.data[0].time_series_data.length <= 0) {
-				setTimeout(function(){ $('#graphLoader').hide(); }, 500);
-				console.log('Found an NWIS site, but it had no data in waterservices: ', e.layer.properties.siteID);
 				
+
+				setTimeout(function(){ 
+					$('#nwisGraphLoader').html('<p><i>No NWIS waterservices data was found</i></p>'); 
+					$('#ahpsGraphLoader').remove();
+					$('#nwmGraphLoader').remove();
+				}, 500);
+
+				console.log('Found an NWIS site, but it had no data in waterservices: ', e.layer.properties.siteID);
 				return;
 			}
-			var graphData = [];
 
 			console.log('NWIS data:',data);
 
 			//set labels
-			var yLabel = '';
-			var pointFormat = '';
+			var yLabel;
+			var pointFormat;
 			var dischargeFlag = false;
-			var series = {};
+			var series;
 
 			$.each(data.data, function( index, seriesData ) {
 
@@ -207,11 +245,11 @@ function showNWISgraph(e) {
 						tooltip: {
 							pointFormat: pointFormat
 						},
-						showInLegend: false, 
+						showInLegend: true, 
+						id: 'usgs-series',
 						data:seriesData.time_series_data,
-						name: seriesData.parameter_name
+						name: 'USGS Measured discharge'
 					};
-					graphData.push(series);
 				}
 
 				else if (seriesData.parameter_name.indexOf('Elevation') !== -1) {
@@ -225,10 +263,10 @@ function showNWISgraph(e) {
 							pointFormat: pointFormat
 						},
 						showInLegend: false, 
+						id: 'usgs-series',
 						data:seriesData.time_series_data,
 						name: seriesData.parameter_name
 					};
-					graphData.push(series);
 				}
 
 				else if (seriesData.parameter_name === 'Water level, depth LSD') {
@@ -240,10 +278,10 @@ function showNWISgraph(e) {
 							pointFormat: pointFormat
 						},
 						showInLegend: false, 
+						id: 'usgs-series',
 						data:seriesData.time_series_data,
 						name: seriesData.parameter_name
 					};
-					graphData.push(series);
 				}
 
 				//only put gage height i
@@ -259,32 +297,45 @@ function showNWISgraph(e) {
 							pointFormat: pointFormat
 						},
 						showInLegend: false, 
+						id: 'usgs-series',
 						data:seriesData.time_series_data,
 						name: seriesData.parameter_name
 					};
-					graphData.push(series);
 				}
+
 			});
 
-			console.log('before all graph data:', graphData);
+			//this is either a non discharge site or gw site so we are done
+			if (!dischargeFlag) {
+				popupChart = undefined;
+				console.log('This is a gw or non disharge site, so were done');
+				$('.graphLoader').remove();
+				showGraph(series, yLabel);
+				return;
+			}
 
-
+			//show NWIS graph
+			$('#nwisGraphLoader').remove();
+			showGraph(series, yLabel);
+			
 			//get NOAA forecast values if this is an AHPS Site 
-			if (siteList[e.layer.properties.siteID].properties.ahpsID) {
-				console.log('Found AHPS site: ',siteList[e.layer.properties.siteID].properties.ahpsID, '  Querying AHPS...');
-				var AHPSurl = 'https://water.weather.gov/ahps2/hydrograph_to_xml.php?gage=' + e.layer.properties.ahpsID + '&output=xml';
-				console.log('AHPS page url:',AHPSurl);
-				var url = './proxy.php?url=';
+			if (siteList[e.layer.properties.siteID].properties.nws_id && siteList[e.layer.properties.siteID].properties.nws_id !== 'n/a') {
+				console.log('Found AHPS site: ',siteList[e.layer.properties.siteID].properties.nws_id, '  Querying AHPS...');
+				var reqURL = AHPSurl + e.layer.properties.nws_id + '&output=xml';
+				console.log('AHPS page url:',reqURL);
+
+				//for prod use relative proxy path
+				var proxyURL = './proxy.php?url=';
 
 				//use staging if were in dev mode or on amazon s3
-				if (process.env.NODE_ENV === 'development' || location.hostname.match('wim') ) { url = 'http://staging-ny.water.usgs.gov/maps/go2/proxy.php?url=';}
+				if (process.env.NODE_ENV === 'development' || location.hostname.match('wim') ) { proxyURL = NYproxyURL;}
 
 				$.ajax({
-					url: url + AHPSurl,
+					url: proxyURL + reqURL,
 					dataType: 'xml',
 					success: function(feedResponse) {
 
-						console.log('Response:',feedResponse);
+						console.log('AHPS Response:',feedResponse);
 						var valueArray = [];
 						var someValues = false;
 						$(feedResponse).find("forecast").find("datum").each(function(){
@@ -312,47 +363,172 @@ function showNWISgraph(e) {
 
 						if (valueArray.length <= 1) {
 							console.log('Found an AHPS Site, but no AHPS data was found: ', e.layer.properties.siteID, e.layer.properties.ahpsID);
-						}
-						//if there is AHPS data, add a new series to the graph
-						else {
-							var forecastSeries = {
-								tooltip: {
-									pointFormat: pointFormat
-								},
-								showInLegend: true, 
-								color: '#009933',
-								name: 'NWS River Forecast (AHPS)',
-								data: valueArray
-							}
-							graphData.push(forecastSeries);
+							$('#ahpsGraphLoader').remove();
+							return;
 						}
 
-						console.log('Calling showgraph function now...');
-						showGraph(graphData, yLabel);
+						//if there is AHPS data, add a new series to the graph
+						var ahpsSeries = {
+							tooltip: {
+								pointFormat: pointFormat
+							},
+							showInLegend: true, 
+							color: '#009933',
+							name: 'NWS River Forecast (AHPS)',
+							id: 'ahps-series',
+							data: valueArray
+						}
+
+						//show AHPS graph
+						$('#ahpsGraphLoader').remove();
+						showGraph(ahpsSeries, yLabel);
+
 					}
 				});
 			}
 
-			//if no AHPS data, just show USGS data
+			//this is not an AHPS site
 			else {
-				console.log('Did not find AHPS site for USGS Site: ', e.layer.properties.siteID);
-				setTimeout(function(){ showGraph(graphData, yLabel); }, 500);
-				
+				console.log('This is not an AHPS site:', e.layer.properties.siteID);
+				$('#ahpsGraphLoader').remove();
 			}
+
+			//Check if NWM site and get forecast
+			var query = L.esri.query({url: NWMmapServiceURL	});
+			var queryString = "site_no = '" + e.layer.properties.siteID + "'";
+			$('#graphContainer').append('LOADING NWM DATA... Please Wait')
+			query.where(queryString);
+			query.run(function (error, featureCollection, response) {
+
+				if (error) {
+					console.log(error);
+					return;
+				}
+				if (featureCollection.features.length == 0) {
+					console.log('Did not find NWM site for USGS Site: ', e.layer.properties.siteID);
+					return;
+				}
+
+				console.log('NWM Feature query results:',featureCollection)
+
+				var nwm_reach_code = featureCollection.features[0].properties['feature_id'];
+
+				//override featureID for Mohawk R nr Utica (01342602) 
+				if (nwm_reach_code == 22743145) {
+					nwm_reach_code = 22743167;
+				}
+
+				//now that we have a feature, OK to continue
+				console.log('Found NWM reach code: ', nwm_reach_code, '  Querying NWM...');
+				var reqURL = NWMshortRangeURL + nwm_reach_code;
+				console.log('NWM page url:',reqURL);
+
+				//for prod use relative proxy path
+				var proxyURL = './proxy.php?url=';
+
+				//use staging if were in dev mode or on amazon s3
+				if (process.env.NODE_ENV === 'development' || location.hostname.match('wim') ) { proxyURL = NYproxyURL;}
+
+				$.ajax({
+					url: proxyURL + reqURL,
+					dataType: 'json',
+					success: function(nwmResponse) {
+
+						console.log('NWM Short Range Response:',nwmResponse);
+						var valueArray = [];
+						if (nwmResponse[0].data.length > 0) someValues = true;
+						
+						var forecastTime = nwmResponse[0]['reference-time'];
+						var units = nwmResponse[0].units;
+
+						$.each(nwmResponse[0].data, function( index, dataVal ) {
+							var date = dataVal['forecast-time'];
+							var value = dataVal['value']
+							var seconds = new Date(date)/1;
+							valueArray.push([seconds, value]);
+						});
+						valueArray.sort();
+
+						//grab last value after sort
+						var lastShortRangeVal = valueArray[valueArray.length-1];
+
+						console.log('Last short range NWM value:',lastShortRangeVal)
+						
+						//nested ajax call for NWM short range data
+						var reqURL = NWMmediumRangeURL + nwm_reach_code;
+						$.ajax({
+							url: proxyURL + reqURL,
+							dataType: 'json',
+							success: function(nwmResponse) {
+		
+								console.log('NWM Medium Range Response:',nwmResponse);
+								if (nwmResponse[0].data.length > 0) someValues = true;
+		
+								var forecastTime = nwmResponse[0]['reference-time'];
+								var units = nwmResponse[0].units;
+		
+								$.each(nwmResponse[0].data, function( index, dataVal ) {
+									var date = dataVal['forecast-time'];
+									var value = dataVal['value']
+									var seconds = new Date(date)/1;
+
+									//only medium range values if time stamp is after the last short range value
+									if (seconds > lastShortRangeVal[0]) {
+										valueArray.push([seconds, value]);
+									}
+
+								});
+								valueArray.sort();
+		
+								if (valueArray.length <= 1) {
+									console.log('Found a NWM Site, but no NWM data was found: ', e.layer.properties.siteID, e.layer.properties.nwm_reach_code);
+									$('#nwmGraphLoader').remove();
+									reteurn;
+								}
+		
+								//if there is AHPS data, add a new series to the graph
+								var nwmSeries = {
+									tooltip: {
+										pointFormat: pointFormat
+									},
+									showInLegend: true, 
+									color: '#AF18EC',
+									name: 'NWM River Forecast for ' +  featureCollection.features[0].properties['site_name'],
+									id: 'nwm-series',
+									data: valueArray
+								}
+
+								//show NWM graph
+								$('#nwmGraphLoader').remove();
+								showGraph(nwmSeries, yLabel);
+
+							}
+						});
+					}
+				});
+			});
 		});
 	}
 }
 
-function showGraph(graphData, yLabel) {
-	console.log('Calling showGraph',graphData)
-	//if there is some data, show the div
-	$('#graphContainer').show();
-	$('#graphLoader').hide();
+function showGraph(series, yLabel) {
+	console.log('In showGraph',series, yLabel, popupChart)
 
-	Highcharts.setOptions({
-		global: { useUTC: false },
-		lang: { thousandsSep: ','}
-	});
+	//if graph is already set up, just refresh series data
+	if (popupChart && popupChart.series) {
+		console.log('CHART EXISTS')
+		popupChart.addSeries(series, false);
+		popupChart.redraw();
+		return;
+	}
+
+	//if there is some data, show the div
+	// $('#graphContainer').show();
+	// $('#graphLoader').hide();
+
+	console.log('SHOULD BE HERE')
+
+	//popupChart.redraw();
 
 	var chartSetup = {
 		chart: {
@@ -360,6 +536,7 @@ function showGraph(graphData, yLabel) {
 			spacingTop: 20,
 			spacingLeft: 0,
 			spacingBottom: 0,
+			zoomType:'x'
 		},
 		title:{
 			text:''
@@ -381,14 +558,23 @@ function showGraph(graphData, yLabel) {
 		yAxis: {
 			title: { text: yLabel }
 		},
-		series: graphData
+		series: [series]
 	};
 
 	//type specific overrides
-	if (graphData[0].name === 'Discharge') chartSetup.yAxis.type = 'logarithmic';
-	if (graphData[0].name === 'Water level, depth LSD') chartSetup.yAxis.reversed = true;
+	if (series.name === 'Discharge') chartSetup.yAxis.type = 'logarithmic';
+	if (series.name === 'Water level, depth LSD') chartSetup.yAxis.reversed = true;
 
-	Highcharts.chart('graphContainer', chartSetup);
+
+	setTimeout(function(){ 
+		popupChart = Highcharts.chart('graphContainer', chartSetup); 
+		$('#graphContainer').show();
+		//$('#nwisGraphLoader').hide();
+		console.log('END OF SHOWGRAPH',popupChart);
+	}, 500);
+	
+
+	
 }
 
 function selectCenter(selectedCenter) {
@@ -480,19 +666,23 @@ function loadWSCboundaries() {
 function loadSites() {
 	var bgIcon = L.icon({iconUrl: './images/symbols/dot_small.png',iconSize: [8,8]});
 	
+	//iterate over the generated siteList JSON
 	$.getJSON(siteListJSON, function(data) {
 		$.each(data.SitesCollection, function( index, site ) {
 			//give all sites the default background marker
 			siteList[site.SiteID] = L.marker([site.Attributes.latDD, site.Attributes.lonDD], {icon: bgIcon});
 
-			//save its properties
+			//overload the properties into the leaflet marker for that site
 			siteList[site.SiteID].properties = {};
 			siteList[site.SiteID].properties.siteID = site.SiteID;
 			siteList[site.SiteID].properties.siteName = site.Attributes.station_nm;
 			siteList[site.SiteID].properties.siteType = site.Attributes.site_type;
-			//set default popup with minimal info
-			siteList[site.SiteID].properties.popupContent = '<b>' + site.SiteID + '</b></br></br>' + site.Attributes.station_nm + '</br><a href="https://waterdata.usgs.gov/nwis/inventory/?site_no=' + site.SiteID + '" target="_blank">Access Data</a></br><div id="graphLoader"><p><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw graph-loader"></i>Loading graph data...</p></div><div id="graphContainer" style="width:100%; height:200px;display:none;"></div>';
-			siteList[site.SiteID].bindPopup(siteList[site.SiteID].properties.popupContent, {minWidth: 300});
+			siteList[site.SiteID].properties.nws_id = site.Attributes.nws_id;
+
+			//Need to still write some popup data that will even apply if site isn't in a trip or out of site
+			siteList[site.SiteID].properties.popupContent = '<b>' + site.SiteID + '</b></br></br>' + site.Attributes.station_nm + '</br><a href="https://waterdata.usgs.gov/nwis/inventory/?site_no=' + site.SiteID + '" target="_blank">Access Data</a></br><div id="graphContainer" style="width:100%; height:200px;display:none;"></div><div class="container" style="width:100%;"><div class="row"><div class="col-md-4 graphLoader" id="nwisGraphLoader"><p><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw graph-loader"></i>Loading NWIS...</p></div><div class="col-md-4 graphLoader" id="ahpsGraphLoader"><p><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw graph-loader"></i>Loading AHPS...</p></div><div class="col-md-4 graphLoader" id="nwmGraphLoader"><p><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw graph-loader"></i>Loading NWM..</p></div></div></div>';
+
+			siteList[site.SiteID].properties.defaultPopupContent = siteList[site.SiteID].properties.popupContent;
 
 			//add to layergroup
 			sitesLayer.addLayer(siteList[site.SiteID]);
@@ -501,8 +691,6 @@ function loadSites() {
 		loadTrips();
 		//initial loadGo2 call
 		loadGo2(go2warningsJSON);
-
-		getAHPSids();
 
 	});
 }
@@ -522,9 +710,11 @@ function loadTrips() {
 							siteList[site].properties.tripOwner = trip.TripOwner;
 							
 							//overwrite popup with added trip data
-							siteList[site].properties.popupContent = '<b>' + site + '</b></br></br>' + siteList[site].properties.siteName+ '</br><a href="https://waterdata.usgs.gov/nwis/inventory/?site_no=' + site + '" target="_blank">Access Data</a></br></br><b>Office: </b>' + WSC.OfficeName + '</br><b>Trip Name: </b>' + siteList[site].properties.tripName + '</br><b>Trip Owner: </b>' + siteList[site].properties.tripOwner + '<div id="graphLoader"><p><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw graph-loader"></i>Loading graph data...</p></div><div id="graphContainer" style="width:100%; height:200px;display:none;"></div>';
+							siteList[site].properties.popupContent = '<b>' + site + '</b></br></br>' + siteList[site].properties.siteName+ '</br><a href="https://waterdata.usgs.gov/nwis/inventory/?site_no=' + site + '" target="_blank">Access Data</a></br></br><b>Office: </b>' + WSC.OfficeName + '</br><b>Trip Name: </b>' + siteList[site].properties.tripName + '</br><b>Trip Owner: </b>' + siteList[site].properties.tripOwner + '<div id="graphContainer" style="width:100%; height:200px;display:none;"></div><div class="container" style="width:100%;"><div class="row"><div class="col-md-4 graphLoader" id="nwisGraphLoader"><p><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw graph-loader"></i>Loading NWIS...</p></div><div class="col-md-4 graphLoader" id="ahpsGraphLoader"><p><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw graph-loader"></i>Loading AHPS...</p></div><div class="col-md-4 graphLoader" id="nwmGraphLoader"><p><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw graph-loader"></i>Loading NWM..</p></div></div></div>';
 
-							siteList[site].getPopup().setContent(siteList[site].properties.popupContent);
+							siteList[site].properties.defaultPopupContent = siteList[site].properties.popupContent;
+
+							//siteList[site].getPopup().setContent(siteList[site].properties.popupContent);
 						}
 						else {
 							if (process.env.NODE_ENV === 'development') console.log('This site does not exist in the master SiteList.json: ', site);
@@ -533,19 +723,6 @@ function loadTrips() {
 				});
 			});
 		});
-	});
-}
-
-function toggleGo2() {
-	$('#toggleGo2').text(function(i,old){
-		if (old ==='Show Go2Lite') {
-			loadGo2(go2liteWarningsJSON);
-			return 'Show Go2';
-		}
-		else {
-			loadGo2(go2warningsJSON);
-			return 'Show Go2Lite';
-		}
 	});
 }
 
@@ -565,6 +742,10 @@ function selectGo2(method) {
 		loadGo2(go2predictedWarningsJSON);
 		return 'Show Go2Fast';
 	}
+	if (method ==='Go2FastR') {
+		loadGo2(go2predictedWarningsJSON_NWM);
+		return 'Show Go2FastR';
+	}
 
 
 }
@@ -578,94 +759,106 @@ function loadGo2(go2json) {
 		$('#loading').hide();
 		$('#time').html('Data queried: ' + data.metadata.created);
 
-		$.each(siteList, function( index, masterSite ) {
-			//reset the site popup and icon
-			masterSite.getPopup().setContent(masterSite.properties.popupContent);
+		//reset all sites popups and icons
+		$.each(siteList, function( index, site ) {
+			//console.log('test',site)
+			site.properties.popupContent = site.properties.defaultPopupContent;
 			var fgIcon = L.icon({iconUrl: './images/symbols/dot_small.png',iconSize: [8,8]});
-			var go2text = '';
-			var go2flags = [];
-
-			//loop of master marker list to find flagged matches
-			$.each(data.SitesCollection, function( index, thisWarning ) {
-
-				if (masterSite.properties.siteID === thisWarning.items.SiteID) {
-					if (!masterSite.properties.tripName) {
-						//if (process.env.NODE_ENV === 'development') console.log('This site does not exist in TripList.json: ', masterSite.properties.siteID);
-						//$('#noTripSites').append('<li>' + masterSite.properties.siteID + '</li>')
-					}
-
-					var sitetype = masterSite.properties.siteType;
-
-					//get array of flags for this site
-					for (var item in thisWarning.items.goflags) {
-
-						//skip 1DCP flags temporarily
-						//if (thisWarning.items.goflags[item].go2flag != '1DCP') {
-							go2text = go2text + '<div class="alert alert-warning"><b>' + thisWarning.items.goflags[item].go2flag + ':</b> ' + thisWarning.items.goflags[item].go2msg + '</div>';
-
-							var thisFlag = thisWarning.items.goflags[item].go2flag
-							
-							//create temporary flag search for 'iGH_meas'
-							if ((thisWarning.items.goflags[item].go2flag == 'iGH') && (thisWarning.items.goflags[item].go2msg.indexOf('meas') != -1)) {
-								thisFlag = 'iGH_meas';
-							}
-							go2flags.push(thisFlag)
-						//}
-					}
-
-					//set the icon based on the flag
-					if ((searchStringInArray("1DCP",go2flags) != -1) || (searchStringInArray("2DCP",go2flags) != -1) || (searchStringInArray("1GH",go2flags) != -1) || (searchStringInArray("2GH",go2flags) != -1) || (searchStringInArray("MODEM",go2flags) != -1))   {
-						if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_red.png",iconSize: [42,40]});
-						else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_red.png",iconSize: [22,30]});
-					}
-					else if ((searchStringInArray("1LRAT",go2flags) != -1) || (searchStringInArray("1HRAT",go2flags) != -1))   {
-						if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_orange.png",iconSize: [42,40]});
-						else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_orange.png",iconSize: [22,30]});
-					}
-					else if ((searchStringInArray("2LRAT",go2flags) != -1) || (searchStringInArray("2HRAT",go2flags) != -1) || (searchStringInArray("2RRAT",go2flags) != -1))   {
-						if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_yellow.png",iconSize: [42,40]});
-						else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_yellow.png",iconSize: [22,30]});
-					}
-					else if ((searchStringInArray("3LRAT",go2flags) != -1) || (searchStringInArray("3HRAT",go2flags) != -1))   {
-						if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_green.png",iconSize: [42,40]});
-						else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_green.png",iconSize: [22,30]});
-					}
-					else if (searchStringInArray("4RAT",go2flags) != -1)    {
-						if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_blue.png",iconSize: [42,40]});
-						else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_blue.png",iconSize: [22,30]});
-					}
-					else if ((searchStringInArray("iGEN",go2flags) != -1) || (searchStringInArray("iGH_meas",go2flags) != -1))   {
-						if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_violet.png",iconSize: [42,40]});
-						else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_violet.png",iconSize: [22,30]});
-					}
-					else if (searchStringInArray("TIME",go2flags) != -1)    {
-						if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_black.png",iconSize: [42,40]});
-						else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_black.png",iconSize: [22,30]});
-					}
-					else if (searchStringInArray("iWEB",go2flags) != -1)    {
-						if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_brown.png",iconSize: [42,40]});
-						else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_brown.png",iconSize: [22,30]});
-					}
-					else if ((searchStringInArray("iDCP",go2flags) != -1) || (searchStringInArray("iGH",go2flags) != -1) || (searchStringInArray("SPIKE",go2flags) != -1) || (searchStringInArray("3DCP",go2flags) != -1) || (searchStringInArray("4DCP",go2flags) != -1) || (searchStringInArray("3GH",go2flags) != -1) || (searchStringInArray("4GH",go2flags) != -1))  {
-						if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_pink.png",iconSize: [42,40]});
-						else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_pink.png",iconSize: [22,30]});
-					}
-					else if ((searchStringInArray("GAP",go2flags) != -1) || (searchStringInArray("SHFT",go2flags) != -1) || (searchStringInArray("COMP",go2flags) != -1))   {
-						if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_gray.png",iconSize: [42,40]});
-						else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_gray.png",iconSize: [22,30]});
-					}
-					//otherwise just bail
-					else {
-						return;
-					}
-				}
-			});
-
-			//update popup content and icon
-			var popupContent = masterSite.getPopup().getContent();
-			masterSite.getPopup().setContent(popupContent += '</br>' + go2text);
-			masterSite.setIcon(fgIcon);
+			site.setIcon(fgIcon);
 		});
+
+		//loop of master marker list to find flagged matches
+		$.each(data.SitesCollection, function( index, thisWarning ) {
+
+			//flag if we are missing this site in the siteList
+			if (typeof siteList[thisWarning.items.SiteID] == 'undefined') {
+				console.warn('This site does not exist in TripList.json: ', thisWarning.items.SiteID);
+				//$('#noTripSites').append('<li>' + thisWarning.items.SiteID + '</li>')
+			}
+
+			//otherwise proceed to processing flags 
+			else {
+				masterSite = siteList[thisWarning.items.SiteID]
+
+				//console.log('Processing:', masterSite)
+				var sitetype = masterSite.properties.siteType;
+				var go2text = '';
+				var go2flags = [];
+
+				//get array of flags for this site
+				for (var item in thisWarning.items.goflags) {
+
+					//console.log('HERE',thisWarning.items.goflags[item].go2flag)
+
+					//skip 1DCP flags temporarily
+					//if (thisWarning.items.goflags[item].go2flag != '1DCP') {
+						go2text = go2text + '<div class="alert alert-warning"><b>' + thisWarning.items.goflags[item].go2flag + ':</b> ' + thisWarning.items.goflags[item].go2msg + '</div>';
+
+						var thisFlag = thisWarning.items.goflags[item].go2flag
+						
+						//create temporary flag search for 'iGH_meas'
+						if ((thisWarning.items.goflags[item].go2flag == 'iGH') && (thisWarning.items.goflags[item].go2msg.indexOf('meas') != -1)) {
+							thisFlag = 'iGH_meas';
+						}
+						go2flags.push(thisFlag)
+					//}
+				}
+
+				//set the icon based on the flag
+				if ((searchStringInArray("1DCP",go2flags) != -1) || (searchStringInArray("2DCP",go2flags) != -1) || (searchStringInArray("1GH",go2flags) != -1) || (searchStringInArray("2GH",go2flags) != -1) || (searchStringInArray("MODEM",go2flags) != -1))   {
+					if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_red.png",iconSize: [42,40]});
+					else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_red.png",iconSize: [22,30]});
+				}
+				else if ((searchStringInArray("1LRAT",go2flags) != -1) || (searchStringInArray("1HRAT",go2flags) != -1))   {
+					if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_orange.png",iconSize: [42,40]});
+					else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_orange.png",iconSize: [22,30]});
+				}
+				else if ((searchStringInArray("2LRAT",go2flags) != -1) || (searchStringInArray("2HRAT",go2flags) != -1) || (searchStringInArray("2RRAT",go2flags) != -1))   {
+					if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_yellow.png",iconSize: [42,40]});
+					else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_yellow.png",iconSize: [22,30]});
+				}
+				else if ((searchStringInArray("3LRAT",go2flags) != -1) || (searchStringInArray("3HRAT",go2flags) != -1))   {
+					if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_green.png",iconSize: [42,40]});
+					else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_green.png",iconSize: [22,30]});
+				}
+				else if (searchStringInArray("4RAT",go2flags) != -1)    {
+					if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_blue.png",iconSize: [42,40]});
+					else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_blue.png",iconSize: [22,30]});
+				}
+				else if ((searchStringInArray("iGEN",go2flags) != -1) || (searchStringInArray("iGH_meas",go2flags) != -1))   {
+					if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_violet.png",iconSize: [42,40]});
+					else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_violet.png",iconSize: [22,30]});
+				}
+				else if (searchStringInArray("TIME",go2flags) != -1)    {
+					if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_black.png",iconSize: [42,40]});
+					else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_black.png",iconSize: [22,30]});
+				}
+				else if (searchStringInArray("iWEB",go2flags) != -1)    {
+					if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_brown.png",iconSize: [42,40]});
+					else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_brown.png",iconSize: [22,30]});
+				}
+				else if ((searchStringInArray("iDCP",go2flags) != -1) || (searchStringInArray("iGH",go2flags) != -1) || (searchStringInArray("SPIKE",go2flags) != -1) || (searchStringInArray("3DCP",go2flags) != -1) || (searchStringInArray("4DCP",go2flags) != -1) || (searchStringInArray("3GH",go2flags) != -1) || (searchStringInArray("4GH",go2flags) != -1))  {
+					if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_pink.png",iconSize: [42,40]});
+					else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_pink.png",iconSize: [22,30]});
+				}
+				else if ((searchStringInArray("GAP",go2flags) != -1) || (searchStringInArray("SHFT",go2flags) != -1) || (searchStringInArray("COMP",go2flags) != -1))   {
+					if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_gray.png",iconSize: [42,40]});
+					else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_gray.png",iconSize: [22,30]});
+				}
+				//otherwise just bail
+				else {
+					return;
+				}
+
+				masterSite.properties.popupContent += '</br>' + go2text
+				masterSite.setIcon(fgIcon);
+
+			}
+
+
+
+		});
+
 	});
 }
 
@@ -825,7 +1018,8 @@ function resetView() {
 	if ($('#togglePeople').hasClass('btn-primary')) togglePeople();
 
 	//toggle go2 back to main if showing go2lite
-	if ($('#toggleGo2').text() == 'Show Go2') toggleGo2();
+	$('#go2typeSelect').val('full');
+	selectGo2('Go2')
 
 	//clear any selection graphics
 	selectLayer.clearLayers();

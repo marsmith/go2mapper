@@ -1589,12 +1589,72 @@
         "site_type": "sw",
         "Office": "Ithaca",
         "nws_id": "n/a",
+        "site_no": "01530301",
+        "station_nm": "CUTHRIE RUN NEAR BIG FLATS NY",
+        "lonDD": "-76.92527778",
+        "latDD": "42.1786111"
+      },
+      "SiteID": "01530301"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "nws_id": "CHEN6",
+        "site_no": "01530332",
+        "station_nm": "CHEMUNG RIVER AT ELMIRA NY",
+        "lonDD": "-76.8011111",
+        "latDD": "42.08638889"
+      },
+      "SiteID": "01530332"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "nws_id": "n/a",
+        "site_no": "03010674",
+        "station_nm": "ROOT CREEK AT DAVIS STREET AT BOLIVAR NY",
+        "lonDD": "-78.1629444",
+        "latDD": "42.06438889"
+      },
+      "SiteID": "03010674"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "nws_id": "n/a",
+        "site_no": "03010720",
+        "station_nm": "DODGE CREEK AT PORTVILLE NY",
+        "lonDD": "-78.34307188",
+        "latDD": "42.03562085"
+      },
+      "SiteID": "03010720"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "nws_id": "n/a",
         "site_no": "03010734",
         "station_nm": "ISCHUA CREEK TRIB NEAR MACHIAS NY",
         "lonDD": "-78.52588889",
         "latDD": "42.40802778"
       },
       "SiteID": "03010734"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "nws_id": "OLNN6",
+        "site_no": "03010820",
+        "station_nm": "ALLEGHENY RIVER AT OLEAN NY",
+        "lonDD": "-78.4511111",
+        "latDD": "42.07305556"
+      },
+      "SiteID": "03010820"
     },
     {
       "Attributes": {
@@ -1694,174 +1754,6 @@
     },
     {
       "Attributes": {
-        "site_type": "gw",
-        "Office": "Ithaca",
-        "nws_id": "PNAN6",
-        "site_no": "420326079295801",
-        "station_nm": "Local number, Cu-5, near Panama NY",
-        "lonDD": "-79.4992164",
-        "latDD": "42.0572781"
-      },
-      "SiteID": "420326079295801"
-    },
-    {
-      "Attributes": {
-        "site_type": "gw",
-        "Office": "Ithaca",
-        "nws_id": "RHSN6",
-        "site_no": "420530078445201",
-        "station_nm": "Local number, Ct-121, near Red House NY",
-        "lonDD": "-78.7475322",
-        "latDD": "42.09172945"
-      },
-      "SiteID": "420530078445201"
-    },
-    {
-      "Attributes": {
-        "site_type": "at",
-        "Office": "Ithaca",
-        "nws_id": "FDLN6",
-        "site_no": "420703079442501",
-        "station_nm": "FINDLEY LAKE RAIN GAGE",
-        "lonDD": "-79.7402333",
-        "latDD": "42.11741944"
-      },
-      "SiteID": "420703079442501"
-    },
-    {
-      "Attributes": {
-        "site_type": "gw",
-        "Office": "Ithaca",
-        "nws_id": "CRCN6",
-        "site_no": "421217079183601",
-        "station_nm": "Local number, Cu-867 near Gerry NY",
-        "lonDD": "-79.3097688",
-        "latDD": "42.2047802"
-      },
-      "SiteID": "421217079183601"
-    },
-    {
-      "Attributes": {
-        "site_type": "at",
-        "Office": "Ithaca",
-        "nws_id": "MYVN6",
-        "site_no": "421429079295601",
-        "station_nm": "MAYVILLE RAIN GAGE",
-        "lonDD": "-79.4990278",
-        "latDD": "42.24141667"
-      },
-      "SiteID": "421429079295601"
-    },
-    {
-      "Attributes": {
-        "site_type": "at",
-        "Office": "Ithaca",
-        "nws_id": "SNCN6",
-        "site_no": "421511079161701",
-        "station_nm": "SINCLAIRVILLE RAIN GAGE NEAR SINCLAIRVILLE NY",
-        "lonDD": "-79.27138889",
-        "latDD": "42.25305556"
-      },
-      "SiteID": "421511079161701"
-    },
-    {
-      "Attributes": {
-        "site_type": "at",
-        "Office": "Ithaca",
-        "nws_id": "NALN6",
-        "site_no": "421932078513701",
-        "station_nm": "CATTARAUGUS RAIN GAGE",
-        "lonDD": "-78.8602778",
-        "latDD": "42.32555556"
-      },
-      "SiteID": "421932078513701"
-    },
-    {
-      "Attributes": {
-        "site_type": "at",
-        "Office": "Ithaca",
-        "nws_id": "FRKN6",
-        "site_no": "421946078274901",
-        "station_nm": "FRANKLINVILLE RAIN GAGE",
-        "lonDD": "-78.4636111",
-        "latDD": "42.32944444"
-      },
-      "SiteID": "421946078274901"
-    },
-    {
-      "Attributes": {
-        "site_type": "gw",
-        "Office": "Ithaca",
-        "nws_id": "PRGN6",
-        "site_no": "422702079005101",
-        "station_nm": "Local number, Ct-2498, near Perrysburg NY",
-        "lonDD": "-79.0142778",
-        "latDD": "42.45044444"
-      },
-      "SiteID": "422702079005101"
-    },
-    {
-      "Attributes": {
-        "site_type": "sw",
-        "Office": "Ithaca",
-        "nws_id": "n/a",
-        "site_no": "01530301",
-        "station_nm": "CUTHRIE RUN NEAR BIG FLATS NY",
-        "lonDD": "-76.92527778",
-        "latDD": "42.1786111"
-      },
-      "SiteID": "01530301"
-    },
-    {
-      "Attributes": {
-        "site_type": "sw",
-        "Office": "Ithaca",
-        "nws_id": "CHEN6",
-        "site_no": "01530332",
-        "station_nm": "CHEMUNG RIVER AT ELMIRA NY",
-        "lonDD": "-76.8011111",
-        "latDD": "42.08638889"
-      },
-      "SiteID": "01530332"
-    },
-    {
-      "Attributes": {
-        "site_type": "sw",
-        "Office": "Ithaca",
-        "nws_id": "n/a",
-        "site_no": "03010674",
-        "station_nm": "ROOT CREEK AT DAVIS STREET AT BOLIVAR NY",
-        "lonDD": "-78.1629444",
-        "latDD": "42.06438889"
-      },
-      "SiteID": "03010674"
-    },
-    {
-      "Attributes": {
-        "site_type": "sw",
-        "Office": "Ithaca",
-        "nws_id": "n/a",
-        "site_no": "03010720",
-        "station_nm": "DODGE CREEK AT PORTVILLE NY",
-        "lonDD": "-78.34307188",
-        "latDD": "42.03562085"
-      },
-      "SiteID": "03010720"
-    },
-    {
-      "Attributes": {
-        "site_type": "sw",
-        "Office": "Ithaca",
-        "nws_id": "OLNN6",
-        "site_no": "03010820",
-        "station_nm": "ALLEGHENY RIVER AT OLEAN NY",
-        "lonDD": "-78.4511111",
-        "latDD": "42.07305556"
-      },
-      "SiteID": "03010820"
-    },
-    {
-      "Attributes": {
         "site_type": "sw",
         "Office": "Ithaca",
         "nws_id": "n/a",
@@ -1934,18 +1826,6 @@
     },
     {
       "Attributes": {
-        "site_type": "gw",
-        "Office": "Ithaca",
-        "nws_id": "n/a",
-        "site_no": "423743078070802",
-        "station_nm": "Local number, Wo-4, near Gainesville NY",
-        "lonDD": "-78.1186201",
-        "latDD": "42.62867339"
-      },
-      "SiteID": "423743078070802"
-    },
-    {
-      "Attributes": {
         "site_type": "sw",
         "Office": "Ithaca",
         "nws_id": "n/a",
@@ -1955,6 +1835,90 @@
         "latDD": "42.5378333"
       },
       "SiteID": "0423403092"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "nws_id": "PNAN6",
+        "site_no": "420326079295801",
+        "station_nm": "Local number, Cu-5, near Panama NY",
+        "lonDD": "-79.4992164",
+        "latDD": "42.0572781"
+      },
+      "SiteID": "420326079295801"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "nws_id": "RHSN6",
+        "site_no": "420530078445201",
+        "station_nm": "Local number, Ct-121, near Red House NY",
+        "lonDD": "-78.7475322",
+        "latDD": "42.09172945"
+      },
+      "SiteID": "420530078445201"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "nws_id": "n/a",
+        "site_no": "420619076515201",
+        "station_nm": "Local number, Cm-131, near Elmira NY",
+        "lonDD": "-76.8645",
+        "latDD": "42.10530556"
+      },
+      "SiteID": "420619076515201"
+    },
+    {
+      "Attributes": {
+        "site_type": "at",
+        "Office": "Ithaca",
+        "nws_id": "FDLN6",
+        "site_no": "420703079442501",
+        "station_nm": "FINDLEY LAKE RAIN GAGE",
+        "lonDD": "-79.7402333",
+        "latDD": "42.11741944"
+      },
+      "SiteID": "420703079442501"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "nws_id": "n/a",
+        "site_no": "420828076484601",
+        "station_nm": "Local number, Cm-622, near Horseheads NY",
+        "lonDD": "-76.81277778",
+        "latDD": "42.1411111"
+      },
+      "SiteID": "420828076484601"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "nws_id": "n/a",
+        "site_no": "421213076313301",
+        "station_nm": "Local number, Ti-891, near Spencer NY",
+        "lonDD": "-76.5259444",
+        "latDD": "42.20352778"
+      },
+      "SiteID": "421213076313301"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "nws_id": "n/a",
+        "site_no": "423743078070802",
+        "station_nm": "Local number, Wo-4, near Gainesville NY",
+        "lonDD": "-78.1186201",
+        "latDD": "42.62867339"
+      },
+      "SiteID": "423743078070802"
     },
     {
       "Attributes": {
@@ -1985,18 +1949,6 @@
         "site_type": "gw",
         "Office": "Ithaca",
         "nws_id": "n/a",
-        "site_no": "420828076484601",
-        "station_nm": "Local number, Cm-622, near Horseheads NY",
-        "lonDD": "-76.81277778",
-        "latDD": "42.1411111"
-      },
-      "SiteID": "420828076484601"
-    },
-    {
-      "Attributes": {
-        "site_type": "gw",
-        "Office": "Ithaca",
-        "nws_id": "n/a",
         "site_no": "422710076462901",
         "station_nm": "Local number, Sy-706, near Burdett NY",
         "lonDD": "-76.77439779",
@@ -2008,13 +1960,61 @@
       "Attributes": {
         "site_type": "gw",
         "Office": "Ithaca",
-        "nws_id": "n/a",
-        "site_no": "421213076313301",
-        "station_nm": "Local number, Ti-891, near Spencer NY",
-        "lonDD": "-76.5259444",
-        "latDD": "42.20352778"
+        "nws_id": "PRGN6",
+        "site_no": "422702079005101",
+        "station_nm": "Local number, Ct-2498, near Perrysburg NY",
+        "lonDD": "-79.0142778",
+        "latDD": "42.45044444"
       },
-      "SiteID": "421213076313301"
+      "SiteID": "422702079005101"
+    },
+    {
+      "Attributes": {
+        "site_type": "at",
+        "Office": "Ithaca",
+        "nws_id": "MYVN6",
+        "site_no": "421429079295601",
+        "station_nm": "MAYVILLE RAIN GAGE",
+        "lonDD": "-79.4990278",
+        "latDD": "42.24141667"
+      },
+      "SiteID": "421429079295601"
+    },
+    {
+      "Attributes": {
+        "site_type": "at",
+        "Office": "Ithaca",
+        "nws_id": "NALN6",
+        "site_no": "421932078513701",
+        "station_nm": "CATTARAUGUS RAIN GAGE",
+        "lonDD": "-78.8602778",
+        "latDD": "42.32555556"
+      },
+      "SiteID": "421932078513701"
+    },
+    {
+      "Attributes": {
+        "site_type": "at",
+        "Office": "Ithaca",
+        "nws_id": "FRKN6",
+        "site_no": "421946078274901",
+        "station_nm": "FRANKLINVILLE RAIN GAGE",
+        "lonDD": "-78.4636111",
+        "latDD": "42.32944444"
+      },
+      "SiteID": "421946078274901"
+    },
+    {
+      "Attributes": {
+        "site_type": "at",
+        "Office": "Ithaca",
+        "nws_id": "SNCN6",
+        "site_no": "421511079161701",
+        "station_nm": "SINCLAIRVILLE RAIN GAGE NEAR SINCLAIRVILLE NY",
+        "lonDD": "-79.27138889",
+        "latDD": "42.25305556"
+      },
+      "SiteID": "421511079161701"
     },
     {
       "Attributes": {
@@ -2032,13 +2032,13 @@
       "Attributes": {
         "site_type": "gw",
         "Office": "Ithaca",
-        "nws_id": "n/a",
-        "site_no": "420619076515201",
-        "station_nm": "Local number, Cm-131, near Elmira NY",
-        "lonDD": "-76.8645",
-        "latDD": "42.10530556"
+        "nws_id": "CRCN6",
+        "site_no": "421217079183601",
+        "station_nm": "Local number, Cu-867 near Gerry NY",
+        "lonDD": "-79.3097688",
+        "latDD": "42.2047802"
       },
-      "SiteID": "420619076515201"
+      "SiteID": "421217079183601"
     },
     {
       "Attributes": {
@@ -2368,18 +2368,6 @@
       "Attributes": {
         "site_type": "gw",
         "Office": "Ithaca",
-        "nws_id": "BTWN6",
-        "site_no": "430146078101301",
-        "station_nm": "Local number, Gs-217, near Batavia NY",
-        "lonDD": "-78.1702778",
-        "latDD": "43.02944444"
-      },
-      "SiteID": "430146078101301"
-    },
-    {
-      "Attributes": {
-        "site_type": "gw",
-        "Office": "Ithaca",
         "nws_id": "n/a",
         "site_no": "430739078502701",
         "station_nm": "Local number, Ni-869, at Shawnee NY",
@@ -2411,6 +2399,18 @@
         "latDD": "43.17916667"
       },
       "SiteID": "431045078160401"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "nws_id": "BTWN6",
+        "site_no": "430146078101301",
+        "station_nm": "Local number, Gs-217, near Batavia NY",
+        "lonDD": "-78.1702778",
+        "latDD": "43.02944444"
+      },
+      "SiteID": "430146078101301"
     },
     {
       "Attributes": {
@@ -2647,8 +2647,8 @@
         "nws_id": "WRSN6",
         "site_no": "04230380",
         "station_nm": "OATKA CREEK AT WARSAW NY",
-        "lonDD": "-78.1375",
-        "latDD": "42.74416667"
+        "lonDD": "-78.1374167",
+        "latDD": "42.74469444"
       },
       "SiteID": "04230380"
     },
@@ -3412,18 +3412,6 @@
       "Attributes": {
         "site_type": "gw",
         "Office": "Ithaca",
-        "nws_id": "NWRN6",
-        "site_no": "430311077051501",
-        "station_nm": "Local number, Wn-594, near Newark NY",
-        "lonDD": "-77.0867222",
-        "latDD": "43.0530833"
-      },
-      "SiteID": "430311077051501"
-    },
-    {
-      "Attributes": {
-        "site_type": "gw",
-        "Office": "Ithaca",
         "nws_id": "VOLN6",
         "site_no": "432148076225101",
         "station_nm": "Local number, Ow-5013, near Volney NY",
@@ -3443,6 +3431,18 @@
         "latDD": "43.3633333"
       },
       "SiteID": "432148076225102"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Ithaca",
+        "nws_id": "NWRN6",
+        "site_no": "430311077051501",
+        "station_nm": "Local number, Wn-594, near Newark NY",
+        "lonDD": "-77.0867222",
+        "latDD": "43.0530833"
+      },
+      "SiteID": "430311077051501"
     },
     {
       "Attributes": {
@@ -3571,8 +3571,8 @@
         "nws_id": "n/a",
         "site_no": "04220209",
         "station_nm": "LK ONTARIO AT HAMLIN BEACH ST PARK NR N HAMLIN NY",
-        "lonDD": "-77.9242806",
-        "latDD": "43.35744167"
+        "lonDD": "-77.9246028",
+        "latDD": "43.357425"
       },
       "SiteID": "04220209"
     },
@@ -3607,8 +3607,8 @@
         "nws_id": "n/a",
         "site_no": "0423207760",
         "station_nm": "LAKE ONTARIO AT SODUS POINT NY",
-        "lonDD": "-76.9745556",
-        "latDD": "43.27305556"
+        "lonDD": "-76.9739917",
+        "latDD": "43.2773861"
       },
       "SiteID": "0423207760"
     },
@@ -3631,8 +3631,8 @@
         "nws_id": "n/a",
         "site_no": "0423205342",
         "station_nm": "LAKE ONTARIO AT NINEMILE POINT NEAR WEBSTER NY",
-        "lonDD": "-77.43416389",
-        "latDD": "43.26675278"
+        "lonDD": "-77.43393889",
+        "latDD": "43.26696389"
       },
       "SiteID": "0423205342"
     },
@@ -3647,6 +3647,18 @@
         "latDD": "43.947075"
       },
       "SiteID": "04250772"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Ithaca",
+        "nws_id": "n/a",
+        "site_no": "04249071",
+        "station_nm": "LK ONTARIO (SELKIRK SHORES) NR DAYSVILLE CORNER NY",
+        "lonDD": "-76.21430278",
+        "latDD": "43.55292778"
+      },
+      "SiteID": "04249071"
     },
     {
       "Attributes": {
@@ -4598,18 +4610,6 @@
     },
     {
       "Attributes": {
-        "site_type": "gw",
-        "Office": "Troy",
-        "nws_id": "n/a",
-        "site_no": "445805073380501",
-        "station_nm": "Local number, Cl-242, at Mooers Forks NY",
-        "lonDD": "-73.6346944",
-        "latDD": "44.9680833"
-      },
-      "SiteID": "445805073380501"
-    },
-    {
-      "Attributes": {
         "site_type": "sw",
         "Office": "Troy",
         "nws_id": "n/a",
@@ -4619,6 +4619,18 @@
         "latDD": "44.38963056"
       },
       "SiteID": "04274200"
+    },
+    {
+      "Attributes": {
+        "site_type": "gw",
+        "Office": "Troy",
+        "nws_id": "n/a",
+        "site_no": "445805073380501",
+        "station_nm": "Local number, Cl-242, at Mooers Forks NY",
+        "lonDD": "-73.6346944",
+        "latDD": "44.9680833"
+      },
+      "SiteID": "445805073380501"
     },
     {
       "Attributes": {
@@ -4643,6 +4655,18 @@
         "latDD": "44.2367361"
       },
       "SiteID": "0427386410"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "n/a",
+        "site_no": "04273885",
+        "station_nm": "CHUBB RIVER NEAR LAKE PLACID NY",
+        "lonDD": "-74.01338889",
+        "latDD": "44.2622222"
+      },
+      "SiteID": "04273885"
     },
     {
       "Attributes": {
@@ -5309,6 +5333,18 @@
         "site_type": "sw",
         "Office": "Troy",
         "nws_id": "n/a",
+        "site_no": "01425805",
+        "station_nm": "OQUAGA CREEK AT MCCLURE NY",
+        "lonDD": "-75.4851944",
+        "latDD": "42.04869444"
+      },
+      "SiteID": "01425805"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "n/a",
         "site_no": "01368050",
         "station_nm": "WALLKILL RIVER AT OIL CITY ROAD NEAR UNIONVILLE NY",
         "lonDD": "-74.5343333",
@@ -5555,6 +5591,18 @@
         "latDD": "41.6678695"
       },
       "SiteID": "01436655"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "n/a",
+        "site_no": "01437100",
+        "station_nm": "GUMAER BROOK NEAR WURTSBORO NY",
+        "lonDD": "-74.4686111",
+        "latDD": "41.5986111"
+      },
+      "SiteID": "01437100"
     },
     {
       "Attributes": {
@@ -6160,18 +6208,6 @@
       "Attributes": {
         "site_type": "sw",
         "Office": "Troy",
-        "nws_id": "BTTN6",
-        "site_no": "01329490",
-        "station_nm": "BATTEN KILL BELOW MILL AT BATTENVILLE NY",
-        "lonDD": "-73.4216667",
-        "latDD": "43.1086111"
-      },
-      "SiteID": "01329490"
-    },
-    {
-      "Attributes": {
-        "site_type": "sw",
-        "Office": "Troy",
         "nws_id": "GLWN6",
         "site_no": "01330000",
         "station_nm": "GLOWEGEE CREEK AT WEST MILTON NY",
@@ -6227,6 +6263,18 @@
         "latDD": "43.62173216"
       },
       "SiteID": "04279085"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "BTTN6",
+        "site_no": "01329490",
+        "station_nm": "BATTEN KILL BELOW MILL AT BATTENVILLE NY",
+        "lonDD": "-73.4216667",
+        "latDD": "43.1086111"
+      },
+      "SiteID": "01329490"
     },
     {
       "Attributes": {
@@ -6587,6 +6635,18 @@
         "latDD": "42.91975"
       },
       "SiteID": "425511074254001"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "n/a",
+        "site_no": "01354230",
+        "station_nm": "MOHAWK RIVER AT LOCK 9 AT ROTTERDAM JUNCTION NY",
+        "lonDD": "-74.04075",
+        "latDD": "42.87827778"
+      },
+      "SiteID": "01354230"
     },
     {
       "Attributes": {
@@ -7493,6 +7553,18 @@
         "site_type": "sw",
         "Office": "Troy",
         "nws_id": "n/a",
+        "site_no": "01435900",
+        "station_nm": "NEVERSINK RESERVOIR NEAR NEVERSINK NY",
+        "lonDD": "-74.6389167",
+        "latDD": "41.82788889"
+      },
+      "SiteID": "01435900"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "n/a",
         "site_no": "01331095",
         "station_nm": "HUDSON RIVER AT STILLWATER NY",
         "lonDD": "-73.6516667",
@@ -7685,6 +7757,54 @@
         "site_type": "sw",
         "Office": "Troy",
         "nws_id": "n/a",
+        "site_no": "01362330",
+        "station_nm": "STONY CLOVE CREEK NEAR LANESVILLE NY",
+        "lonDD": "-74.2400833",
+        "latDD": "42.1300833"
+      },
+      "SiteID": "01362330"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "n/a",
+        "site_no": "01362332",
+        "station_nm": "STONY CLOVE CREEK AT WRIGHT RD NEAR LANESVILLE NY",
+        "lonDD": "-74.2458333",
+        "latDD": "42.13027778"
+      },
+      "SiteID": "01362332"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "n/a",
+        "site_no": "01362350",
+        "station_nm": "STONY CLOVE CREEK AT CHICHESTER NY",
+        "lonDD": "-74.29",
+        "latDD": "42.10555556"
+      },
+      "SiteID": "01362350"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "n/a",
+        "site_no": "01362356",
+        "station_nm": "WARNER CREEK AT SILVER HOLLOW RD NR CHICHESTER NY",
+        "lonDD": "-74.2887222",
+        "latDD": "42.0950833"
+      },
+      "SiteID": "01362356"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "n/a",
         "site_no": "01315170",
         "station_nm": "DURGIN BROOK AT BOREAS RIVER NY",
         "lonDD": "-73.9536111",
@@ -7775,6 +7895,138 @@
         "latDD": "43.745"
       },
       "SiteID": "04253295"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "n/a",
+        "site_no": "01342732",
+        "station_nm": "MOHAWK RIVER AT ILION NY",
+        "lonDD": "-75.0284722",
+        "latDD": "43.01975"
+      },
+      "SiteID": "01342732"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "SCON6",
+        "site_no": "01354330",
+        "station_nm": "MOHAWK RIVER AT LOCK 8 NEAR SCHENECTADY NY",
+        "lonDD": "-73.9903722",
+        "latDD": "42.8281583"
+      },
+      "SiteID": "01354330"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "RXFN6",
+        "site_no": "01355475",
+        "station_nm": "MOHAWK RIVER AT REXFORD NY",
+        "lonDD": "-73.88725",
+        "latDD": "42.8511111"
+      },
+      "SiteID": "01355475"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "ALPN6",
+        "site_no": "01359165",
+        "station_nm": "HUDSON RIVER AT PORT OF ALBANY NY",
+        "lonDD": "-73.7589167",
+        "latDD": "42.61952778"
+      },
+      "SiteID": "01359165"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "n/a",
+        "site_no": "0135980207",
+        "station_nm": "HUDSON RIVER NEAR SCHODACK LANDING NY",
+        "lonDD": "-73.7768056",
+        "latDD": "42.4996111"
+      },
+      "SiteID": "0135980207"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "n/a",
+        "site_no": "01372043",
+        "station_nm": "HUDSON RIVER NEAR POUGHKEEPSIE NY",
+        "lonDD": "-73.94069299",
+        "latDD": "41.72176015"
+      },
+      "SiteID": "01372043"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "n/a",
+        "site_no": "01374019",
+        "station_nm": "HUDSON RIVER AT SOUTH DOCK AT WEST POINT NY",
+        "lonDD": "-73.95513879",
+        "latDD": "41.3862049"
+      },
+      "SiteID": "01374019"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "PMTN6",
+        "site_no": "01376269",
+        "station_nm": "HUDSON RIVER AT PIERMONT NY",
+        "lonDD": "-73.8960556",
+        "latDD": "41.04319444"
+      },
+      "SiteID": "01376269"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "n/a",
+        "site_no": "01376307",
+        "station_nm": "HUDSON RIVER AT WATER GRANT STREET AT YONKERS NY",
+        "lonDD": "-73.9043056",
+        "latDD": "40.93625"
+      },
+      "SiteID": "01376307"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "n/a",
+        "site_no": "01376515",
+        "station_nm": "HUDSON RIVER AT PIER 84 AT NEW YORK NY",
+        "lonDD": "-74.0031944",
+        "latDD": "40.76463889"
+      },
+      "SiteID": "01376515"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Troy",
+        "nws_id": "n/a",
+        "site_no": "01376520",
+        "station_nm": "HUDSON RIVER AT PIER 26 AT NEW YORK NY",
+        "lonDD": "-74.0156111",
+        "latDD": "40.72152778"
+      },
+      "SiteID": "01376520"
     },
     {
       "Attributes": {
@@ -7883,11 +8135,23 @@
         "latDD": "44.5419444"
       },
       "SiteID": "04260901"
+    },
+    {
+      "Attributes": {
+        "site_type": "sw",
+        "Office": "Out Of State",
+        "nws_id": "n/a",
+        "site_no": "422917076275702",
+        "station_nm": "Ithaca subdistrict experimental test site 2",
+        "lonDD": "-76.4658333",
+        "latDD": "42.48805556"
+      },
+      "SiteID": "422917076275702"
     }
   ],
   "metadata": {
     "development": "Written by Todd Siskin and Martyn Smith",
     "description": "Data Section Site collection for NY Water Science Center",
-    "created": "12/07/19 02:05 AM"
+    "created": "02/08/20 02:05 AM"
   }
 }

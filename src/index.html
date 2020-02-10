@@ -4,6 +4,7 @@
     <meta name="author" content="Martyn Smith - USGS NY WSC">
 	<link rel="copyright" href="license.txt">
     <title>NY WSC Go2 Mapper</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <script src="./scripts/vendor.bundle.min.js"></script>
     <script src="./scripts/bundle.min.js"></script>  
@@ -65,10 +66,10 @@
                                             <option selected="selected" value="full">Go2</option>
                                             <option value="lite">Go2Lite</option>
                                             <option value="fast">Go2Fast</option>
+                                            <option value="fastr">Go2FastR</option>
                                         </select> 
                                     </div>
-<!-- 
-                                    <button type="button" class="btn btn-default btn-block" id="toggleGo2">Show Go2Lite</button> -->
+
                                     <button type="button" class="btn btn-default btn-block" id="togglePeople">Show People</button>
                                     <button type="button" class="btn btn-default btn-block" id="resetView" >Reset</button>
                                 </div>
@@ -261,6 +262,7 @@
                         </ul>
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="aboutTabPane"><br>
+                                <div id="noTripSites"></div>
                                 <p>Interactive web mapping application used to display Go2 warning messages and field personnel locations. The Go2 system is used by USGS staff to monitor the maintenance of USGS gages.</p>
 
                                 <h4>Suggested Citation</h4>

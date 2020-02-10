@@ -1,6 +1,22 @@
 # Go2Mapper
 
 
+- if a site has only stage, make sure to check AHPS data for stage, and not just discharge
+ HUDSON RIVER AT ALBANY
+ 
+ 
+- Parse out date of peak from go2fast result and change icons or add number corresponding to # of days out from today
+
+- toggle for individual flag types
+		- this would require more thought.  toggling off one type of item could hide any additional flags from being displayed on the map
+		- would need to reprocess everything on toggle off of a layer
+		
+
+- upper level filter of groundwater/surface water sites
+
+
+		
+
 
 ## Mapper application setup
 
