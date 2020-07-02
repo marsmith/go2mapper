@@ -2,15 +2,28 @@
   "SitesCollection": [
     {
       "items": {
-        "SiteID": "01350120",
+        "SiteID": "01362368",
         "goflags": {
           "1": {
-            "go2flag": "4RAT",
-            "go2msg": "The current Q (81.8) is 124% greater than the highest non-poor Qm in the last 2.8 years"
+            "go2flag": "2rRAT",
+            "go2msg": "The current Q (60.7) is 43% greater than the highest non-poor Qm ever (since 1993)"
           }
         },
-        "name": "PLATTER KILL AT GILBOA NY",
-        "users": "sgstewar"
+        "name": "OX CLOVE NEAR MOUTH AT CHICHESTER NY",
+        "users": "bzatorsk, jsiemion"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01365550",
+        "goflags": {
+          "1": {
+            "go2flag": "2rRAT",
+            "go2msg": "The current Q (795) is 8% greater than the highest non-poor Qm ever (since 1993)"
+          }
+        },
+        "name": "CHESTNUT CREEK AT MOUTH AT GRAHAMSVILLE NY",
+        "users": "albaldwi"
       }
     },
     {
@@ -23,7 +36,59 @@
           }
         },
         "name": "HUDSON RIVER BELOW POUGHKEEPSIE NY",
-        "users": "tlsmith"
+        "users": "dianaphi, tlsmith"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01376307",
+        "goflags": {
+          "1": {
+            "go2flag": "MODEM",
+            "go2msg": "The latest value for this site in NWISweb is 116 hours old"
+          }
+        },
+        "name": "HUDSON RIVER AT WATER GRANT STREET AT YONKERS NY",
+        "users": ", kcolella"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01433005",
+        "goflags": {
+          "1": {
+            "go2flag": "2rRAT",
+            "go2msg": "The current Q (1080) is 3% greater than the highest non-poor Qm ever (since 1993)"
+          }
+        },
+        "name": "MONGAUP R BELOW SWINGING BRIDGE RESERVOIR NY",
+        "users": "besteder"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "01437100",
+        "goflags": {
+          "1": {
+            "go2flag": "2LRAT",
+            "go2msg": "The current Q (17.5) is 4% less than the lowest Qm ever (since 1993)"
+          }
+        },
+        "name": "GUMAER BROOK NEAR WURTSBORO NY",
+        "users": "besteder"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04214231",
+        "goflags": {
+          "1": {
+            "go2flag": "5GAP",
+            "go2msg": "The current Q (157) is in a measurement definition GAP in the lower portion of the rating"
+          }
+        },
+        "name": "S BR EIGHTEENMILE CR AT BLEY RD AT EDEN VALLEY",
+        "users": "mbuil"
       }
     },
     {
@@ -36,20 +101,33 @@
           }
         },
         "name": "LAKE ONTARIO AT NINEMILE POINT NEAR WEBSTER NY",
-        "users": "jmarion"
+        "users": "amorgan"
       }
     },
     {
       "items": {
-        "SiteID": "04233300",
+        "SiteID": "04233255",
         "goflags": {
           "1": {
-            "go2flag": "6SHFT",
-            "go2msg": "The current Q (86.7) is in a Qm definition GAP (Qms > 50% from shifted-rating were ignored)"
+            "go2flag": "5GAP",
+            "go2msg": "The current Q (721) is in a measurement definition GAP in the upper portion of the rating"
           }
         },
-        "name": "SIXMILE CREEK AT BETHEL GROVE NY",
-        "users": "bhayhurs, jmarion, mbjennin"
+        "name": "CAYUGA INLET AT ITHACA NY",
+        "users": "rdjohnso"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04234000",
+        "goflags": {
+          "1": {
+            "go2flag": "5GAP",
+            "go2msg": "The current Q (1060) is in a measurement definition GAP in the upper portion of the rating"
+          }
+        },
+        "name": "FALL CREEK NEAR ITHACA NY",
+        "users": "rdjohnso"
       }
     },
     {
@@ -58,24 +136,63 @@
         "goflags": {
           "1": {
             "go2flag": "1GH",
-            "go2msg": "The DCP Xmitted 6 minutes ago, but stage data is 265 minutes old in NWISweb."
+            "go2msg": "The DCP Xmitted 54 minutes ago, but stage data is 253 minutes old in NWISweb."
           }
         },
         "name": "HARBOR BROOK AT HIAWATHA BOULEVARD, SYRACUSE NY",
-        "users": "albaldwi"
+        "users": "jsgrover"
       }
     },
     {
       "items": {
-        "SiteID": "04273996",
+        "SiteID": "04274000",
         "goflags": {
           "1": {
-            "go2flag": "2DCP",
-            "go2msg": "(DCPid DF139FD4) LRGS has not received a transmission in 20 hours"
+            "go2flag": "2LRAT",
+            "go2msg": "The current Q (303) is 20% less than the lowest Qm ever (since 1993)"
           }
         },
-        "name": "W BR AUSABLE R TRIB 1 ABV ST HW 86 NR LK PLACID NY",
-        "users": "bmcdonal"
+        "name": "W BR AUSABLE R NR LAKE PLACID NY",
+        "users": "kplanty"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "04274051",
+        "goflags": {
+          "1": {
+            "go2flag": "1DCP",
+            "go2msg": "(DCPid D1195344) LRGS has not received a transmission in 36 hours"
+          }
+        },
+        "name": "W BR AUSABLE R TRIB 2 BL ST HW 86 NR WILMINGTON NY",
+        "users": "kplanty"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "404505073131501",
+        "goflags": {
+          "1": {
+            "go2flag": "1DCP",
+            "go2msg": "LRGS has not received a transmission in over 170 hours from PASS-assigned DCPid DD38B6E8"
+          }
+        },
+        "name": "S123414. 1",
+        "users": "gsilva"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "405743072425701",
+        "goflags": {
+          "1": {
+            "go2flag": "1DCP",
+            "go2msg": "LRGS has not received a transmission in over 170 hours from PASS-assigned DCPid D11511D2"
+          }
+        },
+        "name": "S 4271. 1",
+        "users": "gsilva"
       }
     },
     {
@@ -84,7 +201,7 @@
         "goflags": {
           "1": {
             "go2flag": "1DCP",
-            "go2msg": "(DCPid DD83577A) LRGS has not received a transmission in 72 hours"
+            "go2msg": "LRGS has not received a transmission in over 170 hours from PASS-assigned DCPid DD83577A"
           }
         },
         "name": "Ithaca subdistrict experimental test site 2",
@@ -93,15 +210,28 @@
     },
     {
       "items": {
-        "SiteID": "424421077495301",
+        "SiteID": "425543078535001",
         "goflags": {
           "1": {
             "go2flag": "iGH",
-            "go2msg": "The current stage (0.30) is greater than the critical stage (0.01) labeled in go2 as \"EF_meas\""
+            "go2msg": "The current stage (0.22) is greater than the critical stage (0.1) labeled in go2 as \"GI_meas\""
           }
         },
-        "name": "NY-SW1 MERRIMAC FARMS EDGE OF FIELD, E GROVELAND",
-        "users": "akowalcz"
+        "name": "MANHOLE, 50 FT E NIAGARA ST, 115 FT S SCAJAQUADA C",
+        "users": "eandonie"
+      }
+    },
+    {
+      "items": {
+        "SiteID": "444904074455201",
+        "goflags": {
+          "1": {
+            "go2flag": "1DCP",
+            "go2msg": "LRGS has not received a transmission in over 170 hours from PASS-assigned DCPid D119965A"
+          }
+        },
+        "name": "Local number, St-40, near Brasher Falls NY",
+        "users": "kplanty"
       }
     },
     {
@@ -110,7 +240,7 @@
         "goflags": {
           "1": {
             "go2flag": "1DCP",
-            "go2msg": "(DCPid D11975A8) LRGS has not received a transmission in 34 hours"
+            "go2msg": "LRGS has not received a transmission in over 170 hours from PASS-assigned DCPid D11975A8"
           }
         },
         "name": "Local number, St-404, near Louisville NY",
@@ -119,8 +249,8 @@
     }
   ],
   "metadata": {
-    "created": "02/09/20 02:49 PM",
-    "createdFrom": "/usr/local/wrdapp/go2/archive/20200209.go2lite.output",
+    "created": "04/27/20 10:32 AM",
+    "createdFrom": "/usr/local/wrdapp/go2/archive/20200427.go2lite.output",
     "description": "Daily GO2 error flags for NY Water Science Center",
     "development": "Written by Todd Siskin and Martyn Smith"
   }

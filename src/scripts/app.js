@@ -21,7 +21,7 @@ var siteList = {};
 var tripList = {};
 var map;
 var popupChart;
-var layerLabels, layer, wscLayer, hullLayer, selectLayer, sitesLayer, peopleLayer, lr_NWS_layer, sr_NWS_layer, storm_NWS_layer, reflectivity_NWS_conus_layer;
+var layerLabels, layer, hullLayer, selectLayer, sitesLayer, peopleLayer, lr_NWS_layer, sr_NWS_layer, storm_NWS_layer, reflectivity_NWS_conus_layer;
 var showPeople = false;
 var refreshIntervalId;
 
@@ -81,7 +81,6 @@ $( document ).ready(function() {
 	map.setView([MapY, MapX], MapZoom);
 		
 	//define layers
-	wscLayer = L.featureGroup().addTo(map);
 	hullLayer = L.featureGroup().addTo(map);
 
 	selectLayer = L.featureGroup().addTo(map);
@@ -94,7 +93,7 @@ $( document ).ready(function() {
 	reflectivity_NWS_conus_layer = L.layerGroup();
 
 	loadSites();
-	loadWSCboundaries();
+	// loadWSCboundaries();
 	addNWSlayers();
 
 	/*  START EVENT HANDLERS */
@@ -582,13 +581,18 @@ function selectCenter(selectedCenter) {
 	selectLayer.clearLayers();
 	hullLayer.clearLayers();
 
-	//zoom to center on select
-	wscLayer.eachLayer(function (layer) {
-		var layers = layer.getLayers();
-		$.each(layers, function( index, layer ) {
-			if (layer.feature.properties.Office === selectedCenter) map.fitBounds(layer.getBounds())
-		});
+	//draw halo for selected center sites
+	sitesLayer.eachLayer(function (layer) {
+
+		if (layer.properties.office === selectedCenter) {
+			//console.log('found a matching site', layer.properties);
+			drawSelectHalo(layer.properties.siteID);
+		}
 	});
+
+	//get convex hull and zoom to
+	if (selectLayer.getLayers().length <= 2) map.flyToBounds(selectLayer.getBounds());
+	else getConvexHull(selectedCenter);
 
 	//populate trip select
 	$('#tripSelect').show();
@@ -603,6 +607,7 @@ function selectCenter(selectedCenter) {
 }
 
 function selectTrip(tripData) {
+
 	//clear old trip selection
 	selectLayer.clearLayers();
 	hullLayer.clearLayers();
@@ -615,7 +620,7 @@ function selectTrip(tripData) {
 				//if we found the selected trip loop over its sites
 				if (trip.TripName == tripData.tripName) {
 					$.each(trip.Sites, function( index, site) {
-						drawSelectHalo('siteslayer', site);
+						drawSelectHalo(site);
 					});
 				}
 			});
@@ -623,21 +628,22 @@ function selectTrip(tripData) {
 	});
 
 	//get convex hull and zoom to
-	if (selectLayer.getLayers().length <= 2) map.fitBounds(selectLayer.getBounds());
-	else getConvexHull(tripData);
+	if (selectLayer.getLayers().length <= 2) map.flyToBounds(selectLayer.getBounds());
+	else getConvexHull(tripData.tripName);
 }
  
-function getConvexHull(tripData) {
+function getConvexHull(text) {
 	//create convex hull
 	var hull = convex(selectLayer.toGeoJSON());
-	var hullGeoJSONlayer = L.geoJSON(hull).bindPopup('<b>Center: </b>' + tripData.tripCenter + '</br><b>Trip Name: </b>' + tripData.tripName + '</br><b>Trip Owner: </b>' + tripData.tripOwner, {minWidth: 200});
+	// var hullGeoJSONlayer = L.geoJSON(hull)
+	var hullGeoJSONlayer = L.geoJSON(hull).bindPopup(text, {minWidth: 200});
 	hullLayer.addLayer(hullGeoJSONlayer);
 
 	//zoom map
-	map.fitBounds(hullLayer.getBounds());
+	map.flyToBounds(hullLayer.getBounds());
 }
 
-function drawSelectHalo(siteLayerId, siteID) {
+function drawSelectHalo(siteID) {
 
 	var selectIcon = L.icon({iconUrl: './images/symbols/selected_site_yellow.png',iconSize: [64,64]});
 	$.each(siteList, function( index, site ) {
@@ -645,21 +651,6 @@ function drawSelectHalo(siteLayerId, siteID) {
 			var haloMarker = L.marker(site.getLatLng(), {icon: selectIcon, pane:'shadowPane'});
 			selectLayer.addLayer(haloMarker);
 		}
-	});
-}
-
-function loadWSCboundaries() {
-	$.getJSON(subDistGeoJSON, function(data) {
-		$.each(data.features, function( index, value ) {
-			$('#centerSelect').append($('<option></option>').attr('value',value.properties.Office).text(value.properties.Office));
-		});
-		var myStyle = {
-			"color": "#ff8c66",
-			"weight": 0,
-			"opacity": 0.3
-		};
-		var geoJSONlayer = L.geoJSON(data, {style: myStyle});
-		wscLayer.addLayer(geoJSONlayer);
 	});
 }
 
@@ -678,6 +669,7 @@ function loadSites() {
 			siteList[site.SiteID].properties.siteName = site.Attributes.station_nm;
 			siteList[site.SiteID].properties.siteType = site.Attributes.site_type;
 			siteList[site.SiteID].properties.nws_id = site.Attributes.nws_id;
+			siteList[site.SiteID].properties.office= site.Attributes.Office;
 
 			//Need to still write some popup data that will even apply if site isn't in a trip or out of site
 			siteList[site.SiteID].properties.popupContent = '<b>' + site.SiteID + '</b></br></br>' + site.Attributes.station_nm + '</br><a href="https://waterdata.usgs.gov/nwis/inventory/?site_no=' + site.SiteID + '" target="_blank">Access Data</a></br><div id="graphContainer" style="width:100%; height:200px;display:none;"></div><div class="container" style="width:100%;"><div class="row"><div class="col-md-4 graphLoader" id="nwisGraphLoader"><p><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw graph-loader"></i>Loading NWIS...</p></div><div class="col-md-4 graphLoader" id="ahpsGraphLoader"><p><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw graph-loader"></i>Loading AHPS...</p></div><div class="col-md-4 graphLoader" id="nwmGraphLoader"><p><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw graph-loader"></i>Loading NWM..</p></div></div></div>';
@@ -686,6 +678,14 @@ function loadSites() {
 
 			//add to layergroup
 			sitesLayer.addLayer(siteList[site.SiteID]);
+
+			//check if we have this office yet in drop down, if not add it
+			if($("#centerSelect option:contains('" + site.Attributes.Office + "')").length ==0) {
+
+				$('#centerSelect').append($('<option></option>').attr('value',site.Attributes.Office).text(site.Attributes.Office));
+			}
+			
+
 		});
 
 		loadTrips();
