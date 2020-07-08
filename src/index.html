@@ -6,259 +6,271 @@
     <title>NY WSC Go2 Mapper</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script src="./scripts/vendor.bundle.min.js"></script>
-    <script src="./scripts/bundle.min.js"></script>  
     <script src="./appConfig.js"></script>  
   </head>
   <body>
     
-    <div id="top-menu">
-            <div id="mobile-main-menu">
-                    <span class="glyphicon glyphicon-menu-hamburger" ></span>
-                </div>
-        <div class="title">
-            <a class='top-menu-brand hidden-xs' href="https://www.usgs.gov"><img src="images/logo.png"></a>
-            <span class="app-name">NY WSC Go2 Mapper</span><span class="app-name-mobile">USGS NY WSC Go2 Mapper</span> 
-        </div>
+	<div class="app-wrapper">
+	
 
+		<!-- USGS Top Bar -->
+		<div class="top-bar">
+			<!-- Menu button - hidden unless mobile -->
+			<div class="top-bar-mobile-menu-button" id="mobile-main-menu">
+				<span class="mobile-icon-close">&times;</span>
+				<span class="fa fa-bars mobile-icon-open"></span>
+			</div>
+			
+			<!-- Logo and title -->
+			<div class="top-bar-branding">
+				<!-- Logo -->
+				<a class='top-bar-logo' href="https://www.usgs.gov">
+					<img src="images/logo.png"/>
+				</a>
+				<!-- App Name -->
+				<span class="top-bar-app-name">NY WSC Go2 Mapper</span>
+			</div>
 
-        <button id="aboutButton" class="btn btn-default top-menu-btn pull-right">
-            <i class="glyphicon glyphicon-info-sign"></i><span class="hidden-xs">&nbsp;&nbsp;About</span>
-        </button>
-    </div>
+			<!-- Right side -->
+			<div class="top-bar-right">
 
-    <div id="main-menu">
-        <div class="main-menu-container scrollable">
-            <div class="menu-content"> 
-                <div class="scrollable-content">
+				<!-- Wrap each button or element in top-bar-right-item - it will center it vertically -->
+				<div class="top-bar-right-item">
+					<button id="aboutButton">
+						<i class="fa fa-info"></i><span class="d-none d-sm-inline">&nbsp;&nbsp;About</span>
+					</button>
+				</div>
 
-                    <div class="panel-group" id="accordion">
-                        <div class="panel panel-default sidebar-panel">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#optionsPanel">
-                                        Options
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="optionsPanel" class="panel-collapse collapse in" aria-labelledby="optionsHeader">
-                                <div class="panel-body collapse in">
-
-                                    <span id="loading"><img src="./images/loading_black.gif" /></span>
-
-                                    <div id="time" style="font-size:small;padding-bottom:6px;">Data queried: loading date...</div>
-
-                                    <div class="form-group">
-                                        <select class="form-control" id="centerSelect">
-                                            <option selected="selected" value="default">Select an office</option>
-                                        </select> 
-                                    </div>
-
-                                    <div class="form-group">
-                                        <select class="form-control" id="tripSelect" style="display:none;">
-                                            <option selected="selected" value="default">Select a trip</option>
-                                        </select> 
-                                    </div>
-
-                                    <div style="font-size:small;padding-bottom:6px;">Select Go2 Type:</div>
-                                    <div class="form-group">
-                                        <select class="form-control" id="go2typeSelect">
-                                            <option selected="selected" value="full">Go2</option>
-                                            <option value="lite">Go2Lite</option>
-                                            <option value="fast">Go2Fast</option>
-                                            <option value="fastr">Go2FastR</option>
-                                        </select> 
-                                    </div>
-
-                                    <button type="button" class="btn btn-default btn-block" id="togglePeople">Show People</button>
-                                    <button type="button" class="btn btn-default btn-block" id="resetView" >Reset</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default sidebar-panel">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#layersPanel">
-                                        Legend
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="layersPanel" class="panel-collapse collapse">
-                                <div class="panel-body">
+			</div>
+        </div> <!-- End Top Bar -->
         
-                                    <div id="legend" style="display:block;">
-                                        <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="2" style="font-size:small;padding-bottom:6px;padding-top:6px;">
-                                        <TR>
-                                            <TD><img src="images/symbols/sw_symbol.png" alt="Red" /></TD>
-                                            <TD>Surface water</TD>
-                                            <TD><img src="images/symbols/gw_symbol.png" alt="Red" /></TD>
-                                            <TD>Groundwater</TD>
-                                        </TR>
-                                        <TR>
-                                            <TD><img src="images/symbols/at_symbol.png" alt="Red" /></TD>
-                                            <TD>Atmospheric</TD>
-                                            <TD><img src="images/symbols/ot_symbol.png" alt="Red" /></TD>
-                                            <TD>Other</TD>
-                                        </TR>
-                                        </TABLE>
-                                        <br>
-                                        <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="1" style="font-size:small;">
-                                            <TR>
-                                                <TD><img src="images/symbols/red.png" alt="Red" /></TD>
-                                                <TD>xDCP, xGH, MODEM (x=1,2) </TD>
-                                            </TR>
-                                            <TR>
-                                                <TD><img src="images/symbols/orange.png" alt="Orange" /></TD>
-                                                <TD>1xRAT (x=l,h) </TD>
-                                            </TR>
-                                            <TR>
-                                                <TD><img src="images/symbols/yellow.png" alt="Yellow" /></TD>
-                                                <TD>2xRAT (x=l,h,r) </TD>
-                                            </TR>
-                                            <TR>
-                                                <TD><img src="images/symbols/green.png" alt="Green" /></TD>
-                                                <TD>3xRAT (x=l,h) </TD>
-                                            </TR>
-                                            <TR>
-                                                <TD><img src="images/symbols/blue.png" alt="Blue" /></TD>
-                                                <TD>4RAT </TD>
-                                            </TR>
-                                            <TR>
-                                                <TD><img src="images/symbols/violet.png" alt="Violet" /></TD>
-                                                <TD>iGEN </TD>
-                                            </TR>
-                                            <TR>
-                                                <TD><img src="images/symbols/black.png" alt="Black" /></TD>
-                                                <TD>xTIME (x=1,2,3,4) </TD>
-                                            </TR>
-                                            <TR>
-                                                <TD><img src="images/symbols/brown.png" alt="Brown" /></TD>
-                                                <TD>iWEB </TD>
-                                            </TR>
-                                            <TR>
-                                                <TD><img src="images/symbols/pink.png" alt="Pink" /></TD>
-                                                <TD>xDCP, xGH, SPIKE (x=3,4,i)</TD>
-                                            </TR>
-                                            <TR>
-                                                <TD><img src="images/symbols/gray.png" alt="Gray" /></TD>
-                                                <TD>xGAP (x=2,3,4,5), xSHFT (x=3,4,5,6), iCOMP </TD>
-                                            </TR>
-                                            <TR>
-                                                <TD><img src="images/symbols/multi_gray.png" alt="Gray" /></TD>
-                                                <TD>Multiple flags, color represents most severe flag. </TD>
-                                            </TR>
-                                        </TABLE>
+    
+        <!-- App Body -->
+        <div class="app-body">
+
+            <!-- Sidebar -->
+            <div id="main-menu">
+                <div class="main-menu-container scrollable">
+                    <div class="menu-content"> 
+                        <div class="scrollable-content">
+
+                            <div class="accordion" id="accordion">
+
+                                <div class="card mb-0 sidebar-panel">
+
+                                    <div class="card-header" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" href="#optionsPanel">
+                                        <a class="card-title">Options</a><i class="fa fa-plus"></i>
                                     </div>
+
+                                    <div id="optionsPanel" class="card-body collapse show" data-parent="#accordion">
+                                        <div class="card">
+
+                                            <div class="card-body">
+                                                <span id="loading"><img src="./images/loading_black.gif" /></span>
+
+                                                <div id="time" style="font-size:small;padding-bottom:6px;">Data queried: loading date...</div>
+         
+                                                <div class="form-group">
+                                                    <select class="form-control" id="centerSelect">
+                                                        <option selected="selected" value="default">Select an office</option>
+                                                    </select> 
+                                                </div>
+        
+                                                <div class="form-group">
+                                                    <select class="form-control" id="tripSelect" style="display:none;">
+                                                        <option selected="selected" value="default">Select a trip</option>
+                                                    </select> 
+                                                </div>
+    
+                                                <div style="font-size:small;padding-bottom:6px;">Select Go2 Type:</div>
+                                                <div class="form-group">
+                                                    <select class="form-control" id="go2typeSelect">
+                                                        <option selected="selected" value="full">Go2</option>
+                                                        <option value="lite">Go2Lite</option>
+                                                        <option value="fast">Go2Fast</option>
+                                                        <option value="fastr">Go2FastR</option>
+                                                    </select> 
+                                                </div>
+    
+                                                <button type="button" class="btn btn-secondary btn-block" id="togglePeople">Show People</button>
+                                                <button type="button" class="btn btn-secondary btn-block" id="resetView" >Reset</button>
+
+                                            </div>
+
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" href="#layersPanel">
+                                        <a class="card-title">Legend</a><i class="fa fa-plus"></i>
+                                    </div>
+
+                                    <div id="layersPanel" class="card-body collapse" data-parent="#accordion">
+                                        <div class="card">
+                
+                                            <div id="legend" class="card-body" style="display:block;">
+                                                <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="2" style="font-size:small;padding-bottom:6px;padding-top:6px;">
+                                                <TR>
+                                                    <TD><img src="images/symbols/sw_symbol.png" alt="Red" /></TD>
+                                                    <TD>Surface water</TD>
+                                                    <TD><img src="images/symbols/gw_symbol.png" alt="Red" /></TD>
+                                                    <TD>Groundwater</TD>
+                                                </TR>
+                                                <TR>
+                                                    <TD><img src="images/symbols/at_symbol.png" alt="Red" /></TD>
+                                                    <TD>Atmospheric</TD>
+                                                    <TD><img src="images/symbols/ot_symbol.png" alt="Red" /></TD>
+                                                    <TD>Other</TD>
+                                                </TR>
+                                                </TABLE>
+                                                <br>
+                                                <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="1" style="font-size:small;">
+                                                    <TR>
+                                                        <TD><img src="images/symbols/red.png" alt="Red" /></TD>
+                                                        <TD>xDCP, xGH, MODEM (x=1,2) </TD>
+                                                    </TR>
+                                                    <TR>
+                                                        <TD><img src="images/symbols/orange.png" alt="Orange" /></TD>
+                                                        <TD>1xRAT (x=l,h) </TD>
+                                                    </TR>
+                                                    <TR>
+                                                        <TD><img src="images/symbols/yellow.png" alt="Yellow" /></TD>
+                                                        <TD>2xRAT (x=l,h,r) </TD>
+                                                    </TR>
+                                                    <TR>
+                                                        <TD><img src="images/symbols/green.png" alt="Green" /></TD>
+                                                        <TD>3xRAT (x=l,h) </TD>
+                                                    </TR>
+                                                    <TR>
+                                                        <TD><img src="images/symbols/blue.png" alt="Blue" /></TD>
+                                                        <TD>4RAT </TD>
+                                                    </TR>
+                                                    <TR>
+                                                        <TD><img src="images/symbols/violet.png" alt="Violet" /></TD>
+                                                        <TD>iGEN </TD>
+                                                    </TR>
+                                                    <TR>
+                                                        <TD><img src="images/symbols/black.png" alt="Black" /></TD>
+                                                        <TD>xTIME (x=1,2,3,4) </TD>
+                                                    </TR>
+                                                    <TR>
+                                                        <TD><img src="images/symbols/brown.png" alt="Brown" /></TD>
+                                                        <TD>iWEB </TD>
+                                                    </TR>
+                                                    <TR>
+                                                        <TD><img src="images/symbols/pink.png" alt="Pink" /></TD>
+                                                        <TD>xDCP, xGH, SPIKE (x=3,4,i)</TD>
+                                                    </TR>
+                                                    <TR>
+                                                        <TD><img src="images/symbols/gray.png" alt="Gray" /></TD>
+                                                        <TD>xGAP (x=2,3,4,5), xSHFT (x=3,4,5,6), iCOMP </TD>
+                                                    </TR>
+                                                    <TR>
+                                                        <TD><img src="images/symbols/multi_gray.png" alt="Gray" /></TD>
+                                                        <TD>Multiple flags, color represents most severe flag. </TD>
+                                                    </TR>
+                                                </TABLE>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" href="#weatherPanel">
+                                        <a class="card-title">NOAA Weather Layers</a><i class="fa fa-plus"></i>
+                                    </div>
+                                      
+                                    <div id="weatherPanel" class="card-body collapse" data-parent="#accordion">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <button value="reflectivity_NWS_conus_layer" class="btn btn-default slick-btn radarBtn equalize">US Mosaic</button>
+                                                <button value="lr_NWS_layer" class="btn btn-default slick-btn radarBtn equalize">Long Range</button>
+                                                <button value="sr_NWS_layer" class="btn btn-default slick-btn radarBtn equalize">Short Range</button>
+                                                <button value="storm_NWS_layer" class="btn btn-default slick-btn radarBtn equalize">Storm Total</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" href="#basemapsPanel">
+                                        <a class="card-title">Basemaps</a><i class="fa fa-plus"></i>
+                                    </div>
+
+                                    <div id="basemapsPanel" class="card-body collapse" data-parent="#accordion">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <button id="btnStreets" class="btn btn-default slick-btn basemapBtn equalize"><img class="basemapThumb" alt="" src="images/streets.jpg"><br class="basemapThumb">Streets</button>
+                                                <button id="btnSatellite" class="btn btn-default slick-btn basemapBtn equalize" ><img class="basemapThumb" alt="" src="images/satellite.jpg"><br class="basemapThumb">Satellite</button>
+                                                <button id="btnTopo" class="btn btn-default slick-btn basemapBtn equalize"><img class="basemapThumb" alt="" src="images/topo.jpg"><br class="basemapThumb">Topo</button>
+                                                <button id="btnTerrain" class="btn btn-default slick-btn basemapBtn equalize"><img class="basemapThumb" alt="" src="images/terrain.jpg"><br class="basemapThumb">Terrain</button>
+                                                <button id="btnGray" class="btn btn-default slick-btn basemapBtn equalize slick-btn-selection" ><img class="basemapThumb" alt="" src="images/gray.jpg"><br class="basemapThumb">Gray</button>
+                                                <button id="btnNatGeo" class="btn btn-default slick-btn basemapBtn equalize"><img class="basemapThumb" alt="" src="images/natgeo.jpg"><br class="basemapThumb">NatGeo</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                             
                                 </div>
                             </div>
+
+                            <!-- Developed by -->
+							<div id="sidebarFooter">Developed by USGS NY WSC</div>
                         </div>
-
-                        <div class="panel panel-default sidebar-panel">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#weatherPanel">
-                                        NOAA Weather Layers
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="weatherPanel" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <button value="reflectivity_NWS_conus_layer" class="btn btn-default slick-btn radarBtn equalize">US Mosaic</button>
-                                    <button value="lr_NWS_layer" class="btn btn-default slick-btn radarBtn equalize">Long Range</button>
-                                    <button value="sr_NWS_layer" class="btn btn-default slick-btn radarBtn equalize">Short Range</button>
-                                    <button value="storm_NWS_layer" class="btn btn-default slick-btn radarBtn equalize">Storm Total</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="panel panel-default sidebar-panel">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#basemapsPanel">
-                                        Basemaps
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="basemapsPanel" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <button id="btnStreets" class="btn btn-default slick-btn basemapBtn equalize"><img class="basemapThumb" alt="" src="images/streets.jpg"><br class="basemapThumb">Streets</button>
-                                    <button id="btnSatellite" class="btn btn-default slick-btn basemapBtn equalize" ><img class="basemapThumb" alt="" src="images/satellite.jpg"><br class="basemapThumb">Satellite</button>
-                                    <button id="btnTopo" class="btn btn-default slick-btn basemapBtn equalize"><img class="basemapThumb" alt="" src="images/topo.jpg"><br class="basemapThumb">Topo</button>
-                                    <button id="btnTerrain" class="btn btn-default slick-btn basemapBtn equalize"><img class="basemapThumb" alt="" src="images/terrain.jpg"><br class="basemapThumb">Terrain</button>
-                                    <button id="btnGray" class="btn btn-default slick-btn basemapBtn equalize slick-btn-selection" ><img class="basemapThumb" alt="" src="images/gray.jpg"><br class="basemapThumb">Gray</button>
-                                    <button id="btnNatGeo" class="btn btn-default slick-btn basemapBtn equalize"><img class="basemapThumb" alt="" src="images/natgeo.jpg"><br class="basemapThumb">NatGeo</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="info" class="identification pull-right">Developed by USGS NY WSC</div>
-
-                    <div class="footer-links">
-                        <!-- footer nav links -->
-                        <a href="https://www.doi.gov/privacy">DOI Privacy Policy</a>
-                        <a href="https://www.usgs.gov/laws/policies_notices.html">Legal</a>
-                        <a href="https://www2.usgs.gov/laws/accessibility.html">Accessibility</a>
-                        <a href="https://www.usgs.gov/sitemap.html">Site Map</a>
-                        <a href="https://answers.usgs.gov/">Contact USGS</a>
-                        <!--/ footer nav links -->      
-                    </div>
-
-                    <div class="footer-links">
-                        <!-- footer nav links -->
-                        <a href="https://www.doi.gov/">U.S. Department of the Interior</a>
-                        <a href="https://www.doioig.gov/">DOI Inspector General</a>
-                        <a href="https://www.whitehouse.gov/">White House</a>
-                        <a href="https://www.whitehouse.gov/omb/e-gov/">E-gov</a>
-                        <a href="https://www.whitehouse.gov/open">Open Government</a>
-                        <a href="https://www.doi.gov/pmb/eeo/no-fear-act">No Fear Act</a>
-                        <a href="https://www2.usgs.gov/foia">FOIA</a>
-                        <!--/ footer nav links -->      
-                    </div>
-
-                    <!-- .footer-social-links -->
-                    <div class="footer-links">
-                        <a href="https://twitter.com/usgs" target="_blank">
-                            <i class="fa fa-twitter-square"><span class="only">Twitter</span></i>
-                        </a>
-                        <a href="https://facebook.com/usgeologicalsurvey" target="_blank">
-                            <i class="fa fa-facebook-square"><span class="only">Facebook</span></i>
-                        </a>
-                        <a href="https://plus.google.com/112624925658443863798/posts" target="_blank">
-                            <i class="fa fa-google-plus-square"><span class="only">Google+</span></i>
-                        </a>
-                        <a href="https://github.com/usgs" target="_blank">
-                            <i class="fa fa-github"><span class="only">GitHub</span></i>
-                        </a>
-
-                        <a href="https://flickr.com/usgeologicalsurvey" target="_blank">
-                            <i class="fa fa-flickr"><span class="only">Flickr</span></i>
-                        </a>
-
-                        <a href="http://youtube.com/usgs" target="_blank">
-                            <i class="fa fa-youtube-play"><span class="only">YouTube</span></i>
-                        </a>
-                        <a href="https://instagram.com/usgs" target="_blank">
-                            <i class="fa fa-instagram"><span class="only">Instagram</span></i>
-                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+
+            <!-- Map -->
+            <div id="mapDiv">
+                <div id="NWSlegend"></div>
+                <div id="radarTimeStamp" style="font-size:x-small;"></div>
+            </div>
+
+        </div> <!-- End App Body -->
+
+        <!-- Bottom bar -->
+		<footer class="usgs-footer">
+			<div class="tmp-container">
+				<div class="footer-doi">
+					<a href="https://www.doi.gov/privacy">DOI Privacy Policy</a>|
+					<a href="https://www.usgs.gov/laws/policies_notices.html">Legal</a>|
+					<a href="https://www2.usgs.gov/laws/accessibility.html">Accessibility</a>|
+					<a href="https://www.usgs.gov/sitemap.html">Site Map</a>|
+					<a href="https://answers.usgs.gov/">Contact USGS</a>
+				</div>
+		
+				<hr>
+		
+				<div class="footer-doi">
+					<a href="https://www.doi.gov/">U.S. Department of the Interior</a>|
+					<a href="https://www.doioig.gov/">DOI Inspector General</a>|
+					<a href="https://www.whitehouse.gov/">White House</a>|
+					<a href="https://www.whitehouse.gov/omb/e-gov/">E-gov</a>|
+					<a href="https://www.whitehouse.gov/open">Open Government</a>|
+					<a href="https://www.doi.gov/pmb/eeo/no-fear-act">No Fear Act</a>|
+					<a href="https://www2.usgs.gov/foia">FOIA</a>
+				</div>
+			</div>
+			<!-- /.footer-wrap -->
+		</footer>
     
+    <!-- About Modal -->
     <div id="aboutModal" class="modal fade"  tabindex="-1" role="dialog" >
             <div class="modal-dialog  modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button class="close" type="button" data-dismiss="modal" aria-hidden="true" style="color:gray;">&times;</button>
-                        <h4 class="modal-title">NY WSC Go2 Mapper</h4>
+                        <h5 class="modal-title">NY WSC Go2 Mapper</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                     <div id="aboutModalBody" class="modal-body">
-                        <ul class="nav nav-tabs" id="aboutModalTabs">
-                            <li role="presentation" class="active"><a id="aboutTab" href="#aboutTabPane" data-toggle="tab"><i class="fa fa-question-circle"></i>&nbsp;About the application</a></li>
-                            <li role="presentation"><a id="disclaimerTab" href="#disclaimerTabPane" data-toggle="tab"><i class="fa fa-exclamation-circle"></i>&nbsp;Disclaimer</a></li>
+                        <ul class="nav nav-tabs" id="aboutModalTabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="aboutTab" href="#aboutTabPane" data-toggle="tab" role="tab">
+                                <i class="fa fa-question-circle"></i>&nbsp;About the application</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="disclaimerTab" href="#disclaimerTabPane" data-toggle="tab" role="tab">
+                                <i class="fa fa-exclamation-circle"></i>&nbsp;Disclaimer</a>
+                            </li>
                         </ul>
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane active" id="aboutTabPane"><br>
@@ -269,9 +281,8 @@
 
                                 <p>Smith, M.J., Go2 Mapper Web Application, <a href="https://doi.org/10.5066/F7R210PG" target="_blank">https://doi.org/10.5066/F7R210PG</a>.</p>
 
-                                <p>Developed by <a href="https://www.usgs.gov/staff-profiles/martyn-smith">Martyn Smith</a> and <a href="https://www.usgs.gov/staff-profiles/todd-siskin">Todd Siskin</a> of the <a href="https://ny.water.usgs.gov">NY WSC</a>.<br>
-                                Portions of this application were developed in conjuction with <a href="https://wim.usgs.gov" target="_blank">Web Informatics and Mapping (WiM).</a><br>Source code available <a href="https://github.com/marsmith/go2mapper">here.</a><br>
-                                Icons created by David McCulloch, USGS</p>
+                                <p>Developed by <a href="https://www.usgs.gov/staff-profiles/martyn-smith">Martyn Smith</a> and <a href="https://www.usgs.gov/staff-profiles/todd-siskin">Todd Siskin</a> of the <a href="https://ny.water.usgs.gov">NY WSC</a>.<br><br>
+ 
                                 <span id="appVersion"></span>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="disclaimerTabPane"><br>
@@ -284,16 +295,14 @@
                             </div>
                         </div>
                     </div>
-                    <!--<div class="modal-footer">
-                    </div>-->
+					<div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                 </div><!-- /.modal-content -->
             </div> <!-- /.modal-dialog -->
-        </div><!-- /.modal -->
+    </div><!-- /.modal -->
 
-    <div id="mapDiv">
-        <div id="NWSlegend"></div>
-        <div id="radarTimeStamp" style="font-size:x-small;"></div>
-    </div>
+    </div><!-- /.app-wrapper -->
 
   </body>
 </html>
