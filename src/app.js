@@ -79,7 +79,7 @@ $( document ).ready(function() {
 	  })();
 
 	//create map
-	theMap = L.map('mapDiv',{zoomControl: false, preferCanvas: true});
+	theMap = L.map('mapDiv',{zoomControl: false});
 
 	//add zoom control with your options
 	L.control.zoom({position:'topright'}).addTo(theMap);  
@@ -998,35 +998,30 @@ function setBasemap(baseMap) {
 
 function toggleRadar(id) {
 
-	//remove any existing legend img
-	$('#NWSlegend').empty();
-	$('#radarTimeStamp').empty();
-
 	//remove all layers
 	clearRadar();
 	
 	if(id == "sr_NWS_layer") {
 		//if (theMap.hasLayer(sr_NWS_layer)) theMap.removeLayer(sr_NWS_layer);
 		theMap.addLayer(sr_NWS_layer);
-		$("#NWSlegend").append("<img id='LegendImg' src='https://radar.weather.gov/ridge/kml/radarkeyimages/ENX_N0R_Legend_0.gif'/>");
+		$("#NWSlegend").append("<img alt='NWS legend' id='LegendImg' src='https://radar.weather.gov/ridge/kml/radarkeyimages/ENX_N0R_Legend_0.gif'/>");
 	}
 	if(id == "lr_NWS_layer") {
 		theMap.addLayer(lr_NWS_layer);
-		$("#NWSlegend").append("<img id='LegendImg' src='https://radar.weather.gov/ridge/kml/radarkeyimages/ENX_N0Z_Legend_0.gif'/>");
+		$("#NWSlegend").append("<img alt='NWS legend' id='LegendImg' src='https://radar.weather.gov/ridge/kml/radarkeyimages/ENX_N0Z_Legend_0.gif'/>");
 	}
 	if(id == "storm_NWS_layer") {
 		theMap.addLayer(storm_NWS_layer);
-		$("#NWSlegend").append("<img id='LegendImg' src='https://radar.weather.gov/ridge/kml/radarkeyimages/ENX_NTP_Legend_0.gif'/>");
+		$("#NWSlegend").append("<img alt='NWS legend' id='LegendImg' src='https://radar.weather.gov/ridge/kml/radarkeyimages/ENX_NTP_Legend_0.gif'/>");
 	}
 	if(id == "reflectivity_NWS_conus_layer") {
 		theMap.addLayer(reflectivity_NWS_conus_layer);
-		$("#NWSlegend").append("<img id='LegendImg' src='https://radar.weather.gov/ridge/kml/radarkeyimages/ENX_NCR_Legend_0.gif'/>");
+		$("#NWSlegend").append("<img alt='NWS legend' id='LegendImg' src='https://radar.weather.gov/ridge/kml/radarkeyimages/ENX_NCR_Legend_0.gif'/>");
 	}
 }
 
 function clearRadar() {
 	$('#NWSlegend').empty();
-	$('#radarTimeStamp').empty();
 	theMap.removeLayer(sr_NWS_layer);
 	theMap.removeLayer(lr_NWS_layer);
 	theMap.removeLayer(storm_NWS_layer);

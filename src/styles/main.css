@@ -134,8 +134,9 @@ Sidebar and Map
 	flex-grow: 3;
 }
 
-#filterLookups {
-	padding:0px;
+#NWSlegend {
+	position: absolute;
+    z-index: 1000;
 }
 
 #main-menu {
