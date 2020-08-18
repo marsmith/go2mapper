@@ -93,7 +93,7 @@ $( document ).ready(function() {
 
 	//set initial view
 	theMap.setView([MapY, MapX], MapZoom);
-		
+
 	//define layers
 	hullLayer = L.featureGroup().addTo(theMap);
 	selectLayer = L.featureGroup().addTo(theMap);
@@ -890,9 +890,9 @@ function togglePeople() {
 	$('#togglePeople').toggleClass('btn-secondary btn-primary');
 	showPeople = !showPeople;
 	if (showPeople) {
-		//refresh every 30 seconds
+		//refresh every 4 minutes
 		loadPeople();
-		refreshIntervalId = setInterval(loadPeople, 30000);  
+		refreshIntervalId = setInterval(loadPeople, 60000);  
 	}
 	else {
 		theMap.removeLayer(peopleLayer);
@@ -984,16 +984,30 @@ function setBasemap(baseMap) {
 		case 'Terrain': baseMap = 'Terrain'; break;
 		case 'Gray': baseMap = 'Gray'; break;
 		case 'NatGeo': baseMap = 'NationalGeographic'; break;
+		case 'Verizon': baseMap = 'Verizon'; break;
 	}
 
-	if (layer) 	theMap.removeLayer(layer);
-	layer = basemapLayer(baseMap);
-	theMap.addLayer(layer);
-	if (layerLabels) theMap.removeLayer(layerLabels);
-	if (baseMap === 'Gray' || baseMap === 'Imagery' || baseMap === 'Terrain') {
-		layerLabels = basemapLayer(baseMap + 'Labels');
-		theMap.addLayer(layerLabels);
+	if (layer) theMap.removeLayer(layer);
+
+	if (baseMap === 'Verizon') {
+		//testing verizon coverage map
+		var imageUrl = './images/verizon_coverage.jpg',
+		imageBounds = [[40.464082713022, -80.23879543723], [45.162293719815, -71.69092847148]];
+		layer = L.imageOverlay(imageUrl, imageBounds).addTo(theMap);
+		theMap.addLayer(layer);
+
 	}
+
+	else {
+		layer = basemapLayer(baseMap);
+		theMap.addLayer(layer);
+		if (layerLabels) theMap.removeLayer(layerLabels);
+		if (baseMap === 'Gray' || baseMap === 'Imagery' || baseMap === 'Terrain') {
+			layerLabels = basemapLayer(baseMap + 'Labels');
+			theMap.addLayer(layerLabels);
+		}
+	}
+
 }
 
 function toggleRadar(id) {
