@@ -18,7 +18,7 @@
     "@turf/convex": "^3.5.2",
     "bootstrap": "^4.5.0",
     "esri-leaflet": "^2.3.2",
-    "highcharts": "^5.0.2",
+    "highcharts": "^7.2.2",
     "jquery": "^3.4.1",
     "leaflet": "^1.6.0",
     "moment": "^2.15.2",
