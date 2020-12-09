@@ -658,6 +658,10 @@ function selectTrip(tripData) {
 function getConvexHull(text) {
 	//create convex hull
 	var hull = convex(selectLayer.toGeoJSON());
+
+	console.log('sites selection geojson:', JSON.stringify(selectLayer.toGeoJSON()))
+
+	//console.log('hull geojson:', JSON.stringify(hull))
 	// var hullGeoJSONlayer = L.geoJSON(hull)
 	var hullGeoJSONlayer = L.geoJSON(hull).bindPopup(text, {minWidth: 200});
 	hullLayer.addLayer(hullGeoJSONlayer);
