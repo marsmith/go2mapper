@@ -141,7 +141,7 @@ Sidebar and Map
 
 #main-menu {
 	width: 400px;
-	min-width: 400px;
+	/* min-width: 400px; */
 	transition: left .15s ease-in-out;
 	background-color: #FFFFFF;
 	z-index:1001;
@@ -161,7 +161,7 @@ Sidebar and Map
 	border-left: 1px solid rgba(0,0,0,0.2);
 }
 /* Sidebar mobile toggle */
-@media (max-width: 767px) {
+@media (max-width: 500px) {
    /* Slide menu out from left */
 	.isOpenMenu #main-menu {
 		left: 0;
@@ -176,8 +176,8 @@ Sidebar and Map
 	#main-menu {
 		position: absolute;
 		left: -100%;
-		width: 90%;
-		max-width: 400px;
+		width: 100%;
+		/* max-width: 400px; */
 		height: 100%;
 		height: calc(100% - 58px);
 		box-shadow: 2px 0px 25px -4px rgba(30,30,60,0.15);

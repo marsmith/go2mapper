@@ -13,10 +13,12 @@ var trackerData = {
 };
 
 // SA WSC is using the SPOT app and devices to track location data, each user has a group and initials associated with their data, and an icon in /images/person_icons
-//var trackerData = {
-//	feedPassword: 'spot123'
-//};
-var trackerURL = 'https://api.findmespot.com/spot-main-web/consumer/rest-api/2.0/public/feed/0cHGtSqFo2n7VSqg4t17mqFKkE6NEXuDa/latest.json?feedPassword=spot123';
+var trackerURLspot = 'https://api.findmespot.com/spot-main-web/consumer/rest-api/2.0/public/feed/0hz7i5scAWLxVVIgdZHb311LeD19qiRsE/latest.json';
+var iconLookup = {
+	TROY_DATA: 'blue',
+	CORTLAND_DATA: 'yellow',
+	POTSDAM_DATA: 'orange'
+}
 
 //request URLs
 var USGSwaterServicesURL = 'https://staging.waterservices.usgs.gov/nwis/iv/?format=nwjson&sites=';

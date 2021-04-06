@@ -109,6 +109,8 @@
                                         <div class="card">
                 
                                             <div id="legend" class="card-body" style="display:block;">
+                                                <h5>Go2</h5>
+
                                                 <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="2" style="font-size:small;padding-bottom:6px;padding-top:6px;">
                                                 <TR>
                                                     <TD><img src="images/symbols/sw_symbol.png" alt="Red" /></TD>
@@ -171,21 +173,91 @@
                                                     </TR>
                                                 </TABLE>
                                             </div>
+
+                                        </div>
+
+                                        <div class="card mt-2">
+                
+                                            <div id="radar-legend" class="card-body" style="display:none;">
+                                                <h5>Radar</h5>
+                                                
+                                                <table style="font-size:small;padding-bottom:6px;padding-top:6px;">
+                                                    <tr> <td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#66D5E6"></rect></svg></td> <td>20 dBZ</td> <td class="pl-4">Trace amounts of precipitation  </td> </tr>
+                                                    <tr> <td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#139513"></rect></svg></td> <td>30 dBZ</td> <td class="pl-4">Approx.  0.1  inch/hour         </td> </tr>
+                                                    <tr> <td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#006B00"></rect></svg></td> <td>36 dBZ</td> <td class="pl-4">Approx.  0.25 inch/hour         </td> </tr>
+                                                    <tr> <td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#F2D500"></rect></svg></td> <td>41 dBZ</td> <td class="pl-4">Approx.  0.5  inch/hour         </td> </tr>
+                                                    <tr> <td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#FF8000"></rect></svg></td> <td>47 dBZ</td> <td class="pl-4">Approx.  1.25 inch/hour         </td> </tr>
+                                                    <tr> <td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#FF0000"></rect></svg></td> <td>52 dBZ</td> <td class="pl-4">Approx.  2.5  inch/hour         </td> </tr>
+                                                    <tr> <td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#CC0000"></rect></svg></td> <td>55 dBZ</td> <td class="pl-4">Approx.  4    inch/hour         </td> </tr>
+                                                    <tr> <td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#730000"></rect></svg></td> <td>60 dBZ</td> <td class="pl-4">Approx.  8    inch/hour         </td> </tr>
+                                                    <tr> <td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#FF55FF"></rect></svg></td> <td>65 dBZ</td> <td class="pl-4">Approx. 16    inch/hour or more </td> </tr>
+                                                </table>
+                                            </div>
+
+                                            <div id="past-rainfall-legend" class="card-body" style="display:none;">
+                                                <h5>Past Rainfall</h5>
+                  
+                                                <table style="font-size:small;padding-bottom:6px;padding-top:6px;">
+                 
+                                                    <tr> <td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#0096FF"></rect></svg></td> <td class="pl-4">1 inch  </td></tr>
+                                                    <tr> <td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#00FEA2"></rect></svg></td> <td class="pl-4">2 inches</td></tr>
+                                                    <tr> <td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#00FE0C"></rect></svg></td> <td class="pl-4">3 inches</td></tr>
+                                                    <tr> <td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#8AFE00"></rect></svg></td> <td class="pl-4">4 inches</td></tr>
+                                                    <tr> <td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#FEBA00"></rect></svg></td> <td class="pl-4">5 inches</td></tr>
+                                                    <tr><td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#FE2400"></rect></svg></td> <td class="pl-4">6 inches</td></tr>
+                                                    <tr><td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#FE005A"></rect></svg></td> <td class="pl-4">7 inches</td></tr>
+                                                    <tr><td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#FE10FE"></rect></svg></td> <td class="pl-4">8 inches</td></tr>
+                                                    <tr><td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#FE74FE"></rect></svg></td> <td class="pl-4">9 inches</td></tr>
+                
+                                                </table>
+                                            </div>
+
+                                            <div id="forecast-rainfall-legend" class="card-body" style="display:none;">
+                                                <h5>Rainfall Forecast</h5>
+                  
+                                                <table style="font-size:small;padding-bottom:6px;padding-top:6px;">
+                 
+                                                    <tr> <td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#7FFF00"></rect></svg></td> <td class="pl-4"> 0.01 inches </td></tr>
+                                                    <tr> <td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#00FF00"></rect></svg></td> <td class="pl-4"> 0.10 inches </td></tr>
+                                                    <tr><td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#0B8B00"></rect></svg></td> <td class="pl-4"> 0.25 inches </td></tr>
+                                                    <tr><td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#0B4D8B"></rect></svg></td> <td class="pl-4"> 0.50 inches </td></tr>
+                                                    <tr> <td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#1B90FF"></rect></svg></td> <td class="pl-4"> 0.75 inches </td></tr>
+                                                    <tr><td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#00B2EE"></rect></svg></td> <td class="pl-4"> 1.00 inches </td></tr>
+                                                    <tr><td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#00EEEE"></rect></svg></td> <td class="pl-4"> 1.25 inches </td></tr>
+                                                    <tr><td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#8968CD"></rect></svg></td> <td class="pl-4"> 1.50 inches </td></tr>
+                                                    <tr><td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#912EEE"></rect></svg></td> <td class="pl-4"> 1.75 inches </td></tr>
+                                                    <tr><td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#8B008B"></rect></svg></td> <td class="pl-4">  2.00 inches </td></tr>
+                                                    <tr><td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#8B0000"></rect></svg></td> <td class="pl-4">  2.50 inches </td></tr>
+                                                    <tr><td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#FF0000"></rect></svg></td> <td class="pl-4">  3.00 inches </td> </tr>
+                                                    <tr><td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#EE4000"></rect></svg></td> <td class="pl-4">  4.00 inches </td> </tr>
+                                                    <tr><td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#FF7F00"></rect></svg></td> <td class="pl-4">  5.00 inches </td> </tr>
+                                                    <tr><td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#CE8500"></rect></svg></td> <td class="pl-4">  7.00 inches </td> </tr>
+                                                    <tr><td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#FFD700"></rect></svg></td> <td class="pl-4"> 10.00 inches </td> </tr>
+                                                    <tr><td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#FFFF00"></rect></svg></td> <td class="pl-4"> 15.00 inches </td></tr>
+                                                    <tr><td class="text-right"><svg height="12" width="20"><rect height="12" width="20" fill="#FFC0B7"></rect></svg></td> <td class="pl-4"> 20.00 inches </td></tr>
+                
+                                                </table>
+                                            </div>
+
                                         </div>
                                     </div>
 
                                     
                                     <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" aria-expanded="true" href="#weatherPanel">
-                                        <a class="card-title">NOAA Weather Layers</a><i class="fa fa-plus"></i>
+                                        <a class="card-title">Weather Layers</a><i class="fa fa-plus"></i>
                                     </div>
                                       
                                     <div id="weatherPanel" class="card-body collapse" data-parent="#accordion">
                                         <div class="card">
                                             <div class="card-body">
-                                                <button value="reflectivity_NWS_conus_layer" class="btn btn-default slick-btn radarBtn equalize">US Mosaic</button>
-                                                <button value="lr_NWS_layer" class="btn btn-default slick-btn radarBtn equalize">Long Range</button>
-                                                <button value="sr_NWS_layer" class="btn btn-default slick-btn radarBtn equalize">Short Range</button>
-                                                <button value="storm_NWS_layer" class="btn btn-default slick-btn radarBtn equalize">Storm Total</button>
+                                                <button value="NWS_radar_base_reflectivity" class="btn btn-default slick-btn radarBtn equalize">Base Reflectivity (NWS)</button>
+                                                <button value="reflectivity_NWS_conus_layer" class="btn btn-default slick-btn radarBtn equalize">Base Reflectivity (Iowa State)</button>
+
+                                                <button value="Q2_1_hour_precipitation" class="btn btn-default slick-btn radarBtn equalize">Precipitation Past 1 hour (Iowa State)</button>
+                                                <button value="Q2_24_hour_precipitation" class="btn btn-default slick-btn radarBtn equalize">Precipitation Past 1 day (Iowa State)</button>
+
+                                                <button value="Rainfall_forecast_6_hour" class="btn btn-default slick-btn radarBtn equalize">Rainfall forecast 6 hour (Iowa State)</button>
+                                                <button value="Rainfall_forecast_24_hour" class="btn btn-default slick-btn radarBtn equalize">Rainfall forecast 24 hour (Iowa State)</button>
                                             </div>
                                         </div>
                                     </div>

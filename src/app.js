@@ -27,16 +27,17 @@ import 'bootstrap';
 import Highcharts from 'highcharts';
 import 'leaflet';
 import moment from 'moment';
-import {query, basemapLayer} from 'esri-leaflet';
+import {query, basemapLayer, dynamicMapLayer} from 'esri-leaflet';
 import '@fortawesome/fontawesome-free/js/fontawesome';
 import '@fortawesome/fontawesome-free/js/solid';
 
 //global variables
+var theMap;
 var siteList = {};
 var tripList = {};
-var theMap;
 var popupChart;
-var layerLabels, layer, hullLayer, selectLayer, sitesLayer, peopleLayer, lr_NWS_layer, sr_NWS_layer, storm_NWS_layer, reflectivity_NWS_conus_layer;
+var layerLabels, layer, hullLayer, selectLayer, sitesLayer, peopleLayer;
+var Q2_1_hour_precipitation, Q2_24_hour_precipitation, Rainfall_forecast_6_hour, Rainfall_forecast_24_hour, NWS_radar_base_reflectivity, reflectivity_NWS_conus_layer;
 var showPeople = false;
 var refreshIntervalId;
 
@@ -99,10 +100,13 @@ $( document ).ready(function() {
 	selectLayer = L.featureGroup().addTo(theMap);
 	sitesLayer = L.featureGroup().addTo(theMap);
 	peopleLayer = L.featureGroup().addTo(theMap);
-	lr_NWS_layer = L.layerGroup();
-	sr_NWS_layer = L.layerGroup();
-	storm_NWS_layer = L.layerGroup();
+	NWS_radar_base_reflectivity = L.layerGroup();
 	reflectivity_NWS_conus_layer = L.layerGroup();
+
+	Q2_1_hour_precipitation = L.layerGroup();
+	Q2_24_hour_precipitation = L.layerGroup();
+	Rainfall_forecast_6_hour = L.layerGroup();
+	Rainfall_forecast_24_hour = L.layerGroup();
 
 	loadSites();
 	addNWSlayers();
@@ -153,6 +157,7 @@ $( document ).ready(function() {
 	});
 
 	$('.radarBtn').click(function() {
+		console.log('radarBtn click', $(this).val())
 		if ($(this).hasClass('slick-btn-selection')) {
 			$(this).removeClass('slick-btn-selection');
 			clearRadar();
@@ -183,38 +188,33 @@ $( document ).ready(function() {
 		theMap.panTo(theMap.unproject(px),{animate: true}); // pan to new center
 	});
 	/*  END EVENT HANDLERS */
+
+	//test iphone fix	
+	setTimeout(function(){ theMap.invalidateSize(); }, 500);
+	
 });
 
 function addNWSlayers() {
 
 	//got extents from: https://radar.weather.gov/ridge/kmzgenerator.php downloading and looking at KML file attributes
 
-	//reflectivity CONUS layer
-	reflectivity_NWS_conus_layer.addLayer(L.imageOverlay('https://radar.weather.gov/ridge/Conus/RadarImg/northeast_radaronly.gif',[[35.13102, -81.613834], [49.508061, -66.517938]]));
-	//L.esri.dynamicMapLayer({url: 'https://idpgis.ncep.noaa.gov/arcgis/rest/services/NWS_Observations/radar_base_reflectivity/MapServer', layers: [0], opacity : 1, useCors: false}).addTo(theMap);
-	//reflectivity_NWS_conus_layer.addLayer(L.esri.dynamicMapLayer({url: 'https://idpgis.ncep.noaa.gov/arcgis/rest/services/NWS_Observations/radar_base_reflectivity/MapServer', layers: [0], opacity : 1, useCors: false}));
-	//reflectivity_NWS_conus_layer.addLayer(L.imageOverlay('https://radar.weather.gov/ridge/Conus/RadarImg/latest_radaronly.gif',[[21.652538062803, -127.620375523875420], [50.406626367301044, -66.517937876818]]));
+	//iastate base reflectivity
+	reflectivity_NWS_conus_layer.addLayer(L.tileLayer('https://{s}.agron.iastate.edu/cache/tile.py/1.0.0/nexrad-n0q-900913/{z}/{x}/{y}.png', {subdomains: [ "mesonet", "mesonet1", "mesonet2", "mesonet3" ], opacity : 0.7}));
 
-	//long range state composite
-	lr_NWS_layer.addLayer(L.imageOverlay('https://radar.weather.gov/ridge/RadarImg/N0Z/ENX_N0Z_0.gif',[[38.578726,-78.420367],[46.578726,-69.693094]]));
-	lr_NWS_layer.addLayer(L.imageOverlay('https://radar.weather.gov/ridge/RadarImg/N0Z/BGM_N0Z_0.gif',[[38.193727,-80.341364],[46.193727,-71.614092]]));
-	lr_NWS_layer.addLayer(L.imageOverlay('https://radar.weather.gov/ridge/RadarImg/N0Z/BUF_N0Z_0.gif	',[[38.941729,-83.093363],[46.941729,-74.36609]]));
-	lr_NWS_layer.addLayer(L.imageOverlay('https://radar.weather.gov/ridge/RadarImg/N0Z/TYX_N0Z_0.gif',[[39.748728,-80.036364],[47.748728,-71.309091]]));
-	lr_NWS_layer.addLayer(L.imageOverlay('https://radar.weather.gov/ridge/RadarImg/N0Z/OKX_N0Z_0.gif',[[36.858728,-77.220362],[44.858728,-68.493089]]));
+	//nws base reflectivity
+	NWS_radar_base_reflectivity.addLayer(dynamicMapLayer({url: 'https://idpgis.ncep.noaa.gov/arcgis/rest/services/NWS_Observations/radar_base_reflectivity/MapServer', opacity : 0.7, f: 'image'}));
 
-	//short range state composite
-	sr_NWS_layer.addLayer(L.imageOverlay(' https://radar.weather.gov/ridge/RadarImg/N0R/ENX_N0R_0.gif',[[39.894591,-76.989871],[45.267637,-71.128366]]));
-	sr_NWS_layer.addLayer(L.imageOverlay(' https://radar.weather.gov/ridge/RadarImg/N0R/BGM_N0R_0.gif',[[39.526025,-78.893004],[44.866266,-73.067287]]));
-	sr_NWS_layer.addLayer(L.imageOverlay(' https://radar.weather.gov/ridge/RadarImg/N0R/BUF_N0R_0.gif',[[40.241795,-81.680043],[45.646381,-75.78413]]));
-	sr_NWS_layer.addLayer(L.imageOverlay(' https://radar.weather.gov/ridge/RadarImg/N0R/TYX_N0R_0.gif',[[41.012603,-78.662387],[46.48944,-72.687656]]));
-	sr_NWS_layer.addLayer(L.imageOverlay(' https://radar.weather.gov/ridge/RadarImg/N0R/OKX_N0R_0.gif',[[38.245599,-75.712675],[43.476892,-70.00581]]));
+	//1 hour precip
+	Q2_1_hour_precipitation.addLayer(L.tileLayer('https://{s}.agron.iastate.edu/cache/tile.py/1.0.0/q2-n1p-900913/{z}/{x}/{y}.png', {subdomains: [ "mesonet", "mesonet1", "mesonet2", "mesonet3" ], opacity : 0.7}));
 
-	//storm total precip
-	storm_NWS_layer.addLayer(L.imageOverlay(' https://radar.weather.gov/ridge/RadarImg/NTP/ENX_NTP_0.gif',[[39.894178,-76.99032],[45.268049,-71.127915]]));
-	storm_NWS_layer.addLayer(L.imageOverlay(' https://radar.weather.gov/ridge/RadarImg/NTP/BGM_NTP_0.gif',[[39.52562,-78.893445],[44.866669,-73.066846]]));
-	storm_NWS_layer.addLayer(L.imageOverlay(' https://radar.weather.gov/ridge/RadarImg/NTP/BUF_NTP_0.gif',[[40.241382,-81.680491],[45.646793,-75.78368]]));
-	storm_NWS_layer.addLayer(L.imageOverlay(' https://radar.weather.gov/ridge/RadarImg/NTP/TYX_NTP_0.gif',[[41.01219,-78.662836],[46.489851,-72.687205]]));
-	storm_NWS_layer.addLayer(L.imageOverlay(' https://radar.weather.gov/ridge/RadarImg/NTP/OKX_NTP_0.gif',[[38.245202,-75.713107],[43.477288,-70.005377]]));
+	//24 hour precip
+	Q2_24_hour_precipitation.addLayer(L.tileLayer('https://{s}.agron.iastate.edu/cache/tile.py/1.0.0/q2-p24h-900913/{z}/{x}/{y}.png', {subdomains: [ "mesonet", "mesonet1", "mesonet2", "mesonet3" ], opacity : 0.7}));
+
+	//rainfall forecast 6 hour (QPF 6 Hours Day 1)
+	Rainfall_forecast_6_hour.addLayer(dynamicMapLayer({url: 'https://idpgis.ncep.noaa.gov/arcgis/rest/services/NWS_Forecasts_Guidance_Warnings/wpc_qpf/MapServer', opacity : 0.7, f: 'image', layers: [7]}));
+
+	//rainfall forecast 24 hour (QPF 24 Hour Day 1)
+	Rainfall_forecast_24_hour.addLayer(dynamicMapLayer({url: 'https://idpgis.ncep.noaa.gov/arcgis/rest/services/NWS_Forecasts_Guidance_Warnings/wpc_qpf/MapServer', opacity : 0.7, f: 'image', layers: [1]}));
 }
 
 function openPopup(e) {	
@@ -895,6 +895,7 @@ function togglePeople() {
 	showPeople = !showPeople;
 	if (showPeople) {
 		//refresh every 4 minutes
+		//loadPeopleFOLLOWME();
 		loadPeople();
 		refreshIntervalId = setInterval(loadPeople, 60000);  
 	}
@@ -905,6 +906,121 @@ function togglePeople() {
 }
 
 function loadPeople() {
+	//add the layer if it isn't on the map
+	if (!theMap.hasLayer(peopleLayer)) theMap.addLayer(peopleLayer);
+	
+	//get locations
+	$.ajax({
+		type: "GET",
+		contentType: "application/json; charset=utf-8",
+		url: trackerURLspot,
+		//data: trackerData,
+		async: false,
+		dataType: "jsonp",
+		success: function(json){
+
+			console.log('got ppl:', json)
+			
+			//make sure there is a response
+			if(json.response.feedMessageResponse.messages.message.length > 0) {
+				
+				//if there is a response, clear the people Layer
+				peopleLayer.clearLayers();
+				
+				$(json.response.feedMessageResponse.messages.message).each(function(i,v) {
+				
+					//get point info
+//					var coords = [parseFloat(v.Latitude),parseFloat(v.Longitude)];
+//					var accuracy = v.Accuracy;
+//					var speed = v['Speed(mph)'];
+//					var altitude = v['Altitude(m)'];
+//					var name = v.DeviceName;
+//					var color = name.split('-')[1];
+//					var deviceID = v.DeviceID;
+					//get point infro for SAWSC from Spot URL
+					var coords = [parseFloat(v.latitude),parseFloat(v.longitude)];
+					var timeText = v.dateTime;
+					var deviceID = v.id;
+					var msgName = v.messengerName;
+					var msgType = v.messageType;
+					var battery = v.batteryState;
+					var office = null;
+					var group = null;
+					var name = null;
+					var groupID = null;
+					
+					//parse user name and group id (3 char group, underscore, 3 char initials) from messengerName
+					if (msgName.indexOf('_') !== -1) {
+						var msgNameArray = msgName.split('_');
+						office = msgNameArray[0];
+						group = msgNameArray[1];
+						name = msgNameArray[2];
+						groupID = office + '_' + group
+					}
+					else {
+						name = msgName;
+					}
+
+					
+					// ---------------------------------------------------------
+
+					//set up icon color groups based on office/group combos
+
+					// https://www.geoapify.com/create-custom-map-marker-icon
+
+					// ---------------------------------------------------------
+
+
+					console.log('test:', msgName, '|', name, groupID)
+
+					//get timestamp 
+					var dateObj = moment(timeText);
+					var formattedDate = dateObj.format('MMMM Do YYYY, h:mm:ss a');
+					
+					//convert time to seconds
+					var utcSeconds = dateObj.valueOf() / 1000;
+					var seconds = new Date().getTime() / 1000;
+
+					var color = iconLookup[groupID];
+
+					if (!color) alert('No icon for: ' + groupID);
+					
+					//setup marker for person
+					var personIcon = L.icon({iconUrl: './images/person_icons/' + color + '.png',iconSize: [40,40]});
+	
+					//var personMarker = L.marker(coords, {icon: personIcon}).bindPopup('<b>User Data</b></br><b>Timestamp:</b> ' + formattedDate + '</br><b>Color:</b> ' + color + '</br><b>Speed(mph):</b> ' + speed + '</br><b>Altitude(m):</b> ' + altitude + '</br><b>Accuracy(m):</b> ' + accuracy);
+					// Modified person icon for SAWSC
+					var personMarker = L.marker(coords, {zIndexOffset: 1000, icon: personIcon}).bindPopup('<b>User Data</b></br><b>Timestamp:</b> ' + formattedDate + '</br><b>GroupID:</b> ' + groupID + '</br><b>Name:</b> ' + name + '</br><b>Status:</b> ' + msgType + '</br><b>Battery:</b> ' + battery);
+
+					//add the graphic only if timestamp hasn't changed in last 36 hours
+					if (seconds - utcSeconds < 129600) { 
+						if ((msgType == "TRACK") || (msgType == "UNLIMITED-TRACK")) {
+							peopleLayer.addLayer(personMarker);
+							console.log("deviceID: ",deviceID, " | groupID: ", groupID, " | date: ", formattedDate, " | location: ", coords, " | battery: ", battery);
+						}
+						//otherwise skip showing this user
+						else {
+							console.log(groupID, "was skipped because not in TRACK mode.");
+						}
+					}
+					else {
+						console.log(groupID, "was skipped for no update.");
+					}
+				});
+			} 
+	  
+			//no response from tracking url or other error
+			else {
+				console.log('Error retreiving user locations');
+			}
+		},
+		error: function (XMLHttpRequest, textStatus, errorThrown) {
+			alert('Unexpected error has occurred: ' + XMLHttpRequest.statusText + ' (' + XMLHttpRequest.status + ')');
+		}
+	});
+}
+
+function loadPeopleFOLLOWME() {
 	//add the layer if it isn't on the map
 	if (!theMap.hasLayer(peopleLayer)) theMap.addLayer(peopleLayer);
 	
@@ -1016,34 +1132,51 @@ function setBasemap(baseMap) {
 
 function toggleRadar(id) {
 
+	console.log('toggle radar:', id)
+
 	//remove all layers
 	clearRadar();
 	
-	if(id == "sr_NWS_layer") {
-		//if (theMap.hasLayer(sr_NWS_layer)) theMap.removeLayer(sr_NWS_layer);
-		theMap.addLayer(sr_NWS_layer);
-		$("#NWSlegend").append("<img alt='NWS legend' id='LegendImg' src='https://radar.weather.gov/ridge/kml/radarkeyimages/ENX_N0R_Legend_0.gif'/>");
-	}
-	if(id == "lr_NWS_layer") {
-		theMap.addLayer(lr_NWS_layer);
-		$("#NWSlegend").append("<img alt='NWS legend' id='LegendImg' src='https://radar.weather.gov/ridge/kml/radarkeyimages/ENX_N0Z_Legend_0.gif'/>");
-	}
-	if(id == "storm_NWS_layer") {
-		theMap.addLayer(storm_NWS_layer);
-		$("#NWSlegend").append("<img alt='NWS legend' id='LegendImg' src='https://radar.weather.gov/ridge/kml/radarkeyimages/ENX_NTP_Legend_0.gif'/>");
-	}
 	if(id == "reflectivity_NWS_conus_layer") {
 		theMap.addLayer(reflectivity_NWS_conus_layer);
-		$("#NWSlegend").append("<img alt='NWS legend' id='LegendImg' src='https://radar.weather.gov/ridge/kml/radarkeyimages/ENX_NCR_Legend_0.gif'/>");
+		$('#radar-legend').show();
+	}
+	if(id == "NWS_radar_base_reflectivity") {
+		theMap.addLayer(NWS_radar_base_reflectivity);
+		$('#radar-legend').show();
+	}
+
+	if(id == "Q2_1_hour_precipitation") {
+		theMap.addLayer(Q2_1_hour_precipitation);
+		$('#past-rainfall-legend').show();
+	}
+	if(id == "Q2_24_hour_precipitation") {
+		theMap.addLayer(Q2_24_hour_precipitation);
+		$('#past-rainfall-legend').show();
+	}
+	if(id == "Rainfall_forecast_6_hour") {
+		theMap.addLayer(Rainfall_forecast_6_hour);
+		$('#forecast-rainfall-legend').show();
+	}
+	if(id == "Rainfall_forecast_24_hour") {
+		theMap.addLayer(Rainfall_forecast_24_hour);
+		$('#forecast-rainfall-legend').show();
 	}
 }
 
 function clearRadar() {
 	$('#NWSlegend').empty();
-	theMap.removeLayer(sr_NWS_layer);
-	theMap.removeLayer(lr_NWS_layer);
-	theMap.removeLayer(storm_NWS_layer);
+
+	$('#radar-legend').hide();
+	$('#past-rainfall-legend').hide();
+	$('#forecast-rainfall-legend').hide();
+
 	theMap.removeLayer(reflectivity_NWS_conus_layer);
+	theMap.removeLayer(NWS_radar_base_reflectivity);
+	theMap.removeLayer(Q2_1_hour_precipitation);
+	theMap.removeLayer(Q2_24_hour_precipitation);
+	theMap.removeLayer(Rainfall_forecast_6_hour);
+	theMap.removeLayer(Rainfall_forecast_24_hour);
 }
 
 function resetView() {
