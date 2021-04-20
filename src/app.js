@@ -40,6 +40,7 @@ var layerLabels, layer, hullLayer, selectLayer, sitesLayer, peopleLayer;
 var Q2_1_hour_precipitation, Q2_24_hour_precipitation, Rainfall_forecast_6_hour, Rainfall_forecast_24_hour, NWS_radar_base_reflectivity, reflectivity_NWS_conus_layer;
 var showPeople = false;
 var refreshIntervalId;
+var spotURL = spotURLinternal;
 
 Highcharts.setOptions({
 	global: { useUTC: false },
@@ -114,7 +115,6 @@ $( document ).ready(function() {
 	/*  START EVENT HANDLERS */
 	// Add minus icon for collapse element which is open by default
 	$(".collapse.show").each(function(){
-		console.log('in collapse show')
 		$(this).prev(".card-header").find("svg").addClass("fa-minus").removeClass("fa-plus");
 	});
 	
@@ -894,10 +894,10 @@ function togglePeople() {
 	$('#togglePeople').toggleClass('btn-secondary btn-primary');
 	showPeople = !showPeople;
 	if (showPeople) {
-		//refresh every 4 minutes
-		//loadPeopleFOLLOWME();
-		loadPeople();
-		refreshIntervalId = setInterval(loadPeople, 60000);  
+		//refresh every 2.5 minutes as per spot guidance
+		//loadLocationsFOLLOWME();
+		loadLocations();
+		refreshIntervalId = setInterval(loadLocations, 150000);  
 	}
 	else {
 		theMap.removeLayer(peopleLayer);
@@ -905,185 +905,98 @@ function togglePeople() {
 	}
 }
 
-function loadPeople() {
-	//add the layer if it isn't on the map
-	if (!theMap.hasLayer(peopleLayer)) theMap.addLayer(peopleLayer);
-	
-	//get locations
-	$.ajax({
-		type: "GET",
-		contentType: "application/json; charset=utf-8",
-		url: trackerURLspot,
-		//data: trackerData,
-		async: false,
-		dataType: "jsonp",
-		success: function(json){
+function parseLocations(response) {
 
-			console.log('got ppl:', json)
+	console.log('Got locations:', response)
 			
-			//make sure there is a response
-			if(json.response.feedMessageResponse.messages.message.length > 0) {
-				
-				//if there is a response, clear the people Layer
-				peopleLayer.clearLayers();
-				
-				$(json.response.feedMessageResponse.messages.message).each(function(i,v) {
-				
-					//get point info
-//					var coords = [parseFloat(v.Latitude),parseFloat(v.Longitude)];
-//					var accuracy = v.Accuracy;
-//					var speed = v['Speed(mph)'];
-//					var altitude = v['Altitude(m)'];
-//					var name = v.DeviceName;
-//					var color = name.split('-')[1];
-//					var deviceID = v.DeviceID;
-					//get point infro for SAWSC from Spot URL
-					var coords = [parseFloat(v.latitude),parseFloat(v.longitude)];
-					var timeText = v.dateTime;
-					var deviceID = v.id;
-					var msgName = v.messengerName;
-					var msgType = v.messageType;
-					var battery = v.batteryState;
-					var office = null;
-					var group = null;
-					var name = null;
-					var groupID = null;
-					
-					//parse user name and group id (3 char group, underscore, 3 char initials) from messengerName
-					if (msgName.indexOf('_') !== -1) {
-						var msgNameArray = msgName.split('_');
-						office = msgNameArray[0];
-						group = msgNameArray[1];
-						name = msgNameArray[2];
-						groupID = office + '_' + group
-					}
-					else {
-						name = msgName;
-					}
+	//make sure there is a response
+	if(response.length > 0) {
+		
+		//if there is a response, clear the people Layer
+		peopleLayer.clearLayers();
+		
+		$(response).each(function(i,location) {
 
-					
-					// ---------------------------------------------------------
-
-					//set up icon color groups based on office/group combos
-
-					// https://www.geoapify.com/create-custom-map-marker-icon
-
-					// ---------------------------------------------------------
-
-
-					console.log('test:', msgName, '|', name, groupID)
-
-					//get timestamp 
-					var dateObj = moment(timeText);
-					var formattedDate = dateObj.format('MMMM Do YYYY, h:mm:ss a');
-					
-					//convert time to seconds
-					var utcSeconds = dateObj.valueOf() / 1000;
-					var seconds = new Date().getTime() / 1000;
-
-					var color = iconLookup[groupID];
-
-					if (!color) alert('No icon for: ' + groupID);
-					
-					//setup marker for person
-					var personIcon = L.icon({iconUrl: './images/person_icons/' + color + '.png',iconSize: [40,40]});
+			//get the location coords
+			var coords = [parseFloat(location.latitude),parseFloat(location.longitude)];
 	
-					//var personMarker = L.marker(coords, {icon: personIcon}).bindPopup('<b>User Data</b></br><b>Timestamp:</b> ' + formattedDate + '</br><b>Color:</b> ' + color + '</br><b>Speed(mph):</b> ' + speed + '</br><b>Altitude(m):</b> ' + altitude + '</br><b>Accuracy(m):</b> ' + accuracy);
-					// Modified person icon for SAWSC
-					var personMarker = L.marker(coords, {zIndexOffset: 1000, icon: personIcon}).bindPopup('<b>User Data</b></br><b>Timestamp:</b> ' + formattedDate + '</br><b>GroupID:</b> ' + groupID + '</br><b>Name:</b> ' + name + '</br><b>Status:</b> ' + msgType + '</br><b>Battery:</b> ' + battery);
-
-					//add the graphic only if timestamp hasn't changed in last 36 hours
-					if (seconds - utcSeconds < 129600) { 
-						if ((msgType == "TRACK") || (msgType == "UNLIMITED-TRACK")) {
-							peopleLayer.addLayer(personMarker);
-							console.log("deviceID: ",deviceID, " | groupID: ", groupID, " | date: ", formattedDate, " | location: ", coords, " | battery: ", battery);
-						}
-						//otherwise skip showing this user
-						else {
-							console.log(groupID, "was skipped because not in TRACK mode.");
-						}
-					}
-					else {
-						console.log(groupID, "was skipped for no update.");
-					}
-				});
-			} 
-	  
-			//no response from tracking url or other error
-			else {
-				console.log('Error retreiving user locations');
+			//logic to check for and parse out name if it exists
+			var groupID = location.messengerName;
+			var name;
+			var check = groupID.split('_');
+			var internal = false;
+			if (check.length === 3) {
+				internal = true;
+				groupID = check[0] + '_' + check[1];
+				name = check[2];
 			}
-		},
-		error: function (XMLHttpRequest, textStatus, errorThrown) {
-			alert('Unexpected error has occurred: ' + XMLHttpRequest.statusText + ' (' + XMLHttpRequest.status + ')');
-		}
-	});
+
+			//convert time
+			var dateObj = moment(location.dateTime);
+			var formattedDate = dateObj.format('MMMM Do YYYY, h:mm:ss a');
+			var utcSeconds = dateObj.valueOf() / 1000;
+			var seconds = new Date().getTime() / 1000;
+
+			//icon lookup by group
+			var color = iconLookup[groupID];
+			if (!color) console.warn('No icon for: ' + groupID);
+			
+			//setup marker for person
+			var personIcon = L.icon({iconUrl: './images/person_icons/' + color + '.png',iconSize: [40,40]});
+
+			//create popup text
+			var popupString = 'User Data</br>';
+
+			//add name if we are internal
+			if (internal) {
+				popupString = name + '</br>';
+			}
+
+			popupString += '<b>ESN:</b> ' + location.messengerId + '</br><b>Timestamp:</b> ' + formattedDate + '</br><b>GroupID:</b> ' + groupID + '</br><b>Type:</b> ' + location.messageType + '</br><b>Message:</b> ' + location.messageContent + '</br><b>Battery:</b> ' + location.batteryState;
+
+			var personMarker = L.marker(coords, {zIndexOffset: 1000, icon: personIcon}).bindPopup(popupString);
+
+			//add the graphic only if timestamp hasn't changed in last 36 hours
+			if (seconds - utcSeconds < 129600) { 
+				peopleLayer.addLayer(personMarker);
+				console.log("Adding:", location.messengerId);
+			}
+			else {
+				console.log("Skipped for no update:", location.messengerId);
+			}
+		});
+	} 
+
+	//no response from tracking url or other error
+	else {
+		console.log('Error retreiving user locations');
+	}
 }
 
-function loadPeopleFOLLOWME() {
+function loadLocations() {
 	//add the layer if it isn't on the map
 	if (!theMap.hasLayer(peopleLayer)) theMap.addLayer(peopleLayer);
-	
-	//get locations
+
+	console.log('ABOUT TO LOAD PEOPLE WITH THIS URL:', spotURL);
+
+	//attempt internal request first
 	$.ajax({
 		type: "GET",
 		contentType: "application/json; charset=utf-8",
-		url: trackerURL,
-		data: trackerData,
-		async: false,
-		dataType: "jsonp",
-		success: function(json){
-							
-			//make sure there is a response
-			if(json.Data && json.Data.length > 0){
+		url: spotURL,
+		dataType: "json",
+		success: function(response){
 
-				//if there is a response, clear the people Layer
-				peopleLayer.clearLayers();
-			
-				$(json.Data).each(function(i,v) {
-				
-					//get point info
-					var coords = [parseFloat(v.Latitude),parseFloat(v.Longitude)];
-					var timeText = v.Date;
-					var accuracy = v.Accuracy;
-					var speed = v['Speed(mph)'];
-					var altitude = v['Altitude(m)'];
-					var name = v.DeviceName;
-					var color = name.split('-')[1];
-					var deviceID = v.DeviceID;
+			parseLocations(response);
 
-					//get timestamp 
-					var dateObj = moment(timeText);
-					var formattedDate = dateObj.format('MMMM Do YYYY, h:mm:ss a');
-
-					//convert time to seconds
-					var utcSeconds = dateObj.valueOf() / 1000;
-					var seconds = new Date().getTime() / 1000;
-				
-					//setup marker for person
-					var personIcon = L.icon({iconUrl: './images/person_icons/' + color + '.png',iconSize: [40,40]});
-					var personMarker = L.marker(coords, {icon: personIcon}).bindPopup('<b>User Data</b></br><b>Timestamp:</b> ' + formattedDate + '</br><b>Color:</b> ' + color + '</br><b>Speed(mph):</b> ' + speed + '</br><b>Altitude(m):</b> ' + altitude + '</br><b>Accuracy(m):</b> ' + accuracy);
-
-					//add the graphic only if timestamp hasn't changed in last 36 hours
-					if (seconds - utcSeconds < 129600) { 
-						peopleLayer.addLayer(personMarker);
-						console.log("deviceID: ",deviceID, " | color: ", color, " | date: ", formattedDate, " | location: ", coords, " | speed: ", speed, " mph | altitude: ", altitude, " meters | accuracy: ", accuracy, ' meters');
-					}
-					
-					//otherwise skip showing this user
-					else {
-						console.log(color, "was skipped for no update.");
-					}
-				});
-			} 
-	  
-			//no response from followMee or other error
-			else {
-				console.log('Error retreiving user locations');
-			}
 		},
 		error: function (XMLHttpRequest, textStatus, errorThrown) {
-			alert('Unexpected error has occurred: ' + XMLHttpRequest.statusText + ' (' + XMLHttpRequest.status + ')');
+
+			console.error('Unexpected error has occurred: ' + XMLHttpRequest.statusText + ' (' + XMLHttpRequest.status + ')');
+
+			//if we have an error fall back to public URL
+			spotURL = spotURLexternal;
+			loadLocations();
 		}
 	});
 }

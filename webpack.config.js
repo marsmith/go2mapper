@@ -50,6 +50,9 @@ module.exports = {
         new CopyPlugin({
             patterns: [
                 { from: './src/appConfig.js', to: './' },
+                { from: './src/getDataExternal.php', to: './' },
+                { from: './src/getDataInternal.php', to: './' },
+                { from: './src/proxy.php', to: './' },
                 { from: './src/images', to: './images' },
             ]
         }),
