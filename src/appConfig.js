@@ -20,7 +20,7 @@ var iconLookup = {
 var USGSwaterServicesURL = 'https://staging.waterservices.usgs.gov/nwis/iv/?format=nwjson&sites=';
 var proxyURL = 'https://ny.water.usgs.gov/maps/go2/proxy.php?url=';
 var AHPSurl = 'https://water.weather.gov/ahps2/hydrograph_to_xml.php?gage=';
-var NWMmediumRangeURL = 'https://nwmdata.nohrsc.noaa.gov/latest/forecasts/medium_range/streamflow?station_id=';
+var NWMmediumRangeURL = 'https://nwmdata.nohrsc.noaa.gov/latest/forecasts/medium_range_ensemble_member_1/streamflow?station_id=';
 var NWMshortRangeURL = 'https://nwmdata.nohrsc.noaa.gov/latest/forecasts/short_range/streamflow?station_id=';
 var NWMmapServiceURL = 'https://mapservice.nohrsc.noaa.gov/arcgis/rest/services/references_layers/USGS_Stream_Gauges/MapServer/0';
 
