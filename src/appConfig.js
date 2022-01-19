@@ -13,7 +13,10 @@ var iconLookup = {
 	POTSDAM_DATA: 'orange',
 	CORAM_DATA: 'pink',
 	MILFORD_DATA: 'red',
-	BUFFALO_DATA: 'light_green'
+	BUFFALO_DATA: 'light_green',
+	TROY_WATERSHEDS: 'brown',
+	NY_QW: 'gray'
+	
 }
 
 //request URLs

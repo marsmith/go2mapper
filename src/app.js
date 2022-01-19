@@ -857,7 +857,7 @@ function loadGo2(go2json) {
 					if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_violet.png",iconSize: [42,40]});
 					else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_violet.png",iconSize: [22,30]});
 				}
-				else if (searchStringInArray("TIME",go2flags) != -1)    {
+				else if (searchStringInArray("1TIME",go2flags) != -1)    {
 					if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_black.png",iconSize: [42,40]});
 					else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_black.png",iconSize: [22,30]});
 				}
@@ -870,6 +870,10 @@ function loadGo2(go2json) {
 					else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_pink.png",iconSize: [22,30]});
 				}
 				else if ((searchStringInArray("GAP",go2flags) != -1) || (searchStringInArray("SHFT",go2flags) != -1) || (searchStringInArray("COMP",go2flags) != -1))   {
+					if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_white.png",iconSize: [42,40]});
+					else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_white.png",iconSize: [22,30]});
+				}
+				else if ((searchStringInArray("2TIME",go2flags) != -1) ||(searchStringInArray("3TIME",go2flags) != -1) || (searchStringInArray("4TIME",go2flags) != -1))    {
 					if (go2flags.length > 1) fgIcon = L.icon({iconUrl: "images/symbols/multi_" + sitetype + "_gray.png",iconSize: [42,40]});
 					else fgIcon = L.icon({iconUrl: "images/symbols/" + sitetype + "_gray.png",iconSize: [22,30]});
 				}
@@ -907,15 +911,20 @@ function togglePeople() {
 
 function parseLocations(response) {
 
-	console.log('Got locations:', response)
-			
 	//make sure there is a response
 	if(response.length > 0) {
 		
 		//if there is a response, clear the people Layer
 		peopleLayer.clearLayers();
-		
-		$(response).each(function(i,location) {
+
+		//check for duplicate ESNs
+		var result = response.filter(function (a) {
+			return !this[a.messengerId] && (this[a.messengerId] = true);
+		}, Object.create(null));
+
+		console.log('Got locations:',result);
+				
+		$(result).each(function(i,location) {
 
 			//get the location coords
 			var coords = [parseFloat(location.latitude),parseFloat(location.longitude)];
