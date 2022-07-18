@@ -1032,10 +1032,11 @@ function setBasemap(baseMap) {
 	if (layer) theMap.removeLayer(layer);
 
 	if (baseMap === 'Verizon') {
-		//testing verizon coverage map
-		var imageUrl = './images/verizon_coverage.jpg',
-		imageBounds = [[40.464082713022, -80.23879543723], [45.162293719815, -71.69092847148]];
-		layer = L.imageOverlay(imageUrl, imageBounds).addTo(theMap);
+
+		//refarctor using basemap service from https://verizon.cellmaps.com/
+		var layer1 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 19,attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'});
+		var layer2 = L.tileLayer('https://s0{s}.cellmaps.com/1.3/tiles/1.0.0/cellmap/{z}/{x}/{y}.png?map=verizon&base=false&llist=vzw_direct_gsm_1,vzw_direct_gsm_2,vzw_direct_gprs_1,vzw_direct_gprs_2,vzw_direct_umts_global_1,vzw_direct_umts_global_2,vzw_direct_umts_americas_1,vzw_direct_umts_americas_2,vzw_lte_1,vzw_lte_2_1,vzw_lte_2_2,vzw_lte_owned,vzw_intl_5g&color=f6f6f6|f6f6f6|d9d9d9|d9d9d9|969696|969696|969696|969696|e16e51|e16e51|e16e51|e16e51|d52b1e&generic=true', {tms: true, opacity: 0.7, attribution: "https://verizon.cellmaps.com/"});
+		layer = L.layerGroup([layer1, layer2]);
 		theMap.addLayer(layer);
 
 	}
